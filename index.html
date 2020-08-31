@@ -1,46 +1,71 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Quick Introduction</h1>
-    <p>
-      Hi everyone, my name is Maria Medina Martinez and I'm a senior CS major.
-    </p>
-    <p>
-      <ul>
-        <li>Major: CS</li>
-        <li>Minor: RBE</li>
-      </ul>
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>Microsoft</li>
-      <li>128 Technology</li>
-      <li>WPI Information Security</li>
-      <li>Emagination Tech Camps</li>
-    </ul>
-  </body>
-  <script>
-    let color = [0, 100,200]
+<head>
+  <title>CS4241 Assignment 1</title>
+  <link rel="stylesheet" type="text/css"href="styles.css">
+  <meta charset="utf-8">
+</head>
 
-    // fnc to change color values
-    const fnc = function() {
-      document.body.style.backgroundColor = 
+<body>
+  <h1>Quick Introduction</h1>
+  <p>
+    Hi everyone, my name is Maria Medina Martinez and I'm a senior CS major (Class of 2021).
+  </p>
+  <h2> Education </h2>
+  <p>
+  <ul>
+    <li>Major: CS</li>
+    <li>Minor: RBE</li>
+    <li>Classes:
+      <ul>Operating systems</ul>
+      <ul>Database systems I</ul>
+      <ul>Machine learning </ul>
+      <ul>Computer vision for cooking</ul>
+      <ul>Software engineering</ul>
+      <ul>Computer networks </ul>
+      <ul>Systems programming concepts</ul>
+      <ul>Algorithms</ul>
+      <ul>Accel obj-oriented dsgn cncpts</ul>
+      <ul>Intro-machine org & assembly</ul>
+      <ul>Accelertd intro to progr desgn</ul>
+    </li>
+  </ul>
+  </p>
+  <h2>Technology</h2>
+  <p>
+  <ul>
+    <li>HTML: some</li>
+    <li>CSS: some</li>
+    <li>Java: a lot</li>
+    <li>JavaScript: none</li>
+    <li>Ruby: none</li>
+    <li> Python: a lot</li>
+    <li> unit testing: a lot</li>
+  </ul>
+  </p>
+
+  <h2>Work Experience</h2>
+
+  <ul>
+    <li>Microsoft</li>
+    <li>128 Technology</li>
+    <li>WPI Information Security</li>
+    <li>Emagination Tech Camps</li>
+  </ul>
+</body>
+<script>
+  let color = [0, 100, 200]
+
+  // fnc to change color values
+  const fnc = function () {
+    document.body.style.backgroundColor =
       `rgb(${color[0]}, ${color[1]}, ${color[2]})`
 
-      color = color.map(val => (val + 5) % 255)
-    }
-    
-    setInterval(fnc, 100)
-  </script>
+    color = color.map(val => (val + 5) % 255)
+  }
+
+    // setInterval(fnc, 100)
+</script>
+
 </html>
