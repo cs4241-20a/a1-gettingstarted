@@ -3,21 +3,89 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <link href="./style.css"" rel="stylesheet">
-    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;500;700&display=swap" rel="stylesheet">    <meta charset="utf-8">
+
+    <style>
+      
+      body {
+        font-family: 'Work Sans', sans-serif;      }
+h1 {
+text-align: center;
+margin: 40px;
+}
+
+h2 {
+  border-bottom: 5px solid white;
+}
+
+.intro {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px; 
+}
+
+ul {
+list-style: square inside none;
+}
+
+.content {
+margin: 50px; 
+align-self: center;
+display: flex;
+justify-content: space-evenly;
+}
+
+.text {
+text-align: left; 
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 0px; 
+}
+
+img {
+  width: 30px; 
+  height: auto; 
+  margin: 10px;
+  margin-bottom: 40px; 
+}
+
+.topDiv {
+  border: 10px solid transparent; 
+  border-image: linear-gradient(to right, #8194F8, #719CD9, #88CFF0, #71D3D9, #81F8DD); 
+  border-image-slice: 1; 
+  margin: 10px; 
+}
+
+
+
+    </style>
   </head>
+
   <body>
+    <div class="topDiv">
+      <h1>Information about Molly Wirtz</h1>
+      <p class="intro">
+        Hello, I'm Molly, and I am in WPI's class of 2021.
+        <br><br>
+        I am Computer Science major currently pursuing my Bachelor's Degree.
+      </p>
 
-
-    <h1>Information about Molly Wirtz</h1>
-    <p class="intro">
-      Hello, I'm Molly, and I am in WPI's class of 2021.
-      <br>
-      I am Computer Science major currently pursuing my Bachelor's Degree.
-    </p>
+      <div class="links">
+        <a href="https://github.com/MollyWirtz">
+          <img src="assets/GitHub-Mark-120px-plus.png" alt="GitHub logo" style="margin-top: 9px"> 
+        </a>
+        <a href="https://www.linkedin.com/in/molly-wirtz/">
+        <img src="assets/LI-In-Bug.png" alt="LinkedIn logo">
+        </a>
+    </div>
+</div>
 
     <div class="content">
       <div>
-        <h2>Course Work</h2>
+        <h2 style="border-color: #8194F8">Course Work</h2>
             <p>
               Previous CS courses I have taken at WPI include: 
             </p>
@@ -37,21 +105,22 @@
       </div>
 
       <div>
-        <h2>Experience</h2>
+        <h2 style="border-color: #81F8DD">Experience</h2>
           <p>
             Programming experience:
           </p>
           <ul>
-            <li>HTML - A lot</li>
-            <li>CSS - A lot</li>
-            <li>Java - A lot</li>
-            <li>Javascript- A lot</li>
-            <li>Ruby - None</li> 
-            <li>Python - Some</li>
-            <li>Unit Testing - Some</li>
+            <li>HTML - <b>A lot</b></li>
+            <li>CSS - <b>A lot</b></li>
+            <li>Java - <b>A lot</b></li>
+            <li>Javascript - <b>A lot</b></li>
+            <li>Ruby - <b>None</b></li> 
+            <li>Python - <b>Some</b></li>
+            <li>Unit Testing - <b>Some</b></li>
           </ul>
       </div>
     </div>
+
 
   </body>
 </html>
