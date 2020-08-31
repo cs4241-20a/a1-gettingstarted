@@ -1,0 +1,29 @@
+/*
+    Stylesheet for index.html for CS 4241 Assignment 1
+
+    I guessed and used * to set the font of all elements and it
+    worked :)
+ */
+* {
+    font-family: Ubuntu;
+}
+
+h1 {
+    color: #752A23;
+}
+
+h2 {
+    color: #754A46;
+}
+
+h3 {
+    color: #C2453A;
+}
+
+a {
+   color: #F55649;
+}
+
+body {
+    background-color: #F79C94;
+}
