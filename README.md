@@ -6,7 +6,7 @@ http://a1-mollywirtz.glitch.me
 This project shows the basics of web deployment by editing a small web project and deploying it to Glitch. 
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the body, h1, h2, ul, and img selectors, as well as the intro, content, text, links, and topDiv classes. 
+- **Styled page with CSS**: Added rules for the body, h1, h2, ul, and a selectors, as well as the intro, content, text, links, and topDiv classes. 
 - **Experimented with other HTML tags**: Added link, div, br, and a tags.   
 
 ### Design Achievements
