@@ -12,28 +12,21 @@
         margin-left: 40px;
         font-size: large;
         font-family: "Fira Sans", sans-serif;
+        background-color: wheat;
       }
 
       .header {
-        color: maroon;
+        color: blueviolet;
         text-align: center;
         font-size: 50px;
       }
 
-      .intro {
-        color: goldenrod;
-      }
-
       .majors {
-        color: maroon;
-      }
-
-      .other {
-        color: goldenrod;
+        color: black;
       }
 
       .experience {
-        color: maroon;
+        color: black;
       }
 
       #animation {
@@ -47,22 +40,50 @@
 
   <body>
     <h1 class="header">Neville Ingram class of 2022</h1>
+    <h2 style="color: blue">Intro</h2>
     <p class="intro">
       Hello there, I have taken a bunch of WPI CS classes. I am a PLA for the
       math department.
     </p>
-    <p class="majors">Computer Science and Mathematical Science</p>
-    <p class="other">I would really like to become a full stack developer</p>
-
-    <h2 class="experience">Experience</h2>
-    <p>Working experience</p>
+    <h2 style="color: blue">Majors</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Java</li>
-      <li>Javascript</li>
-      <li>WPI</li>
+      <li>Computer Science</li>
+      <li>Mathematical Sciences</li>
     </ul>
+    <h2 style="color: blue">Other Info</h2>
+    <p class="other">
+      I would possibly like to become a full stack developer, this class will
+      make it or break it for me
+    </p>
+    <div class="experience">
+      <h2 style="color: blue">Working Experience</h2>
+      <ul>
+        <li>
+          I have had an internship briefly tackling Angular, Vue, and React
+          (Mainly Angular)
+        </li>
+      </ul>
+      <h2 style="color: blue">Web Development Experience</h2>
+      <ul>
+        <li>Minimal Redux action/reducer/effect cycle</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Java</li>
+        <li>Javascript</li>
+        <li>TypeScript</li>
+      </ul>
+      <h2 style="color: blue">Previous CS Classes</h2>
+      <ul>
+        <li>CS 1001</li>
+        <li>CS 2011</li>
+        <li>CS 2102</li>
+        <li>CS 2223</li>
+        <li>CS 2303</li>
+        <li>CS 3013</li>
+        <li>CS 3133</li>
+        <li>CS 3516</li>
+      </ul>
+    </div>
     <div class="extra-points">
       <a href="https://google.com">Wanna google something? Click me</a>
       <br />
@@ -70,22 +91,35 @@
       <button onclick="al()">Click me for a message!</button>
       <br />
       <b>This text is bold !</b>
+      <br />
+      <span id="color-changer"
+        >This changes color super fast for no reason</span
+      >
       <div id="container">
+        <p>This animation will slowly fall down and off the screen</p>
         <div id="animation"></div>
       </div>
     </div>
   </body>
   <script>
     let color = [0, 100, 200];
-    const fcn = () => {
-      document.body.style.backgroundColor =
-        "rgb(" + color[0] + "," + color[1] + "," + color[2] + ")";
-      color = color.map((val) => (val + 5) % 255);
-    };
+    // const fcn = () => {
+    //   document.body.style.backgroundColor =
+    //     "rgb(" + color[0] + "," + color[1] + "," + color[2] + ")";
+    //   color = color.map((val) => (val + 5) % 255);
+    // };
+    // setInterval(fcn, 700);
+
     const al = () => {
       alert("Yo this message is super secret, don't tell anyone !");
     };
-    setInterval(fcn, 100);
+
+    const changeColor = () => {
+      document.getElementById("color-changer").style.color =
+        "rgb(" + color[0] + "," + color[1] + "," + color[2] + ")";
+      color = color.map((val) => (val + 50) % 255);
+    };
+    setInterval(changeColor, 100);
 
     const animate = () => {
       var count = 0;
