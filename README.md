@@ -3,12 +3,12 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 *DUE: Monday, September 7th by 11:59 AM (before the start of class!)*  
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
+This assignment is a "warm-up" exercise.
+You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/).
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
+Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch.
+If you already know these, great.
+However, if you're new to them, spend several hours practicing, experimenting, and reading documentation.
 In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
 
 Assignment details
@@ -43,7 +43,7 @@ This assignment requires that your website is both contained in a GitHub reposit
 5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
 
 6. Modify the README file according to the specification below.
-7. Commit and push all your changes to GitHub. 
+7. Commit and push all your changes to GitHub.
 8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
 9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
 9. Create and submit a Pull Request to the original repo.
@@ -88,15 +88,30 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
+Gabriel Aponte
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added rules for the body, h1, h2, h3, p, and li selectors.
+    - All colors follow an Adobe Color Pallet I created (see Design Achievements for details)
+    - body -> added a background color for the webpage
+    - h1 -> Bolded with a font weight of 700, underlined and centered the text, color change
+    - h2 -> italic font style, color change
+    - h3 -> color change and font changed to Georgia, serif
+    - p -> color change and centered the text
+    - li -> color change and google font Montserrat added
+    - style.css file added to the server.js file
+
+- **Experiment with other HTML tags**: Used the a, link and img tags.
+    - a -> Used to link the word Wolves to a short youtube video
+    - link -> used to embed my external style.css file into the html file and apply the css style changes I made. Also used to import google fonts
+    - img -> used to add a picture of my Adobe Color Pallet into the site
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Create a color palette using [color.adobe.com]**: I created a color Pallet on the site and used all five colors in my site.
+    - The color pallet picture (pallet.jpg) is embedded in the site using the img tag
+    - The color wheel image can be found in the repo (colorwheel.jpg)
 
-
+- **Use a font from [Goolge Fonts]**: I used the Montserrat font for my li text elements
