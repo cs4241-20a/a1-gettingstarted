@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 Molly Wirtz
-http://a1-mollywirtz.glitch.me ### CHANGE THIS URL
+http://a1-mollywirtz.glitch.me 
 
 This project shows the basics of web deployment by editing a small web project and deploying it to Glitch. 
 
