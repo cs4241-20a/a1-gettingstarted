@@ -3,26 +3,92 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <!--
+      The following source was used to learn how to embed CSS into an HTML file:
+      https://www.w3schools.com/tags/tag_link.asp
+    -->
+    <link type="text/css" rel="stylesheet" href="style_sheet.css">
+    <!--
+      The following source was used to learn how to embed CSS into an HTML file:
+      https://www.w3schools.com/css/css_font_google.asp
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Joseph Swetz</h1>
+    Index:
+    <br>
+      <a href="#Bio">Bio</a><br>
+      <a href="#Experience">Experience</a><br>
+      <a href="#Working Experience">Working Experience</a>
+    <br><br>
+
+  </body>
+    <img id="profile_picture" src="ProfilePicture.jpg" alt="" width="155.4" height="233.2">
+    <br>
+    <button type=button onclick="rotateImage()">Rotate</button>
+
+    <a name="Bio">
+      <h2>Bio</h2>
+    </a>
     <p>
-      [Self introduction]
+      Hi everyone! I'm Joe, and I'm currently a senior.
     </p>
     <p>
-      [Major and other information]
+      I'm a double major in Computer Science / Interactive Media and Game Development
     </p>
     <p>
-      [Other things]
+      Previous computer science courses I've taken at WPI are:
+      <ul>
+        <li>CS 1102</li>
+        <li>CS 210X</li>
+        <li>CS 2303</li>
+        <li>CS 2223</li>
+        <li>CS 2011</li>
+        <li>CS 3013</li>
+        <li>CS 3041</li>
+        <li>CS 3041</li>
+        <li>CS 3516</li>
+        <li>CS 3733</li>
+        <li>CS 4731</li>
+      </ul>
+      I've also taken various IMGD courses, including IMGD 2900, which uses Professor Moriarty's Perlenspiel game engine. This engine is web-based and uses Javascript.
     </p>
 
-    <h2>Experience</h2>
+    <a name="Experience">
+      <h2>Experience</h2>
+    </a>
     <p>
-      Working experience
+      <ul>
+        <li>HTML: Some</li>
+        <li>CSS: Some</li>
+        <li>Java: A lot</li>
+        <li>Javascript: A lot</li>
+        <li>Python: Some</li>
+        <li>Ruby: None</li>
+        <li>Unit Testing: A lot</li>
+      </ul>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+
+    <a name="Working Experience">
+      <h3>Working experience</h3>
+    </a>
+    <p>
+      <ul>
+        <li>Centori</li>
+        <li>HPR</li>
+      </ul>
+    </p>
+
   </body>
+  <script>
+    //Rotates the profile picture by 90 degrees
+    //The following source was using to learn how to rotate objects in CSS:
+    //https://www.w3schools.com/cssref/css3_pr_transform.asp
+    let rotation = 90;
+    const rotateImage = function(){
+      document.getElementById("profile_picture").style.transform = `rotate(${rotation}deg)`;
+      rotation = (rotation + 90) % 360;
+    };
+  </script>
 </html>
