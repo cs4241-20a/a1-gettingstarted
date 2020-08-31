@@ -88,15 +88,17 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
+Jordan Gold
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added rules for h3 and a
+- **Added a JavaScript animation to the image and to the text color**: I think they both look swell
+- **Added extra html tags** Used a img, h3, and a tag
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Spartan Font from Google Fonts**: I used the Spartan font as the font for the primary text in my site. There is text on the site that uses alternate fonts though
 
 

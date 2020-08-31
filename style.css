@@ -1,0 +1,12 @@
+h3 {
+    font-family: cursive;
+    font-size: small;
+    color: chartreuse;
+}
+
+a {
+    font-style: italic;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: medium;
+}
