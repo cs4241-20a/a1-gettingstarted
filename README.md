@@ -1,5 +1,5 @@
 Tom Graham
-http://a1-tgrahamcodes.glitch.me
+http://a1-tgrahamcodes-1.glitch.me
 
 This project shows some of my basic JavaScript, HTML, and CSS knowledge. It's a simple webpage that lists my previous programming knowledge. The server.js was written by Charlie Roberts. The image is from unsplash.com, which hosts free images. I've done all of the achievements listed in the homework writeup. This project will also be hosted on the glitch url above.
 
