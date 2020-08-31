@@ -1,1 +1,53 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+}
 
+h1 {
+  text-align: center;
+  margin: 40px;
+}
+
+h2 {
+  border-bottom: 5px solid white;
+}
+
+ul {
+  list-style: square inside none;
+}
+
+img {
+  width: 30px; 
+  height: auto; 
+  margin: 10px;
+  margin-bottom: 40px; 
+}
+
+.intro {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px; 
+}
+
+.content {
+  margin: 50px; 
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.text {
+  text-align: left; 
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin: 0px; 
+}
+
+.topDiv {
+  border: 10px solid transparent; 
+  border-image: linear-gradient(to right, #8194F8, #719CD9, #88CFF0, #71D3D9, #81F8DD); 
+  border-image-slice: 1; 
+  margin: 10px; 
+}
