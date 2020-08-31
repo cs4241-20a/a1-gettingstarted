@@ -1,28 +1,108 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
+
+<head>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+
+    <title>CS4241 Assignment 1</title>
+
+    <style>
+        /* Google Fonts import (Roboto, Cedarville Cursive, Abril Fatface) */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Cedarville+Cursive&family=Abril+Fatface&display=swap');
+
+        body {
+            font-family: Roboto;
+            margin: 6em auto;
+            width: min(80%, 1000px);
+
+            --accent: #00FFFF;
+        }
+
+        mark {
+            /* linear-gradient trick to get a background color to be smaller than the element-- thanks SO! */
+            background: linear-gradient(0deg, #ffffff00 0.2em, var(--accent) 0.2em, var(--accent) 1em, #ffffff00 1em);
+        }
+
+        #name {
+            display: inline-block;
+            text-align: center;
+            line-height: 0;
+            margin-right: 0.1em;
+            width: 6em;
+        }
+    </style>
+
+    <script>
+        const FONTS = [
+            "Cedarville Cursive",
+            "Roboto",
+            "Abril Fatface"
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const nameElt = document.getElementById("name");
+
+            function choose(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            function chooseNew(arr, existing) {
+                let chosen = existing;
+                while (chosen == existing) {
+                    chosen = choose(arr);
+                }
+                return chosen;
+            }
+
+            function changeNameFont() {
+                nameElt.style.fontFamily = chooseNew(FONTS, nameElt.style.fontFamily);
+            }
+
+            setInterval(changeNameFont, 300);
+
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Information about <mark><em id="name" style="font-family: 'Cedarville Cursive';">Trevor Paley</em></mark></h1>
     <p>
-      [Self introduction]
+        Class of 2023
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+        Computer Science (BS/MS)
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+        <h3>Prior Courses</h3>
+        <ul>
+            <li><em>CS <strong>2303</strong></em> - Systems</li>
+            <li><em>CS <strong>2011</strong></em> - Assembly</li>
+            <li><em>CS <strong>2223</strong></em> - Algorithms</li>
+            <li><em>CS <strong>3133</strong></em> - Foundations</li>
+            <li><em>CS <strong>3013</strong></em> - Operating Systems</li>
+        </ul>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <p>
+        <h3>Skills</h3>
+        <ul>
+            <li><strong>HTML</strong> - 😀</li>
+            <li><strong>CSS</strong> - 🙂</li>
+            <li><strong>Java</strong> - 🙂</li>
+            <li><strong>JavaScript</strong> - 😀</li>
+            <li><strong>Ruby</strong> - 😕</li>
+            <li><strong>Python</strong> - 😐</li>
+            <li><strong>Unit Testing</strong> - 😐</li>
+        </ul>
+    </p>
+    <p>
+        <h3>Employment</h3>
+        <ul>
+            <li><strong>WPI</strong> - for work on the Graduate Coordination System</li>
+        </ul>
+    </p>
+</body>
+
 </html>
