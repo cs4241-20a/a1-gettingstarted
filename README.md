@@ -1,8 +1,6 @@
 Neville Ingram
 https://glitch.com/~a1-beast-nev
 
-This project shows ...
-
 ## Technical Achievements
 
 - **Styled page with CSS**: Added rules using class property (header,intro,majors,others,experience,animation), used margin-left. font-size, background-image, height, width to style
