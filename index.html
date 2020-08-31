@@ -57,7 +57,7 @@
             }
 
             function changeNameFont() {
-                nameElt.style.fontFamily = chooseNew(FONTS, nameElt.style.fontFamily);
+                nameElt.style.fontFamily = chooseNew(FONTS, nameElt.style.fontFamily.replace(/"/g, ""));
             }
 
             setInterval(changeNameFont, 300);
