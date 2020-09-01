@@ -1,7 +1,8 @@
 html {
 	padding: 10px;
-	background: rgb(131,58,180);
-	background: linear-gradient(45deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,133,69,1) 100%);
+}
+
+* {
 	color: white;
 }
 
@@ -10,9 +11,35 @@ a {
 }
 
 h1, h2 {
+	text-align: center;
 	font-family: 'Epilogue', sans-serif;
 }
 
-p, li {
+p, li, td, div {
 	font-family: 'Poppins', sans-serif;
+}
+
+div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	padding-left: 200px;
+}
+
+table, td {
+	border: 1px solid white;
+	padding: 5px;
+}
+
+.otogecon-text {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
 }

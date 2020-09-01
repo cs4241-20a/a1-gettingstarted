@@ -3,59 +3,101 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Poppins&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
+  <script>
+    let angle = 45;
+
+    const fnc = function() {
+      document.body.style.backgroundImage = 
+      `linear-gradient(${angle}deg, rgba(131,58,180,1), rgba(253,29,29,1), rgba(252,133,69,1))`
+      if (angle > 359) {
+        angle = 0;
+      } 
+      angle = angle + 1;
+    }
+
+    setInterval(fnc, 30);
+  </script>
   <body>
     <h1>Information about Benny Klaiman</h1>
-    <p>
-      WPI Class of 2021
-    </p>
-    <p>
-      Major: Computer Science
-    </p>
-    <p>
-      Check me out on <a href="https://github.com/bnklaiman">Github (bnklaiman)</a>
-    </p>
-
+    <div class="row" style="text-align: center;">
+      <div class="col-sm-4">WPI Class of 2021</div>
+      <div class="col-sm-4">Major: Computer Science</div>
+      <div class="col-sm-4">Check me out on <a href="https://github.com/bnklaiman">Github (bnklaiman)</a></div>
+    </div>
+    <br/>  
     <h2>Experience</h2>
-    <p>
-      WPI Coursework
-    </p>
-    <ul>
-      <li>CS 1101: Introduction to Program Design</li>
-      <li>CS 2011: Introduction to Machine Organization and Assembly Language</li>
-      <li>CS 2102: Object-Oriented Design Concepts</li>
-      <li>CS 2223: Algorithms</li>
-      <li>CS 2303: Systems Programming Concepts</li>
-      <li>CS 3013: Operating Systems</li>
-      <li>CS 3041: Human-Computer Interaction</li>
-      <li>CS 3043: Social Implications of Information Processing</li>
-      <li><strong>CS 3733: Software Engineering</strong></li>
-      <li>CS 4731: Computer Graphics</li>
-      <li>MU 3620: Electronic Music Composition</li>
-      <ul>
-        <li>not a CS course but still absolutely worth a mention :3</li>
-      </ul>
-    </ul>
 
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>Brickyard VFX</li>
-      <li>HireEdge</li>
-    </ul>
-
-    <p>Technology experience</p>
-    <ul>
-      <li>HTML: a lot</li>
-      <li>CSS: a lot</li>
-      <li>Java: a lot</li>
-      <li>JavaScript: some</li>
-      <li>Ruby: none</li>
-      <li>Python: some</li>
-      <li>unit testing: some</li>
-    </ul>
+    <div class="row" style="padding-left: 10rem;">
+      <!-- who's Rem? -->
+      <div class="col-sm-6">
+        <p>
+          WPI Coursework
+        </p>
+        <ul>
+          <li>CS 1101: Introduction to Program Design</li>
+          <li>CS 2011: Introduction to Machine Organization and Assembly Language</li>
+          <li>CS 2102: Object-Oriented Design Concepts</li>
+          <li>CS 2223: Algorithms</li>
+          <li>CS 2303: Systems Programming Concepts</li>
+          <li>CS 3013: Operating Systems</li>
+          <li>CS 3041: Human-Computer Interaction</li>
+          <li>CS 3043: Social Implications of Information Processing</li>
+          <li><strong>CS 3733: Software Engineering</strong></li>
+          <li>CS 4731: Computer Graphics</li>
+          <li>MU 3620: Electronic Music Composition</li>
+          <ul>
+            <li>not a CS course but still absolutely worth a mention :3</li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <p>
+          Working experience
+        </p>
+        <ul>
+          <li>Brickyard VFX</li>
+          <li>HireEdge</li>
+        </ul>
+    
+        <p>Technology experience</p>
+        <table>
+          <tr>
+            <td>HTML</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>Ruby</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>Unit testing</td>
+            <td>some</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br />
+    <p class="otogecon-text">I still need to fill some space, so here's my rhythm game controller.</p>
+    <img src="otogecon.jpg"/>
   </body>
 </html>
