@@ -1,28 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        background: #34E3A9
+      }
+    </style>
+    <style>
+    body.center {
+    text-align: center;
+    border: 3px solid #178FB0;
+  }
+  </style>
+  <style>
+    img {
+    border: 3px solid #B01747;
+  }
+  </style>
+    
+  <style>
+    a {
+    border: 1px solid #4F737D;
+  }
+  </style>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body style="background-color:#E6746E" class="center">
+    <h1>Information about Mario Castro</h1>
+
+    <img
+      src="https://cdn.glitch.com/879a601e-0703-4458-b38e-db27024aba40%2FMARIO%20CASTRO.jpg?v=1598895685477"
+      alt="Itsa me"
+      width="200"
+    />
+    <br />
     <p>
-      [Self introduction]
+      My name is Mario Castro and I'm part of the class of 2021 .
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major
     </p>
     <p>
-      [Other things]
+      I've taken a variety of CS classes at WPI like software engineering,
+      database systems, networking, and object oriented design and analysis
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <div id="exp">
+      A table for your viewing pleasure
+      
+    </div>
+    <br>
+    <table style="width:100%">
+      <tr>
+        <th>Activity/Language</th>
+        <th>Experience Level</th>
+      </tr>
+      
+      <tr>
+        <td>HTML</td>
+        <td>None</td>
+      </tr>
+      
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      
+      <tr>
+        <td>JavaScript</td>
+        <td>None</td>
+      </tr>
+      
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      
+      
+      <tr>
+        <td>Python</td>
+        <td>Some</td>
+      </tr>
+      
+      <tr>
+        <td>Unit Testing</td>
+        <td>A lot</td>
+      </tr>
+      
+
+    </table>
+
+    <br />
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Here's a link</a>
+
     <ul>
-      <li>IBM/Rational</li>
       <li>WPI</li>
     </ul>
+
+    <script>
+      var myScript = setInterval(colorChange,100)
+      function colorChange(){
+          document.getElementById("exp").style.color = "blue";
+      }
+      var anotherSvript = setInterval(colorChangeback,200)
+      function colorChangeback(){
+          document.getElementById("exp").style.color = "red";
+      }
+    
+    </script>
+    
   </body>
 </html>
