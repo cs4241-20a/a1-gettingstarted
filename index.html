@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
       .spin {
-        -webkit-animation: spin 20s infinite linear;
+        -webkit-animation: spin 8s linear;
         text-align: center;
         margin: 200px;
         font-family: 'Pacifico', cursive;
@@ -26,7 +26,7 @@
 
     </style>
     <script>
-      let accel = 5;
+      let accel = 4;
       let toRemove = false;
       let rightGrav = null;
       const boxMovement = function(adj){
@@ -35,10 +35,11 @@
           box.style.marginLeft = '0px';
         }
         let initVal = parseInt(box.style.marginLeft.split('px')[0]);
-        initVal += adj;
+        initVal += adj + accel;
         box.style.marginLeft = `${initVal}px`;
-        accel = accel + 5;
-        if (accel > 100){
+        accel = accel * 1.08;
+        console.log(accel)
+        if (accel > 150){
           box.style.opacity = '0.0';
           box.style.marginLeft = '0px';
           clearInterval(rightGrav);
@@ -46,7 +47,7 @@
 
       }
       const boxGravity = function(){
-        rightGrav = setInterval(() => boxMovement(10 + accel), 200);
+        rightGrav = setInterval(() => boxMovement(10 + accel), 30);
       }
       window.onload = boxGravity;
     </script>
