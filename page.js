@@ -1,42 +1,44 @@
-//picture will move back and forth
-function animation() {
-    let elem = document.getElementById("animate");
-    let pos = 0;
-    let towardsRight = true;
-    let id = setInterval(move, 100);
-    function move() {
-        elem.style.left = pos + "px";
-        if (pos > 200) {
-            towardsRight = false;
-        }
-        if (pos <= 0) {
-            towardsRight = true;
-        }
-        if (towardsRight) {
-            pos += 1;
-        } else {
-            pos -= 1;
-        }
+//moves the picture back and forth
+function moveIt() {
+    elemt.style.marginLeft = pos + "px";
+    if (pos > 400) {
+      towardsRight = false;
     }
-}
-
-//text will change color
-function textChange() {
-    let elem = document.getElementsById("header");
-    if (elem.style.colors == "chartreuse") {
-        elem.style.colors = "violet"
+    if (pos <= 0) {
+      towardsRight = true;
+    }
+    if (towardsRight) {
+      pos += 2;
     } else {
-        elem.style.colors = "chartreuse"
+        pos -= 2;
     }
-}
+  }
+  
+  //changes the text color between the two
+  function textChange() {
+      let elem = document.getElementById("passion");
+      if (elem.style.color == "chartreuse") {
+          elem.style.color = "violet"
+      } else {
+          elem.style.color = "chartreuse"
+      }
+  }
+  
+  //link will get big when moused over
+  function bigLink(elem) {
+      elem.style.fontSize = "100px";
+  }
+  
+  //link will get small when the mouse leaves
+  function smallLink(elem) {
+    elem.style.fontSize = "20px";
+  }
+  
+  //Some globals for text moving
+  let elemt = document.getElementById("ani");
+  let pos = 0;
+  let towardsRight = true;
 
-//link will get big when moused over
-function bigLink(elem) {
-    elem.style.fontSize = "xx-large";
-}
-
-//run the animation and textchange when the page is loaded
-window.onload = function() {
-    animation();
-    setInterval(textChange(), 1000);
-}
+  //Sets the intervals to change text and move the picture
+  window.setInterval(textChange, 300);
+  window.setInterval(moveIt, 10);

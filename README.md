@@ -76,7 +76,7 @@ Below are some suggested technical and design achievements. You can use these to
 
 *Design*
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
+2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
 
 Resources
 ---
@@ -94,11 +94,13 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for h3 and a
-- **Added a JavaScript animation to the image and to the text color**: I think they both look swell
-- **Added extra html tags** Used a img, h3, and a tag
+- **Styled page with CSS**: Added rules for h3, a, img, and body tags
+- **Added a JavaScript animation to the image and text color**: Frog image moves back and forth, text color changes color
+- **Added a size change in text on mouseover and a size reset onmouseleave** Changes happen on mouseover and leave of muzak text
+- **Added extra html tags** Used an img for a frog picture, a for a link to music, and h3 for a heading
+- **Updated the server.js to serve JavaScript and css** The JavaScript and CSS is now in seperate files and served seperately by the server when requested
 
 ### Design Achievements
-- **Used the Spartan Font from Google Fonts**: I used the Spartan font as the font for the primary text in my site. There is text on the site that uses alternate fonts though
+- **Used the Spartan Font from Google Fonts and Allura Font from Google Fonts**: I used the Spartan font as the font for the primary text in my site. There is text on the site that uses alternate fonts though. The cursive text is using Allura.
 
 
