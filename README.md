@@ -1,7 +1,5 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-
 Hunter Trautz
-
 http://a1-hctrautz.glitch.me
 
 This project shows ...
