@@ -12,7 +12,7 @@ body {
     width: 90%;
     margin:auto
 }
-#education, #classes, #technology, #work, #footer {
+#education, #classes, #technology, #work, #footer, .heading {
     margin: 1%;
 }
 
@@ -21,7 +21,7 @@ body {
     padding: 75px 0px 25px 0px;
     font-size: xx-large;
 }
-#education, #classes, #technology, #work {
+#education, #classes, #technology, #work, .heading {
     background-color: #efefef;
     padding: 0.5em 0;
 }
@@ -125,23 +125,24 @@ table td p {
     font-weight: lighter;
 }
 
- .heading{
-    margin-left: 5%;
-}
+
  .heading::before{
     content: "";
     background-image: url("https://thumbs.dreamstime.com/z/vector-seamless-pattern-red-leaves-autumn-watercolor-hand-drawn-background-45549426.jpg");
-    /* background-repeat: no-repeat; */
+    background-repeat: repeat;
     background-size: cover;
     position: absolute;
+    left:0;
     opacity: 0.50;
-    width:400px;
-    height: 100px;
+    width:100%;
+    height: 12%;
 }
 .heading{
     text-align:left;
     font-size: x-large;
     font-family: Chivo;
+    background-color: #F7E3D4;
+
 }
 #technology .heading{
     text-align: center;
