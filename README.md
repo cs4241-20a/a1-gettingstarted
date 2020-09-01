@@ -4,7 +4,7 @@ README
 Benny Klaiman
 http://a1-bnklaiman.glitch.me
 
-This project shows ...
+This project shows my introductory page for CS 4241: Webware.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, a, h1, h2, table, td and img selectors.
