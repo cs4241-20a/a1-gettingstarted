@@ -1,0 +1,22 @@
+body {
+  background-color: #ED5A34;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  background-color: #E09C3C;
+}
+h2 {
+  
+  background-color: #F0D95D;
+}
+
+span {
+  background-color: #FACC5A;
+}
+table {
+  background-color: #F78236;
+}
+th {
+  background-color: #FA630C;
+}
