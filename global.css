@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Platform Medium";
+  font-display: fallback;
+  src: url("https://www.drinktrade.com/fonts/Platform/Platform-Medium-Web.woff2") format("woff2"),
+    url("https://www.drinktrade.com/fonts/Platform/Platform-Medium-Web.woff") format("woff");
+}
+
+html {
+    font-family: "Platform Medium";
+}
