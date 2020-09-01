@@ -125,7 +125,6 @@ table td p {
     font-weight: lighter;
 }
 
-
  .heading::before{
     content: "";
     background-image: url("https://thumbs.dreamstime.com/z/vector-seamless-pattern-red-leaves-autumn-watercolor-hand-drawn-background-45549426.jpg");
@@ -144,10 +143,10 @@ table td p {
     background-color: #F7E3D4;
 
 }
-#technology .heading{
+#tech{
     text-align: center;
 }
-#work .heading{
+#wo{
     text-align: right;
     margin-right:5%;
 }
