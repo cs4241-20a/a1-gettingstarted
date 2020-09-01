@@ -9,5 +9,5 @@ This project shows ...
 - **Add a simple JavaScript animation to the page** I added the flashing " A table for your viewing pleasure" animation
 
 ### Design Achievements
-- **Create a color palette using color.adobe.com** I created a set of colors and it is attached. I used every color in the set
+- **Create a color palette using color.adobe.com** I created a set of colors and it is attached (colors.png). I used every color in the set.
 
