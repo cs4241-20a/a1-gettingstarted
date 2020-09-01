@@ -1,28 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <meta charset="utf-8" />
 
-    <h2>Experience</h2>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            let state = true;
+
+            $('#button').click(function () {
+                $('#button').text(`Click to ${state ? 'Show' : 'Hide'} the Table!`);
+
+                if (state) {
+                    $('#table').hide();
+                } else {
+                    $('#table').show();
+                }
+
+                state = !state;
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        th {
+            border-bottom: dotted black;
+        }
+
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Information About Zach Hilman (Class of 2024)</h1>
     <p>
-      Working experience
+        <i>Major in Computer Science</i>
+        <br><br>
+        This is my first class in CS at WPI!
+        <br><br>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>A Lot, I have written multiple websites ranging from basic static landing/status/info type pages
+                    to full
+                    blown control panels.
+                </td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Some, I know how to modify attributes but I usually use a framework like Bootstrap and only
+                    modify CSS when
+                    that doesn't work.
+                </td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>A Lot, I have been programming Java for about 6 Years now, it was the first real language I
+                    learned. Have
+                    written libraries, desktop apps, JavaFX/Swing apps, and even JSP web apps.
+                </td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Some, I have a surface level understanding of syntax, standard library, etc, most of what I have
+                    used it for
+                    is just adding small frontend functionality using Vue to a web app, but I have not ever used it
+                    outside of
+                    that.
+                </td>
+            </tr>
+            <tr>
+                <td>Ruby</td>
+                <td>None, heard of it but never used it.</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Some, used it occasionally and sometimes use it to write basic scripts to do batch actions on
+                    the computer.
+                    Never written anything substantial in it.
+                </td>
+            </tr>
+            <tr>
+                <td>Unit Testing</td>
+                <td>A Lot, I primarily use GoogleTest, but also have used Catch a lot (both C++ testing frameworks).
+                    I have done
+                    unit testing and integration testing, both automated using a real framework.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button role="button" id="button">
+        Click to Hide the Table!
+    </button>
+</body>
 </html>
