@@ -1,7 +1,8 @@
 Edward Carlson
 https://a1-edkazcarlson.glitch.me/
 
-## Technical Achievements1 CSS tag for gray text
+## Technical Achievements
+1 CSS tag for gray text
 1 CSS tag for black h1 and h2 tags
 1 CSS tag for text alignment
 1 CSS tag for margins
