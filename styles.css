@@ -3,22 +3,25 @@
 body {
     font-family: Chivo;
     text-align: center;
-    width: 90%;
     margin: 0 auto;
+    color: #342E09;
+    background-color: #F7E3D4;
 }
 #content {
     overflow: auto;
+    width: 90%;
+    margin:auto
 }
-#classes, #technology, #work, #footer {
+#education, #classes, #technology, #work, #footer {
     margin: 1%;
 }
 
 #header {
     background-color: #FC7307;
-    padding: 0.5em 0;
+    padding: 75px 0px 25px 0px;
+    font-size: xx-large;
 }
-
-#classes, #technology, #work {
+#education, #classes, #technology, #work {
     background-color: #efefef;
     padding: 0.5em 0;
 }
@@ -120,4 +123,36 @@ table td p {
     font-family: Abel;
     font-size: x-large;
     font-weight: lighter;
+}
+
+ .heading{
+    margin-left: 5%;
+}
+ .heading::before{
+    content: "";
+    background-image: url("https://thumbs.dreamstime.com/z/vector-seamless-pattern-red-leaves-autumn-watercolor-hand-drawn-background-45549426.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: absolute;
+    opacity: 0.50;
+    width:400px;
+    height: 100px;
+}
+.heading{
+    text-align:left;
+    font-size: x-large;
+    font-family: Chivo;
+}
+#technology .heading{
+    text-align: center;
+}
+#work .heading{
+    text-align: right;
+    margin-right:5%;
+}
+ .heading h1,  .heading h1, .heading h1 {
+    position: relative;
+}
+#technology {
+    overflow-x: auto;
 }
