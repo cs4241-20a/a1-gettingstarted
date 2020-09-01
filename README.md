@@ -1,6 +1,6 @@
 # Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
-**Jordan Gold**
+**Jordan Gold**  
 http://a1-jgold189.glitch.me
 
 This project shows a basic website with simple HTML, JavaScript, and CSS hosted on Glitch. It also displays a basic use of basic git/github. It also contains extra technical and design achievements. This project **does not** show any common sense in design though, in fact it does the opposite.
@@ -13,6 +13,7 @@ This project shows a basic website with simple HTML, JavaScript, and CSS hosted 
     3. a: Changed font style, font weight, font family, and font size
     4. body: Changed font family
     5. h1: Changed font weight
+    6. td: Changed padding
 - **Added a JavaScript animation to the image and text color**:
     1. Frog image moves back and forth in a fun and exciting way
     2. Text changes color rapidly between two lovely complementary colors
