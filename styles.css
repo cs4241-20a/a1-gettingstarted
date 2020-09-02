@@ -46,10 +46,10 @@ h2 {
 }
 
 .shape-container {
-    margin-top: 50px;
-    width: 100%;
+    width: 50%;
     flex-direction: row;
     justify-content: space-between;
+    margin: auto;
 }
 
 #elem {
@@ -57,4 +57,9 @@ h2 {
     width: 100px;
     background-color: #4578C6;
     margin-left: 150px;
+}
+
+.content-container {
+    width: 50%;
+    margin: auto;
 }
