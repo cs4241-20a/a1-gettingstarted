@@ -1,6 +1,6 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
-Jenna Galli //glitch url
+Jenna Galli https://a1-jegalli22.glitch.me/
 
 This project contains an edited HTML page with scholarly information about me, and a simple node js server 
 to run to webpage. 
