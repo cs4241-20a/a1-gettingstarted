@@ -108,20 +108,6 @@ p, ul {
   transition: all 1s ease-out;
 }
 
-table {
-    margin: auto;
-    margin-bottom: 5%;
-}
-table td{
-    min-width: 100px;
-    height: 100px;
-}
-table td p {
-    font-family: Abel;
-    font-size: x-large;
-    font-weight: lighter;
-}
-
  .heading::before{
     content: "";
     background-image: url("https://thumbs.dreamstime.com/z/vector-seamless-pattern-red-leaves-autumn-watercolor-hand-drawn-background-45549426.jpg");
@@ -175,10 +161,32 @@ table td p {
   text-align: center;
   height: 100%;
 }
-.grid-container {
+.grid-container-2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
   justify-items: center;
+}
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+    row-gap: 50px;
+    align-items: center;
+  justify-items: start;  
+}
+.grid-container-1 div:nth-child(13){
+    grid-column: 3;
+}
+.grid-container-1 div:nth-child(14){
+    grid-column: 4;
+}
+.grid-container-1 div:nth-child(2n+1) p {
+    font-family: Abel;
+    font-size: x-large;
+    font-weight: normal;
+}
+.grid-container-1 div:nth-child(2n+1) {
+    justify-self: end;
 }
