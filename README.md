@@ -30,9 +30,9 @@ Assignment details:
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, and h4.
 - **Java Script Animation**: At the bottom of the page, an animation was added that displays a box moving
-                            from one corner of a container to another. 
+                            from one corner of a container to another. I used code from this link https://www.w3schools.com/js/js_htmldom_animate.asp to create the animation. I changed the way in which the animation moves as well as the colors of the animation. 
 - **Experimentation with other HTML tags**: Added a button to launch the animation. Added a box chart to describe
-                                            my experience level with each technology. 
+                                            my experience level with each technology. I used code from this link https://www.w3schools.com/howto/howto_css_skill_bar.asp for the box chart. I first created a container which would be shown as a bar and then customized each skill to have it's own color filling up this bar to the appropriate precent level.  
 
 ### Design Achievements
 - **Color Palette**: I used a specific color palette from [color.adobe.com](https://color.adobe.com). Every 
