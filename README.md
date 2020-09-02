@@ -12,9 +12,9 @@ This project shows ...
     - h1 -> Bolded with a font weight of 700, underlined and centered the text, color change
     - h2 -> italic font style, color change, centered text
     - h3 -> color change, font changed to Georgia, serif, centered text
-    - p -> color change and centered the text
+    - p -> color change, centered the text and added margins
     - ui -> color change,  google font Montserrat added, centered bullets
-    - img -> centered with margin set to auto
+    - img -> centered with margin set to auto and the size of the picture set to 50%
     - style.css file added to the server.js file
 
 - **Experiment with other HTML tags**: Used the a, link and img tags.
@@ -25,6 +25,7 @@ This project shows ...
 ### Design Achievements
 - **Create a color palette using [color.adobe.com]**: I created a color Palette on the site and used all five colors in my site.
     - The color palette picture (palette.jpg) is embedded in the site using the img tag
-    - The color wheel image can be found in the repo (colorwheel.jpg)
+    - added the palette.jpg file to the server so that it would be used by the site
+    - A screenshot of the colorwheel can be found in the repo as well (colorwheel.jpg)
 
-- **Use a font from [Goolge Fonts]**: I used the Montserrat font for my li text elements
+- **Use a font from [Goolge Fonts]**: I used the Montserrat font for my ui and p text elements
