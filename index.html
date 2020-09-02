@@ -1,28 +1,151 @@
 <!doctype html>
 <html lang="en">
+ 
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    body {
+      background-color: rgb(155, 185, 190);
+    }
+    h1 {
+      color: rgb(1, 2, 2);
+      text-align: center;
+    }
+    h4 {
+      color: rgb(1, 2, 2);
+    }
+
+    * {box-sizing: border-box}
+    
+    .container {
+      width: 100%;
+      background-color: #ddd;
+    }
+    
+    .skills {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+    }
+    
+    .html {width: 80%; background-color: #6B4834;}
+    .css {width: 50%; background-color: #EECEBC;}
+    .java {width: 99%; background-color: #EB9E74;}
+    .js {width: 50%; background-color: #6B5C55}
+    .ruby {width: 0%; background-color: #8a6235;}
+    .python {width: 20%; background-color: #B87B5A;}
+    .unitTesting {width: 40%; background-color: #3d2424;}
+
+
+    #container2 {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: rgb(11, 129, 145);
+    }
+    #animation {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+    }
+    </style>
+    </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Jenna Galli</h1>
+    <p align="center">
+      Class of 2022 
+      Computer Science major and Business minor
+    <hr /> </p>
+    <h4>About Me</h4>
     <p>
-      [Self introduction]
+      As a driven, people-oriented Computer Science student, I'm always bringing a new perspective to the table. My 
+      flexibility allows me to constantly <br> learn new technologies and be a great team player. Passionate about 
+      how technology is driving our economy, I'm seeking to find a perfect medium <br> between Computer Science and 
+      Business. 
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h4>Fun Facts</h4>
+    <ul>
+      <li>I was born in Italy</li>
+      <li>My favorite tv show is Avatar the Last Airbender</li>  
+      <li>My dog's a Vizsla and his name is Vento</li>
+    </ul>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <h4> Relevant Classes:</h4>
+   
+      <ul>
+        <li>ACCELERATED INTRODUCTION TO PROGRAM DESIGN</li>
+        <li>OBJECT-ORIENTED DESIGN CONCEPTS</li>  
+        <li>DISCRETE MATHMATICS </li>
+        <li>ALGORITHMS</li>
+        <li>SYSTEMS PROGRAMMING CONCEPTS</li>
+        <li>DATABASE SYSTEMS </li>
+        <li>MACHINE ORGANIZATION AND ASSEMBLY LANGUAGE </li>
+        <li>OPERATING SYSTEMS </li>
+        <li>FOUNDATIONS OF COMPUTER SCIENCE</li>
+      </ul>
+    
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">80%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">50%</div>
+</div>
+
+<p>Java</p>
+<div class="container">
+  <div class="skills java">99%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">50%</div>
+</div>
+
+<p>Ruby</p>
+<div class="container">
+  <div class="skills ruby">0%</div>
+</div>
+
+<p>Python</p>
+<div class="container">
+  <div class="skills python">20%</div>
+</div>
+
+<p>Unit Testing</p>
+<div class="container">
+  <div class="skills unitTesting">40%</div>
+</div>
+
+<p><button onclick="myMove()">Click Me For a Suprise</button></p> 
+
+<div id ="container2">
+  <div id ="animation"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animation");   
+  var pos = 0;
+  var id = setInterval(frame, 4);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.bottom = pos + "px"; 
+      elem.style.right = pos + "px"; 
+    }
+  }
+}
+</script>
+   </body>
 </html>
