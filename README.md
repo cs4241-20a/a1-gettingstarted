@@ -8,6 +8,7 @@ Referenced sources: www.w3schools.com, www.stockoverflow.com
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, h3, table, th, td, and img selectors.
 - **Experimented with other HTML tags**: Used the \<link\>, \<img\>, <address\>, \<a\>, \<br\>, \<ol\>, \<ul\>, \<li\>, \<abbr\>, \<table\>, \<tr\>, \<th\>, and \<td\> tags throughout the webpage.
+- **Edited server.js**: Edited the server.js file in order to allow both glitch and any other server to display the correct CSS file and hosted image. Without these edits neither would display any formatting or files other than 'index.html'.
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site, as can be seen in 'style.css'
