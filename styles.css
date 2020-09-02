@@ -83,15 +83,12 @@ p, ul {
 #g-3:hover .gauge-c, #g-6:hover .gauge-c,  #g-7:hover .gauge-c{  
     transform:rotate(180deg);
 }
-
-
 #g-1:hover .gauge-data , #g-2:hover .gauge-data, #g-3:hover .gauge-data, #g-4:hover .gauge-data, #g-6:hover .gauge-data, #g-7:hover .gauge-data { 
     color: rgba(255,255,255,1);
  }
  #g-4:hover .gauge-data , #g-5:hover .gauge-data{
     color: red;
  }
-
  #g-4:hover .gauge-a , #g-5:hover .gauge-a { 
     transition: all .5s ease-out;
     background-color: lightcoral;
@@ -162,6 +159,15 @@ table td p {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    opacity: 0.75;
+}
+.image-cropper:hover{  
+    text-align: center;
+    border: 10px solid #dd;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #343009;
+    transition: all 200ms ease-out;
+    opacity:1;
 }
 .logo-icon {
   display: inline;
