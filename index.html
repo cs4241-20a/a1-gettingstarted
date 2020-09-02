@@ -4,9 +4,17 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Fira+Sans">
+  
+    
   </head>
   <body>
-    <h1>Information about Alan Curiel</h1>
+    <h1 id="title" >Information about <br> 
+      <a class="mywebsite" href="https://www.alancuriel.com">
+        Alan Curiel
+      </a>
+    </h1>
     <p>
       I am a software engineer who enjoys drinking coffee. Go figure.
     </p>
@@ -39,4 +47,17 @@
       <li>WPI</li>
     </ul>
   </body>
+  <script>
+    let i = 0
+    const title = document.getElementById('title')
+
+    function hover() {
+      const a = Math.cos(i/10) * 10
+      console.log(a)
+      title.style.margin = Math.round(a) + 'px'
+      i++
+    }
+    setInterval(hover, 50)
+    
+  </script>
 </html>
