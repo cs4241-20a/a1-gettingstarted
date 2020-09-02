@@ -2,7 +2,7 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 ---
 
 Ivan Eroshenko
-https://glitch.com/~ieroshenko-a1-gettingstarted
+https://ieroshenko-a1-gettingstarted.glitch.me
 
 This project shows a simple web-page with "About me" information.
 
