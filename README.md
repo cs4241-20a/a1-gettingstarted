@@ -1,5 +1,5 @@
 Alan Curiel
-http://a1-charlieroberts.glitch.me
+https://alancuriel-a1-gettingstarted.glitch.me
 
 This project shows my ability to create a simple website in node.js using html/css/javascript
 
