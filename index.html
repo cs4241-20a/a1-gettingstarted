@@ -16,12 +16,14 @@
     </head>
     <body>
         <h1>Information about Joseph Swetz</h1>
-        Index:
-        <br>
-        <a href="#Bio">Bio</a><br>
-        <a href="#Experience">Experience</a><br>
-        <a href="#Working Experience">Working Experience</a>
-        <br><br>
+        <p>
+            Index:
+            <br>
+            <a id="BioLink" href="#Bio">Bio</a><br>
+            <a id="ExpLink" href="#Experience">Experience</a><br>
+            <a id="WorkExpLink" href="#Working Experience">Working Experience</a>
+            <br><br>
+        </p>
 
         <img id="profile_picture" src="ProfilePicture.jpg" alt="" width="155.4" height="233.2">
         <br><br>
@@ -31,12 +33,12 @@
             <h2>Bio</h2>
         </a>
         <p>
-            Hi everyone! I'm Joe, and I'm currently a senior.
+            Hi everyone! I'm Joe, and I'm currently a senior (Class of 2021).
             <br><br>
             I'm a double major in Computer Science / Interactive Media and Game Development
-        </p>
-        <p>
+            <br><br>
             Previous computer science courses I've taken at WPI are:
+        </p>
             <ul>
                 <li>CS 1102</li>
                 <li>CS 210X</li>
@@ -50,33 +52,30 @@
                 <li>CS 3733</li>
                 <li>CS 4731</li>
             </ul>
+        <p>
             I've also taken various IMGD courses, including IMGD 2900, which uses Professor Moriarty's Perlenspiel game engine. This engine is web-based and uses Javascript.
         </p>
 
         <a id="Experience">
             <h2>Experience</h2>
         </a>
-        <p>
-            <ul>
-                <li>HTML: Some</li>
-                <li>CSS: Some</li>
-                <li>Java: A lot</li>
-                <li>Javascript: A lot</li>
-                <li>Python: Some</li>
-                <li>Ruby: None</li>
-                <li>Unit Testing: A lot</li>
-            </ul>
-        </p>
+        <ul>
+            <li>HTML: Some</li>
+            <li>CSS: Some</li>
+            <li>Java: A lot</li>
+            <li>Javascript: A lot</li>
+            <li>Python: Some</li>
+            <li>Ruby: None</li>
+            <li>Unit Testing: A lot</li>
+        </ul>
 
         <a id="Working Experience">
             <h3>Working experience</h3>
         </a>
-        <p>
-            <ul>
-                <li>Centori</li>
-                <li>HPR</li>
-            </ul>
-        </p>
+        <ul>
+            <li>Centori</li>
+            <li>HPR</li>
+        </ul>
     </body>
     <script>
         //Rotates the profile picture by 90 degrees
@@ -93,8 +92,10 @@
 
         const rotateImage = function(){
             if(start){
+                //Following source was used to figure out how to translate and rotate:
+                //https://stackoverflow.com/questions/16795548/rotate-and-translate
                 rotation = (rotation + ROTATION_DELTA) % 360;
-                document.getElementById("profile_picture").style.transform = `rotate(${rotation}deg)`;
+                document.getElementById("profile_picture").style.transform = `translate(-50%, 0%) rotate(${rotation}deg)`;
             }
         };
         setInterval(rotateImage, 50);
