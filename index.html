@@ -9,7 +9,7 @@
     -->
     <link type="text/css" rel="stylesheet" href="style_sheet.css">
     <!--
-      The following source was used to learn how to embed CSS into an HTML file:
+      The following source was used to learn how to embed a font into an HTML file:
       https://www.w3schools.com/css/css_font_google.asp
     -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -23,18 +23,16 @@
       <a href="#Working Experience">Working Experience</a>
     <br><br>
 
-  </body>
     <img id="profile_picture" src="ProfilePicture.jpg" alt="" width="155.4" height="233.2">
-    <br>
-    <button type=button onclick="rotateImage()">Rotate</button>
+    <br><br>
+    <button type=button onclick="toggleStart()">Start/Stop Rotation</button>
 
-    <a name="Bio">
+    <a id="Bio">
       <h2>Bio</h2>
     </a>
     <p>
       Hi everyone! I'm Joe, and I'm currently a senior.
-    </p>
-    <p>
+      <br><br>
       I'm a double major in Computer Science / Interactive Media and Game Development
     </p>
     <p>
@@ -55,7 +53,7 @@
       I've also taken various IMGD courses, including IMGD 2900, which uses Professor Moriarty's Perlenspiel game engine. This engine is web-based and uses Javascript.
     </p>
 
-    <a name="Experience">
+    <a id="Experience">
       <h2>Experience</h2>
     </a>
     <p>
@@ -70,7 +68,7 @@
       </ul>
     </p>
 
-    <a name="Working Experience">
+    <a id="Working Experience">
       <h3>Working experience</h3>
     </a>
     <p>
@@ -85,10 +83,21 @@
     //Rotates the profile picture by 90 degrees
     //The following source was using to learn how to rotate objects in CSS:
     //https://www.w3schools.com/cssref/css3_pr_transform.asp
-    let rotation = 90;
-    const rotateImage = function(){
-      document.getElementById("profile_picture").style.transform = `rotate(${rotation}deg)`;
-      rotation = (rotation + 90) % 360;
+    let start = false;
+    let rotation = 0;
+    const ROTATION_DELTA = 5;
+
+    const toggleStart = function(){
+      start = !start;
+      console.log(start);
     };
+
+    const rotateImage = function(){
+      if(start){
+        rotation = (rotation + ROTATION_DELTA) % 360;
+        document.getElementById("profile_picture").style.transform = `rotate(${rotation}deg)`;
+      }
+    };
+    setInterval(rotateImage, 50);
   </script>
 </html>

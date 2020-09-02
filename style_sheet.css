@@ -1,29 +1,34 @@
 /*
-    Stylesheet for index.html for CS 4241 Assignment 1
+ *  Stylesheet for index.html for CS 4241 Assignment 1
+ *
+ *  Joseph Swetz
+ *  CS 4241 Assignment 1
+*/
 
-    I guessed and used * to set the font of all elements and it
-    worked :)
- */
 * {
-    font-family: Ubuntu;
+    font-family: Ubuntu, serif;
 }
 
+/*
+ * Color palette is from color.adobe.com. A screenshot can be found
+ * in this directory at color_palette.png.
+ */
 h1 {
-    color: #752A23;
+    color: #75653C;
 }
 
 h2 {
-    color: #754A46;
+    color: #C2A763;
 }
 
 h3 {
-    color: #C2453A;
+    color: #F5D37C;
 }
 
 a {
-   color: #F55649;
+   color: #756F5F;
 }
 
 body {
-    background-color: #F79C94;
+    background-color: #F7E9C8;
 }
