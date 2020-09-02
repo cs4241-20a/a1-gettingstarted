@@ -1,7 +1,7 @@
 William Yang
 http://a1-billbo-swaggins.glitch.me
 
-This project shows ...
+This project shows a website that contains a quick personal introduction as well as some references for anyone interested to see my skills as a programmer.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, h3, table, th, td, and img selectors.
