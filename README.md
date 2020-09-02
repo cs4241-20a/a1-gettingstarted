@@ -6,7 +6,7 @@ https://a1-gabeaponte.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the body, h1, h2, h3, p, and li selectors.
+- **Styled page with CSS**: Added rules for the body, h1, h2, h3, p, ui and img selectors.
     - All colors follow an Adobe Color Palette I created (see Design Achievements for details)
     - body -> added a background color for the webpage
     - h1 -> Bolded with a font weight of 700, underlined and centered the text, color change
@@ -22,7 +22,7 @@ This project shows ...
     - link -> used to embed my external style.css file into the html file and apply the css style changes I made. Also used to import google fonts
     - img -> used to add a picture of my Adobe Color Pallet into the site
 
-### Design Achievements
+## Design Achievements
 - **Create a color palette using [color.adobe.com]**: I created a color Palette on the site and used all five colors in my site.
     - The color palette picture (palette.jpg) is embedded in the site using the img tag
     - added the palette.jpg file to the server so that it would be used by the site
