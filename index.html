@@ -3,26 +3,80 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+      .spin {
+        -webkit-animation: spin 8s linear;
+        text-align: center;
+        margin: 200px;
+        font-family: 'Pacifico', cursive;
+        color: gray;
+
+      }
+
+      h1, h2{
+        color:black;
+      }
+
+      @-webkit-keyframes spin {
+        0%  {-webkit-transform: rotate(0deg);}
+        100% {-webkit-transform: rotate(360deg);}	
+      }
+
+
+    </style>
+    <script>
+      let accel = 4;
+      let toRemove = false;
+      let rightGrav = null;
+      const boxMovement = function(adj){
+        let box = document.getElementById("slidingBox");
+        if (box.style.marginLeft == ''){
+          box.style.marginLeft = '0px';
+        }
+        let initVal = parseInt(box.style.marginLeft.split('px')[0]);
+        initVal += adj + accel;
+        box.style.marginLeft = `${initVal}px`;
+        accel = accel * 1.08;
+        console.log(accel)
+        if (accel > 150){
+          box.style.opacity = '0.0';
+          box.style.marginLeft = '0px';
+          clearInterval(rightGrav);
+        }
+
+      }
+      const boxGravity = function(){
+        rightGrav = setInterval(() => boxMovement(10 + accel), 30);
+      }
+      window.onload = boxGravity;
+    </script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body class = "spin">
+    <h1>Information about Edward Carlson</h1>
+    <img src = "https://avatars2.githubusercontent.com/u/25288961?s=460&v=4" id = "slidingBox"/>
     <p>
-      [Self introduction]
+       I'm a current computer science Junior (class of 2022)
+       I've previously taken software engineering as well as database systems.
     </p>
     <p>
-      [Major and other information]
+      Major in Computer Science.
+      Minor in Data Science.
     </p>
     <p>
-      [Other things]
+      I have some experience in html/css and javascript as well as some in react and to a lesser extent, flask.
     </p>
 
     <h2>Experience</h2>
+    <ul>
+      <li><a href = 'https://edkazcarlson.github.io/wpi4YearPlanner/#/' target="_blank" rel="noopener noreferrer">4 year course planner website</a></li>
+      <li><a href = 'https://github.com/edkazcarlson/stockResearch' target="_blank" rel="noopener noreferrer">Automatic stock trading bot</a></li>
+    </ul>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>None</li>
     </ul>
   </body>
 </html>
