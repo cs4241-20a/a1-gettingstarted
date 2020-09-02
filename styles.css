@@ -156,3 +156,25 @@ table td p {
 #technology {
     overflow-x: auto;
 }
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.logo-icon {
+  display: inline;
+  margin: auto;
+  text-align: center;
+  /* margin-left: -25%; */
+  height: 100%;
+  /* width: auto; */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+  justify-items: center;
+}
