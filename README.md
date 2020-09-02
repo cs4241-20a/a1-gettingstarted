@@ -1,5 +1,6 @@
 Joseph Swetz
-NOTE: put glitch link here
+
+https://a1-joeswetz.glitch.me
 
 This project shows ...
 
