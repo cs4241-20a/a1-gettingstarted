@@ -1,11 +1,11 @@
 William Yang
-http://a1-charlieroberts.glitch.me <-- change!
+http://a1-billbo-swaggins.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, h3, table, th, td, and img selectors.
-- **Experimented with other HTML tags**: Used links, image, lists, abbreviation (potentially replace with something else), and table tags throughout the page.
+- **Experimented with other HTML tags**: Used the <link>, <img>, <address>, <a>, <br>, <ol>, <ul>, <li>, <abbr>, <table>, <tr>, <th>, and <td> tags throughout the webpage.
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.

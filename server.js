@@ -10,6 +10,24 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/assets/me.jpg':
+      sendFile( response, 'assets/me.jpg')
+      break
+    case '/style.css':
+      sendFile( response, 'style.css')
+      break
+    case '/assets/Roboto/Roboto-Regular.ttf':
+      sendFile( response, 'assets/Roboto/Roboto-Regular.ttf')
+      break
+    case '/assets/Roboto/Roboto-Italic.ttf':
+      sendFile( response, 'assets/Roboto/Roboto-Italic.ttf')
+      break
+    case '/assets/Roboto/Roboto-Bold.ttf':
+      sendFile( response, 'assets/Roboto/Roboto-Bold.ttf')
+      break
+    case '/assets/Roboto/Roboto-BoldItalic.ttf':
+      sendFile( response, 'assets/Roboto/Roboto-BoldItalic.ttf')
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
