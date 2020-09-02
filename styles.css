@@ -22,7 +22,7 @@ body {
     font-size: xx-large;
 }
 #education, #classes, #technology, #work, .heading {
-    background-color: #efefef;
+    background-color: #F7E3D4;
     padding: 0.5em 0;
 }
 
@@ -31,7 +31,7 @@ body {
     padding: 0.5em 0;
 }
 p, ul {
-    font-family: Overpass;
+    font-family: Abel;
 }
 .container {
   width: 100px;
@@ -44,7 +44,7 @@ p, ul {
 .gauge-a {
   z-index: 1;
   position: absolute;
-  background-color: #F7E3D4;
+  background-color: #EEE4DD;;
   width: 100px;
   height: 50px;
   top: 0%;
@@ -80,7 +80,8 @@ p, ul {
 #g-1:hover .gauge-c, #g-2:hover .gauge-c{  
     transform:rotate(90deg);
 }
-#g-3:hover .gauge-c, #g-6:hover .gauge-c,  #g-7:hover .gauge-c{  
+#g-3:hover .gauge-c, #g-6:hover .gauge-c,  #g-7:hover .gauge-c{ 
+    background-color: #FDDC22; 
     transform:rotate(180deg);
 }
 #g-1:hover .gauge-data , #g-2:hover .gauge-data, #g-3:hover .gauge-data, #g-4:hover .gauge-data, #g-6:hover .gauge-data, #g-7:hover .gauge-data { 
@@ -161,14 +162,14 @@ p, ul {
   text-align: center;
   height: 100%;
 }
-.grid-container-2 {
+.grid-container-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
   justify-items: center;
 }
-.grid-container-1 {
+.grid-container-2 {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-gap: 20px;
@@ -176,17 +177,27 @@ p, ul {
     align-items: center;
   justify-items: start;  
 }
-.grid-container-1 div:nth-child(13){
+.grid-container-2 div:nth-child(13){
     grid-column: 3;
 }
-.grid-container-1 div:nth-child(14){
+.grid-container-2 div:nth-child(14){
     grid-column: 4;
 }
-.grid-container-1 div:nth-child(2n+1) p {
+.grid-container-2 div:nth-child(2n+1) p {
     font-family: Abel;
     font-size: x-large;
     font-weight: normal;
 }
-.grid-container-1 div:nth-child(2n+1) {
+.grid-container-2 div:nth-child(2n+1) {
+    justify-self: end;
+}
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1px;
+    align-items: center;
+  justify-items: center;
+}
+.grid-container-2 div:nth-child(2n+1) {
     justify-self: end;
 }
