@@ -1,0 +1,60 @@
+body {
+    background-color: #A2C4F9;
+}
+
+p {
+    color: #4E5F78;
+    font-family: "Crimson Pro", Serif;
+    font-size: 19px;
+}
+
+li {
+    color: #4E5F78;
+    font-family: "Crimson Pro", Serif;
+    font-size: 19px;
+}
+
+h1 {
+    color: #4578C4;
+    font-family: "Crimson Pro", Serif;
+}
+
+h2 {
+    color: #4578C4;
+    font-family: "Crimson Pro", Serif;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5797F7;
+    color: white;
+    text-align: center;
+}
+
+.footer-placeholder {
+    height: 200px;
+}
+
+.circle {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: #4578C4;
+}
+
+.square {
+    margin-left: 150px;
+    height: 100px;
+    width: 100px;
+    background-color: #4578C6;
+}
+
+.shape-container {
+    margin-top: 50px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
