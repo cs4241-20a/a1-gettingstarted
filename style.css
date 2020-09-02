@@ -1,0 +1,44 @@
+/* Style for box at the header */
+.box{
+  height: 200px;
+  width: 1500px;
+  position: relative;
+  display: inline-block;
+  background-color: grey;
+}
+/* Style to center text in the header box and adjust font size*/
+.box .text{
+  position: absolute;
+  z-index:999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top:-25px;
+  width: 100%;
+  font-size: 250%;
+}
+/* Using the color scheme to color the background of various headers*/
+body {
+  background-color: #ED5A34;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  background-color: #E09C3C;
+}
+h2 {
+  
+  background-color: #F0D95D;
+}
+
+span {
+  background-color: #FACC5A;
+}
+table {
+  background-color: #F78236;
+}
+th {
+  background-color: #FA630C;
+}
+
