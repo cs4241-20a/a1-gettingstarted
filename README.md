@@ -16,7 +16,7 @@ http://a1-rmanky.glitch.me
 - Made changes to Node JS Server to serve up CSS and background GIF
 
 **ThreeJS**
-- After taking computer graphics last term, I decided to throw in ThreeJS to display a little spinning 3D Cube
+- After taking Computer Graphics last term, I decided to throw in ThreeJS to display a little spinning 3D Cube
 - *Will probably expand this more in future projects, was just a test of lighting, etc. for now*
 
 ## Design Achievements
