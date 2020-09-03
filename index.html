@@ -1,28 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
+<style>
+  .collapsible {
+    align: center;
+    background-color: #E65D25;
+    border-color: #E65D25;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: #FFC229;
+    width: 50%;
+  }
+
+  .content {
+    width: 50%;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+</style>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+  <body style="background-color: #FF9B29; font-family:Comic Sans MS">
+    
+    <h1 style="text-align: center; font-family:verdana">Charles Kittler</h1>
+    
+    <hr style="border: 5px solid #FFE83B; border-radius: 5px;" />
+    <hr style="border: 5px solid #8F1610; border-radius: 5px;" />
+    <hr style="border: 5px solid #FFE83B; border-radius: 5px;" />
+    
+    <p style="text-align: center;">
+      Class of 2022
     </p>
-    <p>
-      [Major and other information]
+    
+    <p style="text-align: center;">
+      Hiker rock cliber and tech enthusiest
     </p>
-    <p>
-      [Other things]
+    
+    <p style="text-align: center;">
+      Robotics and Computer Science double major
     </p>
+    
+    <p style="text-align: center;"></p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h2 style="font-family:verdana">Experience</h2>
+
+    <button class="collapsible">Work Experience</button>
+    <div class="content">
+      <p>Woodland Golf Club</p>
+      <p>Roche Brothers</p>
+      <p>It Assistant</p>
+    </div>
+
+    <button class="collapsible">CS Classes Taken</button>
+    <div class="content">
+      <p>CS 1101</p>
+      <p>CS 2102</p>
+      <p>CS 2011</p>
+      <p>CS 2223</p>
+      <p>CS 2303</p>
+    </div>
+    
+    <button class="collapsible">Code Experience</button>
+    <div class="content">
+      <p>C/C++</p>
+      <p>Java</p>
+      <p>Python</p>
+      <p>HTML</p>
+      <p>CSS</p>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
