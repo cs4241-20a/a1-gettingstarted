@@ -2,7 +2,7 @@
 
 Noah Olson (nvolson) 
 
-Glitch URL: //TODO ADD HERE
+Glitch URL: https://a1-noahvolson.glitch.me
 
 This project demonstrates basic html, css, and javascript animation
 
