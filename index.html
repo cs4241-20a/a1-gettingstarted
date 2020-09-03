@@ -4,20 +4,22 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
 
     <h1>Information about Noah Parker</h1>
-<div style="margin-left:10%">
+<div style="margin-left:10%;position:absolute">
     <p>
       <h3>Bio: </h3>
-      <div style="border-color:white; border-style:solid; border-width:2px; border-radius:20px">
+      
+      <div id="bioDiv" style=" border-color:white; border-style:solid; border-width:2px; border-radius:20px; position:relative;" onmouseover="animateContent(this.id)">
       <p style="margin-left:5%">
 
       I am a 2nd Year Senior, class of 2020.
       <br>
       Major(s): Computer Science & Robotics Engineering
-
+        <br>
         I love writing software to solve interesting problems, as well as hand-on prototyping of mechanical systems.
       </p>
 
@@ -55,7 +57,7 @@
     </p>
   </div>
     <h2>Experience</h2>
-    <div style="border-color:white; border-style:solid; border-width:2px; border-radius:20px">
+    <div id="expDiv" onmouseover="animateContent(this.id)" style="border-color:white; border-style:solid; border-width:2px; border-radius:20px; position:relative">
 
     <p >
       <h3 style="margin-left:5%">Technologies: </h3>
