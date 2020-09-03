@@ -1,0 +1,56 @@
+h1{
+    color: #61E8C6;
+}
+
+h2{
+    color: #61E8C6;
+    font-size: 2em;
+}
+
+p{
+    text-align: justify;
+}
+
+a{
+    color: #E87D6D;
+}
+
+.image{
+    max-width: 100%;
+    border-radius: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    opacity: 0.7;
+    filter: saturate(1);
+    }
+    img:hover{
+        transform: scaleX(-1);
+    }
+
+ul{
+    color: #E87D6D;
+    font-size: 1.5em;
+    }
+    li{
+    color: #E87D6D;
+    }
+
+body{
+    background-color: #3B3D3D;
+    color: #3A9C83;
+    font-size: 1.25em;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+#container {
+    position: relative;
+  }
+  #animated {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #61E8C6;
+  }
