@@ -1,5 +1,5 @@
 Robear Mankaryous
-http://a1-robearmankaryous.glitch.me
+http://a1-rmanky.glitch.me
 
 ## Technical Achievements
 **Styled page with CSS**
