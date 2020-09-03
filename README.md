@@ -18,4 +18,5 @@ This project shows information about me, and is an example of my ablity to us js
   * #E65D25 - Button Color
   * #FFC229 - Button Hover Color
   * #FFE83B - Colored Line
+  * #8F1610 - Colored Line
   * #FF9B29 - Background Color
