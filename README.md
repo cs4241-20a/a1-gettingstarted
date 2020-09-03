@@ -12,7 +12,7 @@ This project shows a work with html, javascript, css.
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: 
-1. Created and Used a color palette from the https://color.adobe.com/ 
+1. Created and Used a color palette from the https://color.adobe.com/, the screenshot of the palette is in the assets folder.
 2. Used Indie Flower and Maven Pro as the fonts for the text of the website.
 
 
