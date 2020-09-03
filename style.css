@@ -3,12 +3,16 @@ h1{
 }
 
 h2{
-    color: #E87D6D;
+    color: #61E8C6;
     font-size: 2em;
 }
 
 p{
     text-align: justify;
+}
+
+a{
+    color: #E87D6D;
 }
 
 .image{
@@ -27,11 +31,11 @@ p{
     }
 
 ul{
-    color: #79E89E;
+    color: #E87D6D;
     font-size: 1.5em;
     }
     li{
-    color: #61E8C6;
+    color: #E87D6D;
     }
 
 body{
