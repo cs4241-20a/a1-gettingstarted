@@ -1,28 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
   </head>
+  
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Indie+Flower"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Maven+Pro"
+  />
+  
   <body>
-    <h1>Information about Yaru Gong</h1>
+    <h1>
+      Information about Yaru Gong
+      <img
+        id="image"
+        src="https://cdn.pixabay.com/photo/2015/04/03/16/36/bee-705412_1280.png"
+        width="150"
+        visibility="visible"
+      />
+    </h1>
     <p>
-      [Self introduction]
+      Major: Computer Science
     </p>
     <p>
-      [Major and other information]
+      Class: 2022
     </p>
     <p>
-      [Other things]
+      School: Worcester Polytechnic Institute
     </p>
 
+    <q>
+      Hi, I am Yaru Gong. A student who major in computer science. I am looking
+      forward more challenges!
+    </q>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <div>
+      CS course have taken in WPI
+    </div>
     <ul>
-      <li>IBM/Rational</li>
+      <li>CS 1102</li>
+      <li>CS 2103</li>
+      <li>CS 2022</li>
+      <li>CS 2223</li>
+      <li>CS 2303</li>
+      <li>CS 3043</li>
+      <li>CS 3013</li>
+      <li>CS 3041</li>
+      <li>CS 3431</li>
+      <li>CS 3733</li>
+      <li>CS 3133</li>
+      <li>CS 4342</li>
+      <li>CS 4432</li>
+      <li>CS 4518</li>
+      <button onclick="expand()">
+        View More
+      </button>
+    </ul>
+    <div>
+      Experience with the following technologies and methods
+    </div>
+
+    <table style="width:50%">
+      <tr>
+        <th>Technologies and Methods</th>
+        <th>Familiarity</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Node</td>
+      </tr>
+    </table>
+
+    <div>
+      Working experience
+    </div>
+    <ul>
       <li>WPI</li>
     </ul>
   </body>
+
+  <footer>CS4241: Webware &copy; 2020</footer>
+
+  <script>
+    function expand() {
+      alert("There is no more can be shown.");
+    }
+    var show = true;
+    const blink = function() {
+      var image = document.getElementById('image');
+      if(show){
+        image.style.visibility = 'hidden';
+        show = false;
+      }else{
+        image.style.visibility = 'visible';
+        show = true;
+      }
+      
+    }
+
+    setInterval(blink, 800);
+  </script>
 </html>
