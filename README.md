@@ -1,5 +1,7 @@
 Charlie Kittler
-http://a1-cvkittler.glitch.me	http://a1-cvkittler.glitch.me
+
+http://a1-cvkittler.glitch.me
+
 This project shows information about me, and is an example of my ablity to us js HTML and css
 
 ## Technical Achievements
