@@ -8,7 +8,7 @@ This project shows a work with html, javascript, css.
 - **Styled page with CSS**: 
 1. Added rules of background-color, padding, font color, font-size, font, and text-align for the h1, h2, body and div.
 2. Added a blinding image animation to the page.
-3. Experiment with html tags of button, table, footer, quote, and unordered list.
+3. Experiment with html tags of button, table, footer, quote, and link.
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: 
