@@ -3,26 +3,234 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <style>
+      h1 {
+        font-size:40px;
+      }
+      h1,h2,h3 {
+          color:#26F074;
+          text-align:center;
+      }
+      p {
+        font-size:18px;
+      }
+      ul {
+        font-family: 'Rubik', sans-serif;
+        margin-left:5px;
+        color:#6FF2A2;
+      }
+      #sm {
+        height:500px;
+      }
+      #sm div {
+        height:5px;
+      }
+      table {
+        font-family: 'Rubik', sans-serif;
+        border-color:#127036;
+        border:1px solid;
+      }
+      th {
+        color:#26F074;
+      }
+      td {
+        color:#6FF2A2;
+        border:1px solid;
+        border-color:#127036;
+      }
+      body {
+        color:#1EBD5B;
+        background-color:#5B7063;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body onload="set_color()">
+    <h1>Information about Luke Deratzou</h1>
     <p>
-      [Self introduction]
+      Hi! My name is <strong>Luke Deratzou</strong>, a sophomore attending WPI!
     </p>
     <p>
-      [Major and other information]
+      I am a Computer Science major, pursuing a BS/MS at WPI. I am also getting a minor in Data Science.
     </p>
     <p>
-      [Other things]
+      Below is a table of Computer Science courses I took at WPI. Includes course number, name, and term that I took it.
     </p>
+    <table>
+      <tbody>
+        <tr>
+          <th>Course number</th>
+          <th>Course name</th>
+          <th>Term taken</th>
+        </tr>
+        <tr>
+          <td>1102</td>
+          <td>Accelerated Intro to Program Design</td>
+          <td>A19</td>
+        </tr>
+        <tr>
+          <td>2103</td>
+          <td>Accelerated Object-oriented Design Concepts</td>
+          <td>B19</td>
+        </tr>
+        <tr>
+          <td>2303</td>
+          <td>Systems Programming Concepts</td>
+          <td>C20</td>
+        </tr>
+        <tr>
+          <td>2022</td>
+          <td>Discrete Mathematics</td>
+          <td>C20</td>
+        </tr>
+        <tr>
+          <td>2223</td>
+          <td>Algorithms</td>
+          <td>D20</td>
+        </tr>
+        <tr>
+          <td>2011</td>
+          <td>Introduction to Machine Organization and Assembly Language</td>
+          <td>D20</td>
+        </tr>
+        <tr>
+          <td>3043</td>
+          <td>Social Implications of Information Processing</td>
+          <td>E20</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2>Experience</h2>
+    <h2>Experiences</h2>
     <p>
-      Working experience
+      Below is a list of experiences I have regarding the below technologies and methods.
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML
+        <br>A lot. I have developed and deployed multiple websites and have taken courses in HTML
+      </li>
+      <li>CSS
+        <br>A lot. I have used CSS to style the websites I have developed, and I have also taken courses in it.
+      </li>
+      <li>Java
+        <br>A lot. I have taken three courses that used Java, giving me ample experiences both in the language itself and applying it via difficult projects.
+      </li>
+      <li>JavaScript
+        <br>A lot, but not as much as the above. I am self-taught in JavaScript, but I have used it to make my websites more interactive along with some simple scripts. I am still unfamiliar with many concepts, especially regarding servers (but I hope to learn in this class!)
+      </li>
+      <li>Ruby
+        <br>None. I have only heard of the name.
+      </li>
+      <li>Python
+        <br>A lot. I have not taken any formal course, but I have been using the language extensively for a year, doing small projects and scripts. I also teach the language to others.
+      </li>
+      <li>Unit testing
+        <br>Some. I used unit testing in CS 2103 (advanced Object Oriented Programming) and CS 2303 (Systems Programming Concepts), so I have a strong background. However, I am still not fully comfortable with unit testing.
+      </li>
     </ul>
+    <br>
+    <h2>Read more</h2>
+    <p>Below is the link to my website:<br><a href="https://lukederatzou.com" target="_blank">lukederatzou.com</a></p>
+    <hr>
+    <h2>Fun Stuff!</h2>
+    <br>
+    <h3>Cat Picture</h3>
+    <img src="https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572__340.jpg" alt="cat">
+    <br>
+    <h3>Funky JavaScript: Rainbow Animation</h3>
+    <script>
+      const set_color = function () {
+        for(let i=1; i<101; i++) {
+          let str_to_add = "";
+          document.getElementById("sm").innerHTML += "<div class=\"color-bar\" id=\"cb" + (i-1).toString(10) + "\">" + str_to_add + "</div>";
+        }
+        let bgcolor = "ff0000";
+        for(let i=0; i<100; i++) {
+          document.getElementById("cb" + i.toString(10)).style.backgroundColor = "#" + bgcolor;
+          bgcolor = next_bg_color(bgcolor);
+        }
+        setInterval(change_color, 20);
+      }
+
+      const next_bg_color = function(pastcolor) {
+          const check_pc = function (pastcolor, condition, lim) {
+            let newcolor = ""
+            let x = "0";
+            if (lim == "0") x = "f";
+              for(let i=0; i<6; i++) {
+                  if (condition[i]=="X") {
+                      if(pastcolor[i] == lim && pastcolor[i+1] == lim) return false;
+                      if(pastcolor[i+1]==lim) newcolor += change_hex(pastcolor[i], lim);
+                      if(pastcolor[i+1]!=lim) newcolor += pastcolor[i];
+                  } else if (condition[i]=="x") {
+                      if(pastcolor[i-1]!=newcolor[i-1]) newcolor += x;
+                      if(pastcolor[i-1]==newcolor[i-1]) newcolor += change_hex(pastcolor[i], lim);
+                  } else if (condition[i]!=pastcolor[i]) {
+                      return false;
+                  } else {
+                      newcolor += pastcolor[i];
+                  }
+              }
+              return newcolor;
+          }
+          if (check_pc(pastcolor, "ffXx00", "f")!=false) {
+              return check_pc(pastcolor, "ffXx00", "f");
+              //xx < FF
+              //increase xx
+          } else if (check_pc(pastcolor, "Xxff00", "0")!=false) {
+              return check_pc(pastcolor, "Xxff00", "0");
+              //xx > 00
+              //decrease xx
+          } else if (check_pc(pastcolor, "00ffXx", "f")!=false) {
+              return check_pc(pastcolor, "00ffXx", "f");
+              //xx < FF
+              //increase xx
+          } else if (check_pc(pastcolor, "00Xxff", "0")!=false) {
+              return check_pc(pastcolor, "00Xxff", "0");
+              //xx > 0
+              //decrease xx
+          } else if (check_pc(pastcolor, "Xx00ff", "f")!=false) {
+              return check_pc(pastcolor, "Xx00ff", "f");
+              //xx < FF
+              //increase xx
+          } else if (check_pc(pastcolor, "ff00Xx", "0")!=false) {
+              return check_pc(pastcolor, "ff00Xx", "0");
+              //xx > 0
+              //decrease xx
+          }
+      }
+
+      const change_hex =  function(val, lim) {
+          let nv = parseInt(val, 16);
+          if (lim == "f") nv+=3;
+          if (lim == "0") nv-=3;
+          return nv.toString(16);
+      }
+
+    const change_color = function() {
+          let bgcolor = next_bg_color(convert_to_hex(document.getElementById("cb0").style.backgroundColor));
+          for(let i=0; i<100; i++) {
+              document.getElementById("cb"+i.toString(10)).style.backgroundColor = "#" + bgcolor;
+              bgcolor = next_bg_color(bgcolor);
+          }
+  }
+  const convert_to_hex = function (val) {
+      hex = "";
+      cv = "";
+      for(let i=0; i<val.length; i++) {
+          if (val[i] == "0" || val[i] == "1" || val[i] == "2" || val[i] == "3" || val[i] == "4" || val[i] == "5" || val[i] == "6" || val[i] == "7" || val[i] == "8" || val[i] == "9") {
+              cv += val[i];
+          } else if (val[i] == "," || val[i] == ")") {
+              tmp = parseInt(cv);
+              let tmp2 = tmp.toString(16);
+              if (tmp2.length == 1) tmp2 = "0"+tmp2;
+              hex += tmp2;
+              cv = "";
+          }
+      }
+      return hex;
+  }
+  </script>
+    <div id="sm"></div>  
   </body>
 </html>
