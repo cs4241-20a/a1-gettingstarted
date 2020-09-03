@@ -3,26 +3,52 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+    <script src="main.js"></script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body onload="main()">
+  <div id="card">
+    <h1>Information about Noah Olson</h1>
     <p>
-      [Self introduction]
+      Hello World! My name is Noah Olson and I am a member of WPI's class of 2022
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      I am a <a href="https://www.wpi.edu/academics/departments/computer-science">computer science</a> major with a concentration in cybersecurity
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div id="courses">
+      <h2>Courses</h2>
+      <ul>
+        <li>Intro to Program Design</li>
+        <li>Obj. Oriented Design</li>
+        <li>Systems Programming</li>
+        <li>Algorithms</li>
+        <li>Foundations of CS</li>
+        <li>Computer Networks</li>
+        <li>Assembly and Machine Org.</li>
+        <li>Operating Systems</li>
+        <li>Databases</li>
+        <li>Software Engineering</li>
+        <li>HCI</li>
+      </ul>
+    </div>
+
+    <div id="experience">
+      <h2>Experience</h2>
+      <table>
+        <tr><th>Technology</th><th>Experience Level</th></tr>
+        <tr><td>HTML</td><td>A lot</td></tr>
+        <tr><td>CSS</td><td>A lot</td></tr>
+        <tr><td>Java</td><td>A lot</td></tr>
+        <tr><td>JavaScript</td><td>Some</td></tr>
+        <tr><td>Ruby</td><td>None</td></tr>
+        <tr><td>Python</td><td>A lot</td></tr>
+        <tr><td>Unit Testing</td><td>A lot</td></tr>
+      </table>
+    </div>
+
+    <img id="swanImg" src="swan.png">
+  </div>
   </body>
 </html>

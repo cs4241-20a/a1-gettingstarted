@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto Mono', serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    margin: 0 25%;
+    background-color: #422E75;
+    color: #C0AAF7;
+}
+
+h1, h2 {
+    text-shadow: 2px 2px #6D4CC2;
+}
+h1 {
+    padding: 5px;
+}
+
+a {
+    color: #895FF5;
+    text-decoration: none;
+    text-shadow: 1px 1px black;
+}
+
+table {
+    text-align: left;
+}
+
+td {
+    padding-right: 24px;
+}
+
+#swanImg {
+    z-index: -1;
+    opacity: 25%;
+    width:  500px;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+
+#card {
+    background-color: #5b5175;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* Do not display swan when it would overlap with text*/
+@media screen and (max-aspect-ratio: 1.4 / 1) {
+
+    body {
+        font-family: 'Roboto Mono', serif;
+        font-size: 14px;
+        overflow-x: hidden;
+        margin: 0 10%;
+        background-color: #422E75;
+        color: #C0AAF7;
+    }
+
+    #swanImg {
+        display: none;
+    }
+}
