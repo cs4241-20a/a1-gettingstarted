@@ -1,5 +1,6 @@
 var drawingSurface = document.getElementById( 'drawingDiv' );
 
+// yeah ik, bad code (will figure out dynamic scaling later, was able to do it for https://webglcradle2.netlify.app/)
 let size = 200;
 
 var scene = new THREE.Scene();
@@ -21,8 +22,8 @@ camera.position.z = 5;
 
 function animate() {
 	requestAnimationFrame( animate );
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
+    cube.rotation.x += 0.01 % 90.0;
+    cube.rotation.y += 0.01 % 90.0;
 	renderer.render( scene, camera );
 }
 animate();
