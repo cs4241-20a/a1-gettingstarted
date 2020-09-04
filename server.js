@@ -20,9 +20,13 @@ const server = http.createServer( function( request,response ) {
       sendFile(response, 'shanghai-pic.jpg')
       break
 
-      case '/train.png':
-        sendFile(response, 'train.png')
-        break
+    case '/train.png':
+      sendFile(response, 'train.png')
+      break
+
+    case '/github-logo.png':
+      sendFile(response, 'github-logo.png')
+      break
     
     default:
       response.end( '404 Error: File Not Found' )

@@ -88,6 +88,12 @@ li.larger-fonts {
     display: none;
 }
 
+#github {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
 
 .center-img {
     display: block;

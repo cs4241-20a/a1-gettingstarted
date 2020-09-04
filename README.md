@@ -5,9 +5,9 @@ In this project, I designed a website using HTML/CSS and JavaScript that describ
 # Technical Achievements
 - **Styled page with CSS**: Added rules for body, h1, h2, hr, table, th, td, li, p, and button.
 
-- **Experimented with HTML tags**: Used the hr, table, th, td, button, img, ol, ul tags.
+- **Experimented with HTML tags**: Used the hr, table, th, td, button, img, ol, ul, and a tags.
 
-- **Included JavaScript Animation of Moving Train**: Implemented a moving image of a train animation by utilizing JavaScript. By following a reference I found on about JavaScript animation, I was able to gather enough information to help me implement my desired animation. 
+- **Included JavaScript Animation of Moving Train**: Implemented a moving image of a train animation by utilizing JavaScript. By following a reference I found on about JavaScript animation, I was able to gather enough information to help me implement my desired animation. The animation of the moving train will activate when the user clicks on the 'Click Here' button.
     - Reference Used: https://www.w3schools.com/howto/howto_js_animate.asp 
 
 # Design Achievements
