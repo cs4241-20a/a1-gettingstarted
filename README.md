@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 
 Sadie Lombardi
-http://a1-charlieroberts.glitch.me 
+https://a1-slombar.glitch.me/
 
 This project shows ...
 
