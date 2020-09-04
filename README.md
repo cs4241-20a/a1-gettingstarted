@@ -13,7 +13,7 @@ This project shows ...
 - **Used several HTML tags**: Used the follwing HTML tags: ul, li, article, main, div, h1, h2, h3, p, table, tr, td, and span.
 ### Design Achievements
 - **Used several Fonts from Google Docs**: I used IBM Plex Sans as the font for the primary font in my site. I used Raleway and Balsamiq Sans for the fonts of my header tags.
-- **Used color.adobe.com to create color pallete**: I created my color pallete in color.adobe.com for my website. *see attached image "pallete.jpg in repository"*
+- **Used color.adobe.com to create color pallete**: I created my color pallete in color.adobe.com for my website. *see attached images in repository*
 
 -----------------------------
 Resources Used
