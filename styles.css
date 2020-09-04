@@ -1,0 +1,118 @@
+body {
+    background-color: #018FCC;
+}
+
+h1 {
+    color: white;
+    text-align: center; 
+    font-family: 'Teko', sans-serif;
+}
+h2 {
+    color: #012D78;
+}
+
+
+hr {
+    border-top: 10px dashed #012D78;
+}
+
+
+table, th, td {
+    border: 4px solid #012D78;
+    border-collapse: collapse;
+}
+
+table {
+    background-color: white;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+
+th {
+    font-weight: normal;
+}
+
+
+td {
+    width: 50%;
+}
+
+
+li {
+    text-align: left;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    color: black;
+}
+
+
+p {
+    font-family: 'Slabo 27px', serif;
+    font-size: 25px;
+    text-align: left;
+    color: black;
+    padding-left: 25px;
+}
+
+
+button {
+    width:200px; 
+    height:50px; 
+    font-size: 25px;
+    background-color: #B7BFC7;
+    cursor: pointer;
+}
+
+
+li.larger-fonts {
+    font-size: 30px;
+}
+
+
+#train {
+    position: relative;
+    cursor: pointer;
+    width: 500px; 
+    height:auto; 
+    float:right; 
+    display: none;
+}
+
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.center {
+    margin: auto;
+    margin-top:50px;
+    width: 50%;
+    /*border: 3px solid green;*/
+    padding: 10px;
+}
+
+
+.image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+
+.margin-bottom {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+

@@ -3,32 +3,102 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about Jonathan Dang</h1>
-    <p>
-      My name is Jonathan Dang and I am a senior at Worcester Polytechnic Institute. 
-    </p>
-    <p>
-      I am majoring in Computer Science and minoring in Data Science.
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <hr>
+    <h1>Jonathan Dang</h1>
+    <h2 style="text-align: center; font-family: 'Slabo 27px', serif; color:white;">Class of 2021</h2>
+    <hr>
+    <div class = "container center">
+      <img class="image center-img" src="shanghai-pic.jpg">
+    </div>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>Juniper Networks</li>
-      <li>Website Designer for SASE NERC 2020 Conference</li>
-    </ul>
-    <p>
-      Class experience
-    </p>
-    <ul>
-      <li></li>
-    </ul>
+    <div class = "container center" style="text-align: center;">
+      <button id=sl>Click Here</button>
+    </div>
+
+    <div>
+      <img src ="train.png" id="train">
+    </div>
+
+    <div class="container center">
+      <table width="100%;">
+        <tr>
+          <th colspan="2">
+            <h2>About Me</h2>
+            <p>Hi, my name is Jonathan Dang and I am a senior at WPI majoring
+            in Computer Science and minoring in Data Science.</p>
+          </th>
+          
+        </tr>
+        <tr>
+          <td>
+            <h2>Computer Science Classes</h2>
+            <ul>
+              <li>CS 1101 Introduction to Program Design</li>
+              <li>CS 2102 Object Oriented Design Concepts</li>
+              <li>CS 2303 Systems Programming Concepts</li>
+              <li>CS 2011 Intro to Machine Org & Assembly Lang</li>
+              <li>CS 2022 Discrete Mathematics</li>
+              <li>CS 2223 Algorithms</li>
+              <li>CS 3013 Operating Systems</li>
+              <li>CS 3041 HCI</li>
+              <li>CS 3043 Social Implications of Info Processing</li>
+              <li>CS 3133 Foundations of CS</li>
+              <li>CS 3516 Computer Networks</li>
+              <li>CS 3733 Software Engineering</li>
+              <li>CS 3431 Database Systems I</li>
+              <li>CS 4432 Database Systems II</li>
+              <li>CS 4233 Object-Oriented Analysis & Design</li>
+            </ul>
+          </td>
+          <td style="vertical-align: top;">
+            <h2>Experience</h2> 
+            <ol>
+              <li class="margin-bottom">HTML - some</li>
+              <li class="margin-bottom">CSS  - some</li>
+              <li class="margin-bottom">Java - a lot</li>
+              <li class="margin-bottom">JavaScript - none</li>
+              <li class="margin-bottom">Ruby - none</li>
+              <li class="margin-bottom">Python - a lot</li>
+              <li class="margin-bottom">Unit Testing - some</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <h2>Work Experience</h2>
+            <ul>
+              <li>Juniper Networks</li>
+            </ul>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      sl.onclick = function() {
+        var pos = 0;
+        var train = document.getElementById("train");
+        train.style.display = "block";
+        var id = setInterval(moveLeft, 1);
+
+        function moveLeft() {
+          if (pos>= 1870) {
+            clearInterval(id);
+            train.style.display = "none";
+
+          }
+
+          else {
+            pos+= 3;
+            train.style.right = pos + 'px';
+          }
+        }
+      }
+    </script>
   </body>
 </html>
