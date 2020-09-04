@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <script>
     var degrees = 0;
@@ -12,23 +13,26 @@
       e.style.transform = "rotate(" + degrees + "deg)";
 
       setTimeout('rotate(\'' + e1 + '\',' + speed + ')', speed);
-      degrees+=0.1;
-      if(degrees >= 360) {
+      degrees += 0.1;
+      if (degrees >= 360) {
         degrees = 1;
       }
     }
   </script>
-  </head>
-  <body>
-    <h1>Information about William Yang</h1>
-    <img id="me" src="assets/me.jpg" width="300">
-    <script>rotate("me", 100);</script>
-    <p>
-      Hi! My name is William Yang (I go by Bill though) and I am a undergraduate Junior here at WPI :)<br>
-      I am pursuing a BS/MS in Computer Science.<br>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+      <h1>Information about William Yang</h1>
+      <img id="me" src="assets/me.jpg" width="300">
+      <script>rotate("me", 100);</script>
+      <p>
+        Hi! My name is William Yang (I go by Bill though) and I am a undergraduate Junior here at WPI :)<br>
+        I am pursuing a BS/MS in Computer Science.<br>
       <address>You can find me on LinkedIn <a href="https://www.linkedin.com/in/wbyang99">here!</a></address>
-    </p>
-    <h2>Table of Contents</h2>
+      </p>
+      <h2>Table of Contents</h2>
       <ol>
         <li><a href="#prev_courses">Previous Courses at WPI</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -37,7 +41,7 @@
           <li><a href="#tech_exp">Technology Experience</a></li>
         </ul>
       </ol>
-    <p>
+      <p>
       <h2 id="prev_courses">Previous CS Courses at WPI</h2>
       <ul>
         <li>Software Engineering</li>
@@ -45,10 +49,10 @@
         <li>Foundations of Computer Science</li>
         <li>... and more!</li>
       </ul>
-    </p>
+      </p>
 
-    <h2 id="experience">Experience</h2>
-    <p>
+      <h2 id="experience">Experience</h2>
+      <p>
       <h3 id="working_exp">Working Experience</h3>
       <ul>
         <li>Topaz Labs</li>
@@ -90,6 +94,8 @@
           <td>3</td>
         </tr>
       </table>
-    </p>
-  </body>
+      </p>
+    </div>
+  </div>
+</body>
 </html>
