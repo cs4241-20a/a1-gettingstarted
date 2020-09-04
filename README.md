@@ -8,8 +8,7 @@ In this project, I designed a website using HTML/CSS and JavaScript that describ
 - **Experimented with HTML tags**: Used the hr, table, th, td, button, img, ol, ul tags.
 
 - **Included JavaScript Animation of Moving Train**: Implemented a moving image of a train animation by utilizing JavaScript. By following a reference I found on about JavaScript animation, I was able to gather enough information to help me implement my desired animation. 
-
-Reference Used: https://www.w3schools.com/howto/howto_js_animate.asp 
+    - Reference Used: https://www.w3schools.com/howto/howto_js_animate.asp 
 
 # Design Achievements
 - **Used color.adobe.com for Creating Color Palette**: Used color.adobe.com to help me pick a color palette to use in my website. I was able to incorporate all 5 colors into my website and you can view the used color palette under the file: color-wheel.png.

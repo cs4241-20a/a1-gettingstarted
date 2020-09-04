@@ -66,6 +66,7 @@ button {
     width:200px; 
     height:50px; 
     font-size: 25px;
+    font-family: 'Slabo 27px', serif;
     color: white;
     background-color: #0BD9D1;
     border-color: #077EE6;
