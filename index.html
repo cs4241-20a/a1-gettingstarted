@@ -1,28 +1,169 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
+
+<head>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>CS4241 Assignment 1</title>
+
+    <style>
+        /* Google Fonts import (Roboto, Cedarville Cursive, Abril Fatface) */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Cedarville+Cursive&family=Abril+Fatface&display=swap');
+
+        body {
+            font-family: Roboto;
+            margin: 6em auto;
+            width: min(80%, 1000px);
+            background-color: var(--background-color);
+            color: var(--text-color);
+
+            --background-color: white;
+            --accent: #00FFFF;
+            --text-color: black;
+            --mark-text-color: black;
+        }
+
+        body.dark-mode {
+            --background-color: black;
+            --accent: #ff7300;
+            --text-color: #bbbbbb;
+        }
+
+        mark {
+            /* linear-gradient trick to get a background color to be smaller than the element-- thanks SO! */
+            background: linear-gradient(0deg, #ffffff00 0.2em, var(--accent) 0.2em, var(--accent) 1em, #ffffff00 1em);
+            color: var(--mark-text-color);
+        }
+
+        #name {
+            display: inline-block;
+            text-align: center;
+            line-height: 1;
+            margin-right: 0.2em;
+            width: 6.1em; /* extra 0.1 to satisfy firefox... sigh */
+        }
+
+        .fixed {
+            position: fixed;
+            left: 1em;
+            top: 1em;
+        }
+
+        #dark-mode-toggle {
+            font-size: 32pt;
+            opacity: 50%;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        #dark-mode-toggle:hover {
+            opacity: 75%;
+        }
+    </style>
+
+    <script>
+        const FONTS = [
+            "Cedarville Cursive",
+            "Roboto",
+            "Abril Fatface"
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            const nameElt = document.getElementById("name");
+            const toggleDarkModeBtn = document.getElementById("dark-mode-toggle")
+            
+
+            function initialize() {
+                const storedDarkMode = localStorage.getItem("dark-mode");
+                if (storedDarkMode == null) {
+                    toggleDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
+                }
+                else {
+                    toggleDarkMode(storedDarkMode == "true");
+                }
+            }
+            initialize();
+            
+
+            function toggleDarkMode(force = undefined) {
+                const nowDarkTheme = document.body.classList.toggle("dark-mode", force);
+                toggleDarkModeBtn.setAttribute("aria-pressed", nowDarkTheme);
+                if (force === undefined) {
+                    localStorage.setItem("dark-mode", nowDarkTheme ? "true" : "false");
+                }
+            }
+            toggleDarkModeBtn.addEventListener('click', () => toggleDarkMode());
+
+
+            function choose(arr) {
+                return arr[Math.floor(Math.random() * arr.length)];
+            }
+
+            function chooseNew(arr, existing) {
+                let chosen = existing;
+                while (chosen == existing) {
+                    chosen = choose(arr);
+                }
+                return chosen;
+            }
+
+            function changeNameFont() {
+                nameElt.style.fontFamily = chooseNew(FONTS, nameElt.style.fontFamily.replace(/"/g, ""));
+            }
+            setInterval(changeNameFont, 300);
+
+        });
+    </script>
+</head>
+
+<body>
+    <div class="fixed">
+        <span id="dark-mode-toggle" class="material-icons" aria-label="Toggle Dark Mode" role="button">brightness_6</span>
+    </div>
+
+    <h1>Information about <mark><em id="name" style="font-family: 'Cedarville Cursive';">Trevor Paley</em></mark></h1>
+
     <p>
-      [Self introduction]
+        Class of 2023
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+        Computer Science (BS/MS)
     </p>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+        <h3>Prior Courses</h3>
+        <ul>
+            <li><em>CS <strong>2303</strong></em> - Systems</li>
+            <li><em>CS <strong>2011</strong></em> - Assembly</li>
+            <li><em>CS <strong>2223</strong></em> - Algorithms</li>
+            <li><em>CS <strong>3133</strong></em> - Foundations</li>
+            <li><em>CS <strong>3013</strong></em> - Operating Systems</li>
+        </ul>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+    <p>
+        <h3>Skills</h3>
+        <ul>
+            <li title="Decent amount of experience"><strong>HTML</strong> - 🙂</li>
+            <li title="Decent amount of experience"><strong>CSS</strong> - 🙂</li>
+            <li title="Decent amount of experience"><strong>Java</strong> - 🙂</li>
+            <li title="Tons of experience"><strong>JavaScript</strong> - 😀</li>
+            <li title="No experience"><strong>Ruby</strong> - 😕</li>
+            <li title="Some experience"><strong>Python</strong> - 😐</li>
+            <li title="Some experience"><strong>Unit Testing</strong> - 😐</li>
+        </ul>
+    </p>
+    <p>
+        <h3>Employment</h3>
+        <ul>
+            <li><strong>WPI</strong> - for work on the Graduate Coordination System</li>
+        </ul>
+    </p>
+</body>
+
 </html>
