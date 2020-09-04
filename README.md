@@ -3,7 +3,7 @@ http://a1-billbo-swaggins.glitch.me
 
 This project shows a website that contains a quick personal introduction as well as some references for anyone interested to see my skills as a programmer. It uses a combination of html/css as well as some JavaScript and node.js (to host the server) in order to achieve this.
 
-Referenced sources: www.w3schools.com, www.stockoverflow.com
+Referenced sources: www.w3schools.com, www.stockoverflow.com, developphp.com
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, h3, table, th, td, and img selectors.

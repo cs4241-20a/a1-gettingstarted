@@ -4,10 +4,25 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script>
+    var degrees = 0;
+    function rotate(e1, speed) {
+      var e = document.getElementById(e1);
+      e.style.transform = "rotate(" + degrees + "deg)";
+
+      setTimeout('rotate(\'' + e1 + '\',' + speed + ')', speed);
+      degrees+=0.1;
+      if(degrees >= 360) {
+        degrees = 1;
+      }
+    }
+  </script>
   </head>
   <body>
     <h1>Information about William Yang</h1>
-    <img src="assets/me.jpg" width="300">
+    <img id="me" src="assets/me.jpg" width="300">
+    <script>rotate("me", 100);</script>
     <p>
       Hi! My name is William Yang (I go by Bill though) and I am a undergraduate Junior here at WPI :)<br>
       I am pursuing a BS/MS in Computer Science.<br>
