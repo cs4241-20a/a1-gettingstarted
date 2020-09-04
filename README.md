@@ -3,7 +3,7 @@ Jonathan Dang https://a1-jdang.glitch.me
 In this project, I designed a website using HTML/CSS and JavaScript that describes a little bit about myself.
 
 # Technical Achievements
-- **Styled page with CSS**: Added rules for body, h1, h2, hr, table, th, td, li, p, and button.
+- **Styled page with CSS**: Added rules for body, h1, h2, hr, table, th, td, li, p, button.
 
 - **Experimented with HTML tags**: Used the hr, table, th, td, button, img, ol, ul, a tags.
 
