@@ -13,14 +13,6 @@ tr #tableTitle{
 	margin-top: 0;
 }
 
-#intro{
-	width: 35%;
-	float: left;
-	margin-left: 7%;
-	background-color: #7EF5CE;
-	padding: 10px;
-}
-
 #exp{
 	float: right;
 	margin-right: 7%;
@@ -39,8 +31,16 @@ tr #tableTitle{
 
 }
 
+#intro{
+	width: 39%;
+	float: left;
+	margin-left: 7%;
+	background-color: #7EF5CE;
+	padding: 10px;
+}
+
 #major{
-	width: 45%;
+	width: 40%;
 	float: right;
 	margin-right: 7%;
 	background-color: #D4B2F5;
