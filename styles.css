@@ -89,7 +89,7 @@ li.larger-fonts {
 }
 
 #github {
-    width: 60px;
+    width: 40px;
     height: auto;
     cursor: pointer;
 }
@@ -107,15 +107,14 @@ li.larger-fonts {
     margin: auto;
     margin-top:50px;
     width: 50%;
-    /*border: 3px solid green;*/
     padding: 10px;
 }
 
 
 .image {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
 }
 
 

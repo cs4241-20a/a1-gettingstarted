@@ -16,16 +16,16 @@ const server = http.createServer( function( request,response ) {
       sendFile(response, 'styles.css')
       break
 
-    case '/shanghai-pic.jpg':
-      sendFile(response, 'shanghai-pic.jpg')
+    case '/images/shanghai-pic.jpg':
+      sendFile(response, 'images/shanghai-pic.jpg')
       break
 
-    case '/train.png':
-      sendFile(response, 'train.png')
+    case '/images/train.png':
+      sendFile(response, 'images/train.png')
       break
 
-    case '/github-logo.png':
-      sendFile(response, 'github-logo.png')
+    case '/images/github-logo.png':
+      sendFile(response, 'images/github-logo.png')
       break
     
     default:
