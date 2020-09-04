@@ -1,27 +1,16 @@
 
-main{
-	font-family: 'IBM Plex Sans', sans-serif;
-	width: 86%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 10px;
-	min-width: 900px;
-	margin-top: -10px;
+.squig{
+		font-family: 'Long Cang', cursive;
+		padding-right: 3px;
+}
+
+.classes{
+	padding: 5px;
 }
 
 tr #tableTitle{
 	margin-bottom: 0px;
 	margin-top: 0;
-}
-
-article{
-		clear: both;
-}
-
-#eImgs{
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
 }
 
 #intro{
@@ -61,10 +50,6 @@ article{
 	padding: 10px;
 }
 
-.classes{
-	padding: 5px;
-}
-
 #pgTitle{
 	background-color: #FABB31;
 	width: 340px;
@@ -82,6 +67,22 @@ article{
 	font-family: 'Balsamiq Sans', cursive;
 }
 
+main{
+	font-family: 'IBM Plex Sans', sans-serif;
+	width: 86%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	min-width: 900px;
+	margin-top: -10px;
+}
+
+article{
+		clear: both;
+		padding-top: 20px;
+}
+
+
 h1{
 	font-size: 35px;
 	font-family: 'Balsamiq Sans', cursive;
@@ -90,15 +91,6 @@ h1{
 	padding-right: 10px;
 	margin: 0px;
 	margin-bottom: 5px;
-}
-
-img{
-	height: 300px;
-}
-
-p{
-	text-indent: 20px;
-	text-align: center;
 }
 
 h2{
@@ -120,12 +112,16 @@ h3{
 
 }
 
+
+p{
+	text-indent: 20px;
+	text-align: center;
+}
+
+
+
 ul {
 	list-style: none;
 	margin-left: -20px;
 }
 
-.squig{
-		font-family: 'Long Cang', cursive;
-		padding-right: 3px;
-}
