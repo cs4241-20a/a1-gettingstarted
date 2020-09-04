@@ -1,0 +1,131 @@
+
+main{
+	font-family: 'IBM Plex Sans', sans-serif;
+	width: 86%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	min-width: 900px;
+	margin-top: -10px;
+}
+
+tr #tableTitle{
+	margin-bottom: 0px;
+	margin-top: 0;
+}
+
+article{
+		clear: both;
+}
+
+#eImgs{
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+#intro{
+	width: 35%;
+	float: left;
+	margin-left: 7%;
+	background-color: #7EF5CE;
+	padding: 10px;
+}
+
+#exp{
+	float: right;
+	margin-right: 7%;
+	width: 20%;
+	background-color: #F5566F;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+
+#cTable{
+	float: left;
+	margin-left: 7%;
+	width: 60%;
+	background-color: #9ADEF5;
+	padding: 10px;
+
+}
+
+#major{
+	width: 45%;
+	float: right;
+	margin-right: 7%;
+	background-color: #D4B2F5;
+}
+
+#intro, #major{
+	padding: 10px;
+}
+
+.classes{
+	padding: 5px;
+}
+
+#pgTitle{
+	background-color: #FABB31;
+	width: 340px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#email{
+	text-decoration: none;
+	color: #000;
+	font-weight: 900;
+	padding-left: 10px;
+	margin-top: 5px;
+	text-transform: uppercase;
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+h1{
+	font-size: 35px;
+	font-family: 'Balsamiq Sans', cursive;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+img{
+	height: 300px;
+}
+
+p{
+	text-indent: 20px;
+	text-align: center;
+}
+
+h2{
+	font-weight: normal;
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: left;
+	margin: 0px;
+	margin-bottom: -10px;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+h3{
+	display: inline;
+	font-weight: bold;
+	font-size: 15px;
+
+}
+
+ul {
+	list-style: none;
+	margin-left: -20px;
+}
+
+.squig{
+		font-family: 'Long Cang', cursive;
+		padding-right: 3px;
+}
