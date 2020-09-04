@@ -1,28 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script>
+    var degrees = 0;
+    function rotate(e1, speed) {
+      var e = document.getElementById(e1);
+      e.style.transform = "rotate(" + degrees + "deg)";
+
+      setTimeout('rotate(\'' + e1 + '\',' + speed + ')', speed);
+      degrees += 0.1;
+      if (degrees >= 360) {
+        degrees = 1;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div style="text-align: center;">
+    <div style="display: inline-block; text-align: left;">
+      <h1>Information about William Yang</h1>
+      <img id="me" src="assets/me.jpg" width="300">
+      <script>rotate("me", 100);</script>
+      <p>
+        Hi! My name is William Yang (I go by Bill though) and I am a undergraduate Junior here at WPI :)<br>
+        I am pursuing a BS/MS in Computer Science.<br>
+      <address>You can find me on LinkedIn <a href="https://www.linkedin.com/in/wbyang99">here!</a></address>
+      </p>
+      <h2>Table of Contents</h2>
+      <ol>
+        <li><a href="#prev_courses">Previous Courses at WPI</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <ul>
+          <li><a href="#working_exp">Working Experience</a></li>
+          <li><a href="#tech_exp">Technology Experience</a></li>
+        </ul>
+      </ol>
+      <p>
+      <h2 id="prev_courses">Previous CS Courses at WPI</h2>
+      <ul>
+        <li>Software Engineering</li>
+        <li>Operating Systems</li>
+        <li>Foundations of Computer Science</li>
+        <li>... and more!</li>
+      </ul>
+      </p>
+
+      <h2 id="experience">Experience</h2>
+      <p>
+      <h3 id="working_exp">Working Experience</h3>
+      <ul>
+        <li>Topaz Labs</li>
+        <li><abbr title="Worcester Polytechnic Institute">WPI</abbr></li>
+      </ul>
+      <h3 id="tech_exp">Technology Experience</h3>
+      <br>(1-5, 1 being lowest and 5 being highest)
+      <table>
+        <tr>
+          <th>Technology</th>
+          <th>Skill</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>3</td>
+        </tr>
+      </table>
+      </p>
+    </div>
+  </div>
+</body>
 </html>
