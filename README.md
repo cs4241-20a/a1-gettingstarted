@@ -88,15 +88,19 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Stephen Lucas
+https://a1-stephenlucas600.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
+- **Styled page with CSS**:
+- **or the bacround as a custom purple bacground and custom gold words, with 10px padding and a primary font of Times , with a secrondaries of Arial the cursive.**
+- **Made the header blue and words green with zero padding.**
+- **Paragraphs has a pail yellow backgound, gold letters, 5px padding but 0px for margin.**
+- **changed the style of the unordered list to square bullets **
+- **added the screen shot of the collor pallot used as a image.
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Roboto Font from Google Fonts**: I Created a Color Palette and learned how to imcoprerate it into the page style as custom colors.
 
 
