@@ -8,7 +8,7 @@ This project shows my sample personal webpage.
 
 ### Technical Achievements
 - **Styled page with CSS**: Added rules for the h1, a, a:hover, mode switcher, and dl\dt... Changed colors for h1, a, a:hover, and made the mode switcher floating. Also changed font size for dl and dt.
-- **Added JS animation**: Animation for light/dark mode switch
+- **Added JS animation**: Animation for light/dark mode switch, a gradual change for color style.
 - **Other HTML tags**: Added links(a), h1, h2, button, div, blockquote, strong HTML tags.
 
 ### Design Achievements
