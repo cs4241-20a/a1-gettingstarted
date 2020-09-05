@@ -1,4 +1,5 @@
 Xiaoyue Lyu
+https://a1-rubylll.glitch.me
 
 This project shows a simple one-page personal portfolio website. It includes some personal and professional information about me.
 
@@ -8,9 +9,9 @@ This project shows a simple one-page personal portfolio website. It includes som
 - In addition to this, I add rules for body, a, hr, and pre tags; generally it is because these tags only appear once in the project thus I don't need to assign them a class or id. 
 - I also combine two selectors to apply styles only to those that have both classes and exclude those that only have one.
 - I use grid when the screen is relatively large and flex otherwise.
-- 
+ 
 - **JavaScript animation**: I write a JavaSctipt function that changes the format of the website depending on the screen size, so that makes my website a little bit responsive. It is kind of the same effect achieved by using css media queries.
-- 
+ 
 - **Experiment with other HTML tags**： 
 - First of all, I use div tags to seperate different sections of the website and make them organize. 
 - I also use h1, h2, h3, and p tags to indicate different kinds of info. 
