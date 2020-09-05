@@ -1,28 +1,99 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>zph</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack@0.8.1/dist/hack.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack@0.8.1/dist/dark-grey.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <h1>Information about Pinhan</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <body class="hack transition">
+
+    <div class="main container">
+      <div class="personal">
+        <h1>About Pinhan</h1>
+        <p>
+            <blockquote>
+                <strong>Pinhan, a humanist, observer, and hacker.</strong>
+            </blockquote>
+        </p>
+        <p>
+            <blockquote>
+                <strong>WPI class of 2023, majoring in Computer Science</strong>
+            </blockquote>
+        </p>
+      </div>
+
+      <hr>
+      <h2>Facts</h2>
+      <dl>
+        <dt></dt>
+        <dd>D&D Alignment: Chaotic good</dd>
+        <dd>Love anime, here's my <a href="https://zph.io/anime/" target="_blank">anime list</a></dd>
+        
+      </dl>
+
+      <h2>Experience</h2>
+      <dl>
+
+        <dt>CS courses taken</dt>
+
+        <ul>
+          <li>CS1011</li>
+          <li>CS2102</li>
+          <li>CS2303</li>
+          <li>CS2223</li>
+          <li>CS3516 (In progress)</li>
+          <li>CS4241 (In progress)</li>
+        </ul>
+
+        <dt>Programming experience</dt>
+
+        <ul>
+          <li>HTML: A lot</li>
+          <li>CSS: A lot</li>
+          <li>JavaScript: Some</li>
+          <li>C/C++: A lot</li>
+          <li>Java: Some</li>
+          <li>Ruby: None</li>
+          <li>Python: Some</li>
+          <li>Unit testing: Some</li>
+        </ul>
+
+      </dl>
+
+      <div class="alert alert-error">
+        海绵宝宝，那我们是不是也应该，坚持做自己喜欢的事情<br>
+        So shouldn't we get back to what we love?<br>
+        — <a href="https://www.bilibili.com/video/BV1qt411j7fV" target="_blank" rel="noopener noreferrer nofollow">BV1qt411j7fV</a>
+      </div>
+
+      <hr>
+      Powered by <a href="https://github.com/egoist/hack" target="_blank" rel="noopener noreferrer nofollow">hack.css</a>
+
+    </div>
+    <button onclick="toggleMode()" class="btn btn-default btn-ghost mode-switch">🌙</button>
+    <script>
+      let isDark = false;
+
+      let setDarkMode = function() {
+          document.getElementsByTagName("body")[0].classList.add("dark-grey");
+          document.getElementsByClassName("mode-switch")[0].innerHTML = "☀️"
+          isDark = true;
+      }
+
+      let setLightMode = function() {
+          document.getElementsByTagName("body")[0].classList.remove("dark-grey");
+          document.getElementsByClassName("mode-switch")[0].innerHTML = "🌙"
+          isDark = false;
+      }
+
+      let toggleMode = function() {
+          isDark ? setLightMode() : setDarkMode()
+      }
+  </script>
   </body>
 </html>
