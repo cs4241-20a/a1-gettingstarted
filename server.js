@@ -4,6 +4,7 @@ const http = require('http'),
 
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
+   
     case '/':
       sendFile( response, 'index.html' )
       break
@@ -19,7 +20,7 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     file = content
+     
      response.end( content, 'utf-8' )
    })
 }
