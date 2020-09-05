@@ -1,5 +1,4 @@
 Xiaoyue Lyu
-http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
