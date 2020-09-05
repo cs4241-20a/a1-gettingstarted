@@ -1,0 +1,68 @@
+.hack {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.main {
+  padding: 20px 10px;
+}
+
+.transition {
+    transition: all 0.5s ease-in;
+}
+
+h1 {
+    color: #0E85B3;
+}
+
+a:hover {
+    background-color: #1EA682;
+    color: #fff;
+}
+
+.mode-switch {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    cursor: pointer;
+    color: #1EA682;
+    text-decoration: none;
+    border-bottom: 1px solid #25CC9F;
+}
+
+.alert-error {
+    color: #f44336;
+    border-color: #f44336;
+}
+
+.alert-error a {
+    color: #ff2e88;
+    border-bottom: 1px solid #ff2e88;
+}
+
+.alert-error a:hover {
+    background-color: #ff2e88;
+    color: #fff;
+}
+
+dl {
+  margin-bottom: 20px;
+}
+
+dl dt {
+    font-size: larger;
+}
+
+dl dd {
+  margin: 10px 0 10px 25px;
+}
+
+.mode-switch:hover {
+  background-color: #555;
+}
