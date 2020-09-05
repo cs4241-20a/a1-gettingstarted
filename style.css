@@ -19,6 +19,16 @@ a:hover {
     color: #fff;
 }
 
+.mode-switch {
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    z-index: 999;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 a {
     cursor: pointer;
     color: #1EA682;
@@ -53,16 +63,6 @@ dl dd {
   margin: 10px 0 10px 25px;
 }
 
-.mode-switch {
-  position: fixed; /* Fixed/sticky position */
-  bottom: 15px; /* Place the button at the bottom of the page */
-  right: 25px; /* Place the button 30px from the right */
-  z-index: 999; /* Make sure it does not overlap */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 5px; /* Rounded corners */
-}
-
 .mode-switch:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
 }
