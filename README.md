@@ -95,10 +95,11 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**:
---for the bacround as a custom purple bacground and custom gold words, with 10px padding and a primary font of Times , with a secrondaries of Arial the cursive.
---Made the header blue and words green with zero padding.
---Paragraphs has a pail yellow backgound, gold letters, 5px padding but 0px for margin.
-
+- **or the bacround as a custom purple bacground and custom gold words, with 10px padding and a primary font of Times , with a secrondaries of Arial the cursive.**
+- **Made the header blue and words green with zero padding.**
+- **Paragraphs has a pail yellow backgound, gold letters, 5px padding but 0px for margin.**
+- **changed the style of the unordered list to square bullets **
+- **added the screen shot of the collor pallot used as a image.
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I Created a Color Palette and learned how to imcoprerate it into the page style as custom colors.
 
