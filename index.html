@@ -1,28 +1,107 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
 
-    <h2>Experience</h2>
+<body onload="moveImg()">
+    <h1>Information about Haley Hauptfeld</h1>
     <p>
-      Working experience
+        Hi my name is Haley. I am in the class of 2021 at WPI.
+    </p>
+    <div id="wrapper">
+        <div id="moving-pic">
+            <img src="linkedin-pic.png ">
+        </div>
+    </div>
+    <p class="center">
+        <b>Major:</b> Computer Science
+    </p>
+    <p class="center">
+        <b>Minors:</b> Bioinformatics, Philosophy
+    </p>
+    <br>
+    <h3>
+        Previous WPI Computer Science Courses:
+    </h3>
+    <ul>
+        <li>CS4233: Object Oriented Analysis & Design</li>
+        <li>CS4342: Machine Learning</li>
+        <li>CS4341: Intro to Artificial Intelligence</li>
+        <li>CS3133: Foundations of Computer Science</li>
+        <li>CS3043: Social Implications of Computer Science</li>
+        <li>CS3041: Human Computer Interactions</li>
+        <li>CS3013: Operatings Systems</li>
+        <li>CS3733: Software Engineering</li>
+        <li>CS2022: Discrete Mathematics</li>
+        <li>CS2223: Algorithms</li>
+        <li>CS2303: System Programming Concepts</li>
+        <li>CS2102: Object Oriented Design Concepts</li>
+        <li>CS1101: Intro to Program Design</li>
+    </ul>
+
+    <h3>Experience</h3>
+    <p>
+        Working experience:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+        <li><b>HTML:</b> a lot</li>
+        <li><b>CSS:</b> a lot</li>
+        <li><b>Java:</b> a lot</li>
+        <li><b>JavaScript:</b> some</li>
+        <li><b>Ruby:</b> none</li>
+        <li><b>Python:</b> some</li>
+        <li><b>unit testing:</b> some</li>
     </ul>
-  </body>
+
+    <script>
+        function moveImg() {
+            var elem = document.getElementById("moving-pic");
+            var pos = 0;
+            var future_pos = 1;
+            var id = setInterval(frame, 10);
+
+            function frame() {
+
+                /*
+                  if (pos == 350) {
+                      clearInterval(id);
+                  } else {
+                      pos++;
+                      elem.style.left = pos + 'px';
+                  }
+                  */
+
+
+                if ((future_pos <= 650) && (future_pos > pos)) {
+                    pos++;
+                    future_pos++;
+                    elem.style.left = pos + 'px';
+                } else {
+                    if (future_pos == 651) {
+                        future_pos = 649;
+                        pos--;
+                        future_pos--;
+                        elem.style.left = pos + 'px';
+                    } else if (future_pos == -1) {
+                        future_pos = 1;
+                        pos++;
+                        future_pos++;
+                        elem.style.left = pos + 'px';
+                    } else {
+                        pos--;
+                        future_pos--;
+                        elem.style.left = pos + 'px';
+                    }
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
 </html>
