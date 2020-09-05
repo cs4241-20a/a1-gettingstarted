@@ -4,13 +4,14 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
   </head>
   <body>
     <h1>Information about Sam Moran</h1>
 
     <h2>Self Introduction</h2>
 
-    <p>
+    <p id="intro" class="rounded">
       Hello, my name is Sam. I'm a senior (class of 2021) studying Computer Science at WPI.
       I'm also planning on doing the BS/MS program.
 
@@ -24,13 +25,15 @@
       global pandemics.
     </p>
 
+    <hr>
+
     <h2>Experience</h2>
 
     <h3>
       Web Technologies
     </h3>
 
-    <table>
+    <table id="experience" class="rounded">
       <tr>
         <td>HTML</td>
         <td>Lots of experience</td>
@@ -65,15 +68,93 @@
       Work Experience
     </h3>
 
-    <div id="coop">
+    <div id="coop" class="rounded">
       <p>
-        <b>Software Engineer Co-op</b>
-        @ Leidos, Mar 2020 - Aug 2020
+        <b>Software Engineer Co-op (Secret Clearance)</b>
+        Leidos, Mar 2020 - Aug 2020
         <ul>
-          <li></li>
+          <li>Worked on high-fidelity underwater acoustic simulation software</li>
+          <li>Developed internal diagnostic tools in Python and updated existing tools from Python 2 to 3</li>
+          <li>Designed and implemented unit tests for existing software using the C++ Boost unit test framework</li>
+          <li>Created Docker images for existing applications to increase portability</li>
         </ul>
       </p>
   </div>
-    
+  
+  <hr>
+
+  <h2>Javascript Animation</h2>
+
+  <div id="sliders" class="rounded">
+    <p>Adjust red value of background</p>
+    <input type="range" min="0" max="255" value="255" id="redSlider">
+
+    <p>Adjust green value of background</p>
+    <input type="range" min="0" max="255" value="255" id="greenSlider">
+
+    <p>Adjust blue value of background</p>
+    <input type="range" min="0" max="255" value="255" id="blueSlider">
+
+    <p>Current rgb value: </p>
+    <p id="currentRGB"></p>
+
+    <button onclick="resetBackground()">Reset Background</button>
+  </div>
+
+  <script>
+      // Default RGB values make light gray color from color palette
+      const DEFAULT_RED = 224;
+      const DEFAULT_GREEN = 205;
+      const DEFAULT_BLUE = 197;
+
+      let red = DEFAULT_RED;
+      let green = DEFAULT_GREEN;
+      let blue = DEFAULT_BLUE;
+
+      let redSlider = document.getElementById("redSlider");
+      let greenSlider = document.getElementById("greenSlider");
+      let blueSlider = document.getElementById("blueSlider");
+
+      redSlider.oninput = function() {
+        red = this.value;
+        updateColor();
+      }
+
+      greenSlider.oninput = function() {
+        green = this.value;
+        updateColor();
+      }
+
+
+      blueSlider.oninput = function() {
+        blue = this.value;
+        updateColor();
+      }
+
+
+      function updateColor() {
+        let color = `rgb(${red}, ${green}, ${blue})`;
+        document.body.style.backgroundColor = color;
+        document.getElementById("currentRGB").innerHTML = color;
+      }
+
+      function resetBackground() {
+        document.body.style.backgroundColor = `rgb(${DEFAULT_RED}, ${DEFAULT_GREEN}, ${DEFAULT_BLUE})`;
+        redSlider.value = DEFAULT_RED;
+        greenSlider.value = DEFAULT_GREEN;
+        blueSlider.value = DEFAULT_BLUE;
+
+        red = DEFAULT_RED;
+        green = DEFAULT_GREEN;
+        blue = DEFAULT_BLUE;
+
+        updateColor();
+      }
+
+      document.body.onload = function() {
+        resetBackground();
+        updateColor();
+      }
+  </script>
   </body>
 </html>

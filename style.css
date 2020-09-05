@@ -1,6 +1,14 @@
+/* Pallette colors:
+    Pink-red: #FF6459
+    Pink-gray: #E0CDC5
+    Light orange: #FSB678
+    Yellow-brown: #E3B149
+    Yellow: #F5D747
+ */
+
 table {
     border-radius: 5px 15px 0px 15px;
-    background-color: #FF795E;
+    background-color: #FF6459;
     border-collapse: collapse;
 }
 
@@ -14,24 +22,24 @@ td:last-of-type {
     border: none;
 }
 
-h1 {
-    color: black;
+h1, h2, h3, h4, h5, h6, p, td, li {
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-/* Pallette:
-Red-ish #FF795E
-Gray DECAC0
-Pink-orange #F5B678
-Light Brown-ish #E3AC49
-Yellow-y #FFD34A
- */
-body {
-    background-color: white;
-}
-
-#coop {
+.rounded {
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5px 15px 0px 15px;
+}
+
+#intro {
+    background-color: #E3B149
+}
+
+#coop {
     background-color: #F5B678
+}
+
+#sliders {
+    background-color: #F5D747
 }
