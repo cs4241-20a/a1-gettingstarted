@@ -9,7 +9,7 @@ JavaScript.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for selectors containing text to style them with the font
-I chose to use (Noto Sans JP). Also added rules for the "intro", "coop" and "slider" ids to set
+I chose to use (Noto Sans JP). Also added rules for the "intro", "coop" and "courses" ids to set
 their background colors to the ones from my color palette in order to add emphasis. Finally, I
 added a selector for the "rounded" class to give each section with a different background color
 a smoother look. Style rules are in style.css.

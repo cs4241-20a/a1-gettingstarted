@@ -25,6 +25,29 @@
       global pandemics.
     </p>
 
+    <h2>Courses I've Taken</h2>
+    <div  id="courses" class="rounded">
+      <p>
+        Here, in order, are the CS courses I've taken at WPI:
+          <ol>
+            <li>CS1102 Intro to Program Design</li>
+            <li>CS2102 Object Oriented Design Concepts </li>
+            <li>CS2011 Intro to Machine Org and Assembly</li>
+            <li>CS2223 Algorithms</li>
+            <li>CS2303 Systems Programming Concepts</li>
+            <li>CS3013 Operating Systems</li>
+            <li>CS3133 Foundations of Computer Science</li>
+            <li>CS3733 Software Engineering</li>
+            <li>CS3043 Social Implications of Data Processing</li>
+            <li>CS3431 Database Systems I</li>
+            <li>CS4341 Intro to Artificial Intelligence</li>
+            <li>CS4731 Computer Graphics</li>
+            <li>CS4342 Machine Learning</li>
+            <li>CS585 Big Data Management</li>
+          </ol>
+      </p>
+    </div>
+
     <hr>
 
     <h2>Experience</h2>
@@ -85,21 +108,21 @@
 
   <h2>Javascript Animation</h2>
 
-  <div id="sliders" class="rounded">
-    <p>Adjust red value of background</p>
-    <input type="range" min="0" max="255" value="255" id="redSlider">
 
-    <p>Adjust green value of background</p>
-    <input type="range" min="0" max="255" value="255" id="greenSlider">
+  <p>Adjust red value of background</p>
+  <input type="range" min="0" max="255" value="255" id="redSlider">
 
-    <p>Adjust blue value of background</p>
-    <input type="range" min="0" max="255" value="255" id="blueSlider">
+  <p>Adjust green value of background</p>
+  <input type="range" min="0" max="255" value="255" id="greenSlider">
 
-    <p>Current rgb value: </p>
-    <p id="currentRGB"></p>
+  <p>Adjust blue value of background</p>
+  <input type="range" min="0" max="255" value="255" id="blueSlider">
 
-    <button onclick="resetBackground()">Reset Background</button>
-  </div>
+  <p>Current rgb value: </p>
+  <p id="currentRGB"></p>
+
+  <button onclick="resetBackground()">Reset Background</button>
+
 
   <script>
       // Default RGB values make light gray color from color palette
