@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 16fr 1fr;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 0 20px;
+    background-color: #d6e0f0;
+    color: #8d93ab;
+}
+
+.info {
+    padding: 20px 30px;
+    background-color: #d6e0f0;
+    color: #393b44;
+}
+
+a {
+    color: #393b44 ;
+}
+
+hr {
+    width: 83%;
+    margin: 0;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 30px;
+}
+
+.language {
+    padding: 0 10px;
+    /* to leave a comfortable distance between the two */
+    margin: 0 70px; 
+}
+
+.lang-list {
+    padding: 0;
+    width: max-content;
+
+}
+
+pre {
+    font-size: x-large;
+    width: max-content;
+    justify-self: end;
+}
+
+.footer {
+    padding: 30px 20px;
+    background-color: #f1f3f8;
+    color: #000000;
+}
+
+.small-screen.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-screen.language {
+    display: flex;
+    justify-content: center;
+}
+
+.small-screen.footer {
+    text-align: center;
+    background-color: #f1f3f8;
+    color: #000000;
+}
