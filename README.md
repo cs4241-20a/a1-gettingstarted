@@ -3,12 +3,12 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 *DUE: Monday, September 7th by 11:59 AM (before the start of class!)*  
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
+This assignment is a "warm-up" exercise.
+You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/).
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
+Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch.
+If you already know these, great.
+However, if you're new to them, spend several hours practicing, experimenting, and reading documentation.
 In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
 
 Assignment details
@@ -43,7 +43,7 @@ This assignment requires that your website is both contained in a GitHub reposit
 5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
 
 6. Modify the README file according to the specification below.
-7. Commit and push all your changes to GitHub. 
+7. Commit and push all your changes to GitHub.
 8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
 9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
 9. Create and submit a Pull Request to the original repo.
@@ -76,7 +76,7 @@ Below are some suggested technical and design achievements. You can use these to
 
 *Design*
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
+2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
 
 Resources
 ---
@@ -94,9 +94,8 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added styling rules for p, body, ul, li, h1, h2, h3, h4, as well as my div containers for .working and .programming. Style rules included, background-color, font-family, text-align, list-style-type, font-weight, line-height.
+- **Experimented with other HTML tags**: I used <div> containers to further organize my content in my <ul> and <li> items, as well as more header tags, <h2>, <h3>, <h4>.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
-
-
+- **Used the Syne Font from Google Fonts**: I used Syne as the font for the primary copy text in my site.
