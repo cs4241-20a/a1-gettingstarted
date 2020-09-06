@@ -88,15 +88,29 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
+Abhijay Thammana
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: 
+- **Styled page with CSS**: Added a background color for the header and the main part of the website from the color palette, changed the font size to be consistent throught the body tag (22px), for the header added a border, changed the text color to white, and the header background color, changed the cursor to a pointer for the hover of clickable things, manually set the width and height of some elements, set the course element to be displayed inline with a 0 margin
+
+- **Javascript Animation**: I added one where if you click the play button next to courses it will scroll through all of the cs courses I have taken, and I kind of added another? I'm not sure this one counts, thats why I have 2, but if click on the companies I have worked on previously it changes them to a random from the list in the script tag.
+
+- **Other HTML Tags**: I used a button tag for scrolling through my classes. I used ul for the list of work places. I used li for each work place. I used br a lot to keep small line breaks. I used a couple different h2/5 tags to experiment with the different font types. I used an iframe to add an autoplaying youtube video because everybody loves cats.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Color Palette**: I created a color palette with a lot of purple on the adobe site. These are the colors I got:
+
+    ![Color Wheel Snip](./ColorWheel.png)
+
+  - ![#45306B](https://via.placeholder.com/15/45306B/000000?text=+) `#45306B`
+  - ![#C7B3EE](https://via.placeholder.com/15/C7B3EE/000000?text=+) `#C7B3EE`
+  - ![#976AEB](https://via.placeholder.com/15/976AEB/000000?text=+) `#976AEB`
+  - ![#5A506B](https://via.placeholder.com/15/5A506B/000000?text=+) `#5A506B`
+  - ![#7653B8](https://via.placeholder.com/15/7653B8/000000?text=+) `#7653B8`
+
+- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site. (I actually did)
 
 
