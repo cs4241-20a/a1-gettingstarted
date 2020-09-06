@@ -1,0 +1,23 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin-left:100px;
+    margin-right:100px;
+}
+h1{
+    margin:auto;
+    width:50%;
+    color:#91CDF2;
+    text-align:center;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color:#82D9C0;
+}
+th,td {
+    padding: 5px;
+    text-align: left;
+}
+th {
+    color:#B796D9;
+}
