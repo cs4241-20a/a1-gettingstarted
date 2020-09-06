@@ -1,4 +1,5 @@
-http://a1-charlieroberts.glitch.me
+Tyler Sprowl
+http://a1-tsprowl.glitch.me
 
 This project shows that I have a grasp on the basics of HTML by using it to build a basic website frontend that gives basic information about myself and my CS knowledge.
 
