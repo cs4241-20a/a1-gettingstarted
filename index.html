@@ -1,28 +1,174 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="header">
+      <h2>Personal Portfolio</h2>
+    </div>
+    <div class="info">
+      <div class="introduction">
+        <h1>Information about Xiaoyue Lyu</h1> 
+        <h3>Class of 2021</h3>
+        <p>
+          Hi, my name is Xiaoyue Lyu. I am a senior student majoring Computer Science at WPI.
+        </p>
+        <p>
+          Major: <i class="fas fa-laptop-code"></i> Computer Science 
+        </p>
+      </div>
+      <hr/>
+  
+      <div class="experience">
+        <div class="course small-screen">
+          <h2>Courses taken so far...</h2>
+          <table>
+            <tr>
+              <th>Academic Year</th>
+              <th>2017-2018</th>
+              <th>2018-2019</th>
+              <th>2019-2020</th>
+              <th>2020-2021</th>
+            </tr>
+  
+            <tr>
+              <th>A Term</th>
+              <th> <!--2017-->
+                <ul>
+                  <li>Intro To Program Design</li>
+                </ul>
+              </th>
+              <th> <!--2018-->
+                <ul>
+                  <li>Intro-machine Org & Assembly</li>
+                  <li>Systems Programming Concepts</li>
+                </ul>
+              </th>
+              <th> <!--2019-->
+                <ul>
+                  <li>Num Meth For Calc & Diff Equat</li>
+                </ul>
+              </th>
+              <th> <!--2020-->
+                /
+              </th>
+            </tr>
+  
+            <tr>
+              <th>B Term</th>
+              <th> <!--2017-->
+                <ul>
+                  <li>Objct-Oriented Design Concepts</li>
+                </ul>
+              </th>
+              <th> <!--2018-->
+                <ul>
+                  <li>Human-computer Interaction</li>
+                  <li>Foundations of Comp. Science</li>
+                </ul>
+              </th>
+              <th><!--2019-->
+                <ul>
+                  <li>Theory of Computation</li>
+                </ul>
+              </th>
+              <th> <!--2020-->
+                /
+              </th>
+            </tr>  
+  
+            <tr>
+              <th>C Term</th>
+              <th> <!--2017-->
+                <ul>
+                  <li>Algorithms</li>
+                  <li>Operating Systems</li>
+                </ul>
+              </th>
+              <th> <!--2018-->
+                <ul>
+                  <li>Database Systems I</li>
+                </ul>
+              </th>
+              <th><!--2019-->
+                <a href="https://digitalcommons.wpi.edu/cgi/viewcontent.cgi?article=6613&context=iqp-all" class="project-link">IQP in Melbourne</a>
+              </th>
+              <th> <!--2020-->
+                /
+              </th>
+            </tr>
+  
+            <tr>
+              <th>D Term</th>
+              <th> <!--2017-->
+                <ul>
+                  <li>Discrete Mathematics</li>
+                </ul>
+              </th>
+              <th> <!--2018-->
+                <ul>
+                  <li>Database Systems II</li>
+                </ul>
+              </th>
+              <th><!--2019-->
+                <ul>
+                  <li>Social Impl of Info Processing</li>
+                  <li>Programming Languages</li>
+                </ul>
+              </th>
+              <th> <!--2020-->
+                /
+              </th>
+            </tr>
+          </table>
+        </div>
+    
+        <div class="language">
+          <div class="lang-content">
+            <h2>Experience</h2>
+            <ul class="lang-list">
+              <pre>HTML:          some</pre>
+              <pre>CSS:           some</pre>
+              <pre>Java:          some</pre>
+              <pre>JavaScript:    some</pre>
+              <pre>Ruby:          none</pre>
+              <pre>Python:        some</pre>
+              <pre>unit testing:  none</pre>
+            </ul>
+          </div>
+        </div>
+      </div> <!--class="experience"-->
+    </div> <!-- class="info" -->
+    <div class="footer">
+      Contact Me
+      <br />
+      <br />
+      <i class="fas fa-envelope-open-text"></i> Email: <a href="mailto:xlyu@wpi.edu">xlyu@wpi.edu</a>
+    </div>
+    <script>
+      function myFunction(mediaQuery) {
+        var experience = document.querySelector(".experience");
+        var language = document.querySelector('.language');
+        var footer = document.querySelector('.footer');
+        if(mediaQuery.matches){
+          experience.classList.add("small-screen");
+          language.classList.add("small-screen");
+          footer.classList.add("small-screen");
+        } else {
+          experience.classList.remove('small-screen');
+          language.classList.remove('small-screen');
+          footer.classList.remove("small-screen");
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        }
+      }
+      var smallScreen = window.matchMedia("(max-width: 1020px)")
+      myFunction(smallScreen)
+      smallScreen.addListener(myFunction)
+    </script>
   </body>
 </html>
