@@ -5,7 +5,7 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about Xiaowei Chen</h1>
+    <h1 id="head1">Information about Xiaowei Chen</h1>
     <p>
       Name: Xiaowei Chen
     </p>
@@ -94,4 +94,21 @@
       background-image:linear-gradient(#33BDFF,#33FFD5)
     }
   </style>
+  
+  <script tyle="text/javascript">
+    //head1.style.color = "red";
+    setInterval(colorBlink, 300);
+    var colorFlag = 0;
+    function colorBlink(){
+      var head1 = document.getElementById("head1");
+      if(colorFlag===0){
+        head1.style.visibility="hidden";
+        colorFlag=1;
+      }
+      else{
+        head1.style.visibility="visible";
+        colorFlag=0;
+      }
+    }
+  </script>
 </html>
