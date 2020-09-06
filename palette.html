@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="content">
+
+        <div id="edu" class="heading heading-image">
+            <h1> palettes </h1>
+        </div>
+        <div>
+            <h1>Light </h1>
+        </div>
+        <div id="palette">
+            <a href="https://www.w3schools.com/colors/colors_analogous.asp" target="blank">
+                <img src="https://i.imgur.com/h4SuaoAm.jpg" alt="palette">
+            </a>
+        </div>
+        <div>
+            <h1>Dark </h1>
+        </div>
+        <div id="palette-2">
+            <a href="https://material.io/design/color/dark-theme.html#ui-application" target="blank">
+                <img src=" https://i.imgur.com/8BLfKfzm.jpg" alt="palette dark">
+            </a>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="grid-container-4">
+            <div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round" onclick="activateDark()"></span>
+                </label>
+                <p>dark mode</p>
+            </div>
+            <div>
+                <p><a href="pets.html">animals</a> | <a href="index.html">home</a></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    var activated = false;
+
+    const startDark = function () {
+
+        // change bg color and text
+        document.body.style.backgroundColor = "#121212";
+        document.body.style.color = "#ffffff";
+
+        // change background image of headers
+        var edu = document.getElementById("edu");
+        edu.classList.remove('heading-image');
+        edu.classList.add('heading-image-dark');
+        edu.classList.add('heading-dark');
+
+        // change footer
+        var footer = document.getElementById('footer');
+        footer.style.backgroundColor = "rgba(177, 156, 217, 0.5)";
+        footer.classList.add('grid-container-4-dark');
+    }
+    const startLight = function () {
+        // change bg color and text
+        document.body.style.backgroundColor = "#F7E3D4";
+        document.body.style.color = "#342E09";
+
+        // change background image of headers
+        var edu = document.getElementById("edu");
+        edu.classList.remove('heading-dark');
+        edu.classList.remove('heading-image-dark');
+        edu.classList.add('heading-image');
+
+        // change footer
+        var footer = document.getElementById('footer');
+        footer.style.backgroundColor = "#342E09";
+        footer.classList.remove('grid-container-4-dark');
+    }
+
+    function activateDark() {
+        if (activated) {
+            startLight();
+            activated = false;
+        }
+        else {
+            startDark();
+            activated = true;
+        }
+    }
+
+</script>
+
+</html>
