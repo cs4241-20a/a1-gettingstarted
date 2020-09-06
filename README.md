@@ -32,15 +32,15 @@ This project shows ...
     that rotates the image can be found on lines 84-104 of index.html
 - **Experiment with other HTML tags**: Added the following tags:
     - **img**: added a picture of myself on line 28 of index.html
-    - **strong**: Used to emphasize the names of each technology listed. Can be found on lines 63-69 
+    - **strong**: Used to emphasize the names of each technology listed. Can be found on lines 62-68 
         of index.html.
     - **a**: Used to create anchors to the separate sections of the webpage
         - Anchor links are located on lines 22-24 of index.html 
-        - Anchors are defined on lines 32, 59 and 72 of index.html
-    - **button**: Used to create input trigger so user can continuously rotate the profile picture.
+        - Anchors are defined on lines 32, 58 and 71 of index.html
+    - **button**: Used to create input trigger so user can toggle rotation of the profile picture.
         The button is defined on line 30 of index.html.
-    - **br**: Used to provide whitespace between various sections of webpage, such as putting rotate 
-    button under the image rather than next to it. Can be found on lines throughout index.html
+    - **br**: Used to provide whitespace between various sections of webpage. Can be found on lines 
+        throughout index.html
     
 ## Design Achievements
 - **Used a Color Palette**: Created a monochromatic color palette using color.adobe.com. A screenshot
