@@ -1,25 +1,30 @@
-const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+"strict mode";
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
-  }
-})
+const http = require('http');
+const fs = require('fs');
 
-server.listen( process.env.PORT || port )
+let index;
+fs.readFile('index.html', function(err, content) {
+	index = content;
+});
 
-const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     file = content
-     response.end( content, 'utf-8' )
-   })
-}
+fs.readFile('assets/otogecon.jpg', function(err, content) {
+	picture = content;
+});
+
+http.createServer(function(request, response) {
+	switch(request.url) {
+		case '/style.css':
+			fs.readFile('style.css', function(err, content) {
+				response.end(content, 'utf-8');
+			});
+			break;
+		case '/assets/otogecon.jpg':
+			fs.readFile('assets/otogecon.jpg', function (err, content) {
+				response.end(content, 'utf-8');
+			});
+			break;
+		default:
+			response.end(index, 'utf-8');
+	}
+}).listen(3000);

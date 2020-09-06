@@ -1,0 +1,46 @@
+html {
+	padding: 10px;
+}
+
+* {
+	color: white;
+}
+
+a {
+	color: #ddd;
+}
+
+h1, h2 {
+	text-align: center;
+	font-family: 'Epilogue', sans-serif;
+}
+
+p, li, td, div {
+	font-family: 'Poppins', sans-serif;
+}
+
+div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table {
+	padding-left: 200px;
+}
+
+table, td {
+	border: 1px solid white;
+	padding: 5px;
+}
+
+.otogecon-text {
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	border: 2px solid white;
+}
