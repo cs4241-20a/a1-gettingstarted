@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Chivo|Overpass|Abel');
 
 body {
-    font-family: Chivo;
+    font-family: Abel;
     text-align: center;
     margin: 0 auto;
     color: #342E09;
@@ -10,13 +10,13 @@ body {
 #content {
     overflow: auto;
     width: 90%;
-    margin:auto
+    margin:auto;
 }
 #education, #classes, #technology, #work, #footer, .heading {
     margin: 1%;
 }
-
 #header {
+    font-family: Chivo;
     background-color: #FC7307;
     padding: 75px 0px 25px 0px;
     font-size: xx-large;
@@ -25,7 +25,18 @@ body {
     background-color: #F7E3D4;
     padding: 0.5em 0;
 }
-
+#education p{
+    font-size: x-large;
+    font-family: Abel;
+}
+.class-header{
+    font-size: x-large;
+    font-family: Abel;
+}
+#classes {
+    font-size: large;
+    font-family: Abel;
+}
 #footer{
     background-color: #342E09;
     padding: 0.5em 0;
@@ -40,7 +51,6 @@ p, ul {
   overflow: hidden;
   text-align: center;
 }
-
 .gauge-a {
   z-index: 1;
   position: absolute;
@@ -50,7 +60,8 @@ p, ul {
   top: 0%;
   border-radius: 50px 50px 0px 0px;
 }
-
+.gauge-a-dark {
+    background-color: #e7e7e7;}
 .gauge-b {
   z-index: 3;
   position: absolute;
@@ -62,7 +73,6 @@ p, ul {
   margin-right: auto;
   border-radius: 50px 50px 0px 0px;
 }
-
 .gauge-c {
   z-index: 2;
   position: absolute;
@@ -76,7 +86,9 @@ p, ul {
   transform-origin: center top;
   transition: all 1.3s ease-in-out;
 }
-
+.gauge-c-dark{
+    background-color: #bb86fc;
+}
 #g-1:hover .gauge-c, #g-2:hover .gauge-c{  
     transform:rotate(90deg);
 }
@@ -84,7 +96,11 @@ p, ul {
     background-color: #FDDC22; 
     transform:rotate(180deg);
 }
-#g-1:hover .gauge-data , #g-2:hover .gauge-data, #g-3:hover .gauge-data, #g-4:hover .gauge-data, #g-6:hover .gauge-data, #g-7:hover .gauge-data { 
+#g-3:hover .gauge-c-dark, #g-6:hover .gauge-c-dark,  #g-7:hover .gauge-c-dark{ 
+    background-color: #03dac6; 
+    transform:rotate(180deg);
+}
+#g-1:hover .gauge-data , #g-2:hover .gauge-data, #g-3:hover .gauge-data, #g-6:hover .gauge-data, #g-7:hover .gauge-data { 
     color: rgba(255,255,255,1);
  }
  #g-4:hover .gauge-data , #g-5:hover .gauge-data{
@@ -92,9 +108,8 @@ p, ul {
  }
  #g-4:hover .gauge-a , #g-5:hover .gauge-a { 
     transition: all .5s ease-out;
-    background-color: lightcoral;
+    background-color: #cf6679;
  }
-
 .gauge-data {
   z-index: 4;
   color: rgba(255,255,255,.2);
@@ -108,8 +123,7 @@ p, ul {
   margin-right: auto;
   transition: all 1s ease-out;
 }
-
- .heading::before{
+ .heading-image::before{
     content: "";
     background-image: url("https://thumbs.dreamstime.com/z/vector-seamless-pattern-red-leaves-autumn-watercolor-hand-drawn-background-45549426.jpg");
     background-repeat: repeat;
@@ -119,12 +133,31 @@ p, ul {
     opacity: 0.50;
     width:100%;
     height: 12%;
+    
+}
+.heading-image-dark::before{
+    content: "";
+    background-image: url("https://i2.wp.com/www.123freevectors.com/wp-content/original/122816-purple-and-black-grunge-watercolor-texture.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    left:0;
+    opacity: 0.5;
+    width:100%;
+    height: 12%;
 }
 .heading{
     text-align:left;
     font-size: x-large;
     font-family: Chivo;
     background-color: #F7E3D4;
+
+}
+.heading-dark{
+    text-align:left;
+    font-size: x-large;
+    font-family: Chivo;
+    background-color: #121212;
 
 }
 #tech{
@@ -153,6 +186,14 @@ p, ul {
     border: 10px solid #dd;
     border-radius: 50%;
     box-shadow: 0 0 0 5px #343009;
+    transition: all 200ms ease-out;
+    opacity:1;
+}
+.image-cropper-dark:hover{  
+    text-align: center;
+    border: 10px solid #dd;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #bb86fc;
     transition: all 200ms ease-out;
     opacity:1;
 }
@@ -193,11 +234,116 @@ p, ul {
 }
 .grid-container-1 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1px;
     align-items: center;
-  justify-items: center;
+    justify-items: center;
+}
+.grid-container-1 .grid-1-item:hover {
+    color:#FC7307;
+}
+.grid-container-1-dark .grid-1-item:hover {
+    color:#bb86fc;
 }
 .grid-container-2 div:nth-child(2n+1) {
     justify-self: end;
 }
+.grid-container-4 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;  
+}
+.grid-container-4 div:nth-child(1) {
+   justify-self: start;
+   align-self: center;
+   margin-left: 10%;
+}
+.grid-container-4 p{
+    color: #FC7307;
+    font-size: large;
+    display: inline-block;
+    vertical-align: middle ;
+    margin-left:10px;
+}
+.grid-container-4-dark p{
+    color: #ffffff;
+}
+.grid-container-4 div:nth-child(2) {
+    color: #FC7307;
+    justify-self: end;
+    margin-right: 5%;
+}
+.grid-container-4 a {
+    font-family: Abel;
+    font-size: large;
+    color: #FC7307;
+    text-decoration: none;
+}
+
+.grid-container-4-dark div:nth-child(2) {
+    color: #ffffff;
+    justify-self: end;
+    margin-right: 5%;
+}
+.grid-container-4-dark a {
+    font-family: Abel;
+    font-size: large;
+    color: #ffffff;
+    text-decoration: none;
+}
+.switch {
+    position: relative;
+    vertical-align: middle ;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: gray;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #bb86fc;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #bb86fc;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
