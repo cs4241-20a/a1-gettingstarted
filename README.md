@@ -51,3 +51,5 @@ The following sources were either particularly helpful sites or contained the so
 - **Gauges:** [Used](https://www.cssscript.com/creating-fast-and-responsive-gauges-with-pure-css/) as the source for the responsive gauges. I modified the styling as well as the size and placement of the gauges within my site.
 
 - **Dark Mode Palette:** [Used](https://material.io/design/color/dark-theme.html) for the dark mode palette.
+
+- **Toggle switch** [Used](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch) to create the dark mode toggle switch.
