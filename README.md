@@ -1,5 +1,5 @@
 Joseph Swetz
-CS 42421 Assignment 1
+CS 4241 Assignment 1
 
 Live website: https://a1-joeswetz.glitch.me
 
