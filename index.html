@@ -1,28 +1,101 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <head>
+        <title>CS4241 Assignment 1</title>
+        <meta charset="utf-8">
+        <!--
+            The following source was used to learn how to embed CSS into an HTML file:
+            https://www.w3schools.com/tags/tag_link.asp
+        -->
+        <link type="text/css" rel="stylesheet" href="style_sheet.css">
+        <!--
+            The following source was used to learn how to import a font into an HTML file:
+            https://www.w3schools.com/css/css_font_google.asp
+        -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    </head>
+    <body>
+        <h1>Information about Joseph Swetz</h1>
+        <p>
+            Index:
+            <br>
+            <a id="BioLink" href="#Bio">Bio</a><br>
+            <a id="ExpLink" href="#Experience">Experience</a><br>
+            <a id="WorkExpLink" href="#Working Experience">Working Experience</a>
+            <br><br>
+        </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+        <img id="profile_picture" src="ProfilePicture.jpg" alt="" width="155" height="233">
+        <br><br>
+        <button type="button" onclick="toggleStart()">Start/Stop Rotation</button>
+
+        <a id="Bio">
+            <h2>Bio</h2>
+        </a>
+        <p>
+            Hi everyone! I'm Joe, and I'm currently a senior (Class of 2021).
+            <br><br>
+            I'm a double major in Computer Science / Interactive Media and Game Development
+            <br><br>
+            Previous computer science courses I've taken at WPI are:
+        </p>
+            <ul>
+                <li>CS 1102</li>
+                <li>CS 210X</li>
+                <li>CS 2303</li>
+                <li>CS 2223</li>
+                <li>CS 2011</li>
+                <li>CS 3013</li>
+                <li>CS 3041</li>
+                <li>CS 3516</li>
+                <li>CS 3733</li>
+                <li>CS 4731</li>
+            </ul>
+        <p>
+            I've also taken various IMGD courses, including IMGD 2900, which uses Professor Moriarty's Perlenspiel game engine. This engine is web-based and uses Javascript.
+        </p>
+
+        <a id="Experience">
+            <h2>Experience</h2>
+        </a>
+        <ul>
+            <li><strong>HTML:</strong> Some</li>
+            <li><strong>CSS:</strong> Some</li>
+            <li><strong>Java:</strong> A lot</li>
+            <li><strong>Javascript:</strong> A lot</li>
+            <li><strong>Python:</strong> Some</li>
+            <li><strong>Ruby:</strong> None</li>
+            <li><strong>Unit Testing:</strong> A lot</li>
+        </ul>
+
+        <a id="Working Experience">
+            <h3>Working Experience</h3>
+        </a>
+        <ul>
+            <li>Centori</li>
+            <li>HPR</li>
+        </ul>
+    </body>
+    <script>
+        //Rotates the profile picture by 90 degrees
+        //The following source was using to learn how to rotate objects in CSS:
+        //https://www.w3schools.com/cssref/css3_pr_transform.asp
+        let start = false;
+        let rotation = 0;
+        const ROTATION_DELTA = 5;
+
+        const toggleStart = function(){
+            start = !start;
+        };
+
+        const rotateImage = function(){
+            if(start){
+                //Following source was used to figure out how to translate and rotate:
+                //https://stackoverflow.com/questions/16795548/rotate-and-translate
+                rotation = (rotation + ROTATION_DELTA) % 360;
+                document.getElementById("profile_picture").style.transform = `translate(-50%, 0%) rotate(${rotation}deg)`;
+            }
+        };
+        setInterval(rotateImage, 50);
+    </script>
 </html>

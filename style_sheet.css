@@ -1,0 +1,73 @@
+/*
+ * Stylesheet for index.html for CS 4241 Assignment 1
+ *
+ * The following sources were used to figure out CSS:
+ * https://stackoverflow.com/questions/14171855/css-left-not-working
+ * https://www.w3schools.com/cssref/pr_class_position.asp
+ * https://www.w3schools.com/cssref/pr_dim_max-width.asp
+ * https://stackoverflow.com/questions/46142110/css-position-an-element-in-percent-from-its-own-width
+ *
+ * Joseph Swetz
+ * CS 4241 Assignment 1
+*/
+
+* {
+    position: relative;
+    font-family: Ubuntu, serif;
+}
+
+/*
+ * Color palette is from color.adobe.com. A screenshot can be found
+ * in this directory at color_palette.png.
+ */
+h1 {
+    color: #75653C;
+    text-align: center;
+}
+
+h2 {
+    color: #C2A763;
+}
+
+h3 {
+    color: #F5D37C;
+}
+
+a {
+    color: #756F5F;
+}
+
+body {
+    background-color: #F7E9C8;
+}
+
+/*
+ * Center all elements on page relative to their width
+ */
+img, button, h1, h2, h3, p {
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/*
+ * Define the different widths
+ */
+img {
+    width: 155px;
+}
+button {
+    width: 145px;
+}
+h1, h2, h3, p {
+    width: 50%;
+}
+
+/*
+ * Rather than centered, have lists about a tab to the right under the
+ * paragraphs and headings.
+ */
+ul, li {
+    width: 50%;
+    left: 50%;
+    transform: translate(-65%, 0%);
+}
