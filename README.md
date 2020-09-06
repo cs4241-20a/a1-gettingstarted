@@ -19,7 +19,7 @@ This project shows ...
 
 ### Design Achievements
 - **Create a color palette from color.adobe.com**: I used a monochromatic color pallete generated on the color.adobe.com site. The screenshot is included (webware_color_palette.png)
-- **Used the Oswald Font from Google Fonts**: I used changed the fond to Oswald, one of the fonts found on the google fonts site.
+- **Used the Oswald Font from Google Fonts**: I changed the font to Oswald, one of the fonts found on the google fonts site.
 
 
 
