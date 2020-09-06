@@ -15,6 +15,7 @@ const server = http.createServer( function( request,response ) {
   }
 })
 
+console.log("Listening on port " + port);
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
