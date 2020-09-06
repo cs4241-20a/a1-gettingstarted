@@ -1,91 +1,83 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<title>CS4241 Assignment 1</title>
-		<meta charset="utf-8">
-		<style type="text/css">
-			body {
-					font-family: 'Roboto';
-					font-size: 22px;
-					background-color: #976AEB;
-					/*
-					Color Wheel: https://color.adobe.com/create/color-wheel;
-					Colors: #45306B, #C7B3EE, #976AEB, #5A506B, #7653B8;
-					*/
-			}
+  <head>
+    <title>CS4241 Assignment 1</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+      body {
+          font-family: 'Roboto';
+          font-size: 22px;
+          background-color: #976AEB;
+          /*
+          Color Wheel: https://color.adobe.com/create/color-wheel;
+          Colors: #45306B, #C7B3EE, #976AEB, #5A506B, #7653B8;
+          */
+      }
 
-			li {
-				cursor: pointer;
-			}
+      li {
+        cursor: pointer;
+      }
 
-			#intro {
-				background-color: #5A506B;
-				color: white;
-				text-align: center;
-				border: 2px solid black;
-			}
+      #intro {
+        background-color: #5A506B;
+        color: white;
+        text-align: center;
+        border: 2px solid black;
+      }
 
-		</style>
-		<script type="text/javascript">
-			courses = ['CS1101', 'CS2103', 'CS2303', 'CS2011', 'CS3013', 'CS3516', 'CS2022', 'CS2223', 'CS4341', 'CS3733', 'CS4536']
-			fortune100Companies = ['Walmart','Exxon Mobil','Apple','Berkshire Hathaway','McKesson','UnitedHealth Group','CVS Health','General Motors','Ford Motor','AT&T','General Electric','AmerisourceBergen','Verizon','Chevron','Costco','Fannie Mae','Kroger','Amazon.com','Walgreens Boots Alliance','HP','Cardinal Health','Express Scripts Holding','J.P. Morgan Chase','Boeing','Microsoft','Bank of America Corp.','Wells Fargo','Home Depot','Citigroup','Phillips 66','IBM','Valero Energy','Anthem','Procter & Gamble','State Farm Insurance Cos.','Alphabet','Comcast','Target','Johnson & Johnson','MetLife'];
-			cursor = -1;
+    </style>
+    <script type="text/javascript">
+      courses = ['CS1101', 'CS2103', 'CS2303', 'CS2011', 'CS3013', 'CS3516', 'CS2022', 'CS2223', 'CS4341', 'CS3733', 'CS4536']
+      fortune100Companies = ['Walmart','Exxon Mobil','Apple','Berkshire Hathaway','McKesson','UnitedHealth Group','CVS Health','General Motors','Ford Motor','AT&T','General Electric','AmerisourceBergen','Verizon','Chevron','Costco','Fannie Mae','Kroger','Amazon.com','Walgreens Boots Alliance','HP','Cardinal Health','Express Scripts Holding','J.P. Morgan Chase','Boeing','Microsoft','Bank of America Corp.','Wells Fargo','Home Depot','Citigroup','Phillips 66','IBM','Valero Energy','Anthem','Procter & Gamble','State Farm Insurance Cos.','Alphabet','Comcast','Target','Johnson & Johnson','MetLife'];
+      cursor = -1;
 
+      scrollCourses = () => {
+        cursor = courses[cursor + 1] !== undefined ? cursor + 1 : 0;
+        document.getElementById('course').innerHTML = (courses[cursor]);
+        setTimeout(scrollCourses, 500);     
+      }
 
-			// modCourse = (dir) => {
-			//   if (courses[cursor + dir] !== undefined) {
-			//     cursor += dir;
-			//     document.getElementById('course').innerHTML = (courses[cursor]);
-			//   }
-			// }
+      randomCompany = (listItem) => {
+        document.getElementById(listItem).innerHTML = fortune100Companies[Math.round(Math.random() * fortune100Companies.length)];
+      }
 
-			scrollCourses = () => {
-				cursor = courses[cursor + 1] !== undefined ? cursor + 1 : 0;
-		    document.getElementById('course').innerHTML = (courses[cursor]);
-		    setTimeout(scrollCourses, 500);			
-			}
+    </script>
+  </head>
 
-			randomCompany = (listItem) => {
-				document.getElementById(listItem).innerHTML = fortune100Companies[Math.round(Math.random() * fortune100Companies.length)];
-			}
+  <body>
+    <div id='intro'>
+      <h1>Information about AJ Thammana</h1>
+      <p>
+        Hi I'm AJ in the Class of 2021!<br>
+        (And sorry if my page makes your eyes bleed)
+      </p>
+    </div>
+    <div id='major'>
+      <p style="width: 70vw;">
+        I'm majoring in Computer Science and Electrical and Computer Engineering. I've taken a decent amount of CS courses (Click the button to start scrolling between them): 
+      </p>
 
-		</script>
-	</head>
-
-	<body>
-		<div id='intro'>
-			<h1>Information about AJ Thammana</h1>
-			<p>
-				Hi I'm AJ in the Class of 2021!<br>
-				(And sorry if my page makes your eyes bleed)
-			</p>
-		</div>
-		<div id='major'>
-			<p style="width: 70vw;">
-				I'm majoring in Computer Science and Electrical and Computer Engineering. I've taken a decent amount of CS courses (Click the button to start scrolling between them): 
-			</p>
-
-			<div id="courseDisp">
-				<!-- <button onclick="modCourse(-1)">L</button> -->
-					<h3 id='course' style="width: 10vw; margin: 0px; display: inline">CS4241</h3>
-					<button onclick="scrollCourses()" style="height: 30px; width: 30px; background: url(https://img.icons8.com/nolan/25/play.png);"/>
-				<!-- <button onclick="modCourse(1)">R</button> -->
-			</div>
-		</div>
-		<br>
-		<h2>Experience</h2>
-		<p>
-			Working experience (Click on them to change my past)
-		</p>
-		<ul>
-			<li id='lOne' onclick="randomCompany('lOne')">Liberty Mutual</li>
-			<li id='lTwo' onclick="randomCompany('lTwo')">Booz Allen Hamilton</li>
-			<li id='lThree' onclick="randomCompany('lThree')">Seanergy Softech</li>
-		</ul>
-		<br>
-		<h2>Extra thingy because everyone loves autoplaying videos</h2>
-		<h5>I apologize if you were in public</h5>
-		<iframe width="420" height="315" src="https://www.youtube.com/embed/Xfs03Va5pAY?autoplay=1" />
-	</body>
+      <div id="courseDisp">
+        <!-- <button onclick="modCourse(-1)">L</button> -->
+          <h3 id='course' style="width: 10vw; margin: 0px; display: inline">CS4241</h3>
+          <button onclick="scrollCourses()" style="height: 30px; width: 30px; background: url(https://img.icons8.com/nolan/25/play.png);"/>
+        <!-- <button onclick="modCourse(1)">R</button> -->
+      </div>
+    </div>
+    <br>
+    <h2>Experience</h2>
+    <p>
+      Working experience (Click on them to change my past)
+    </p>
+    <ul>
+      <li id='lOne' onclick="randomCompany('lOne')">Liberty Mutual</li>
+      <li id='lTwo' onclick="randomCompany('lTwo')">Booz Allen Hamilton</li>
+      <li id='lThree' onclick="randomCompany('lThree')">Seanergy Softech</li>
+    </ul>
+    <br>
+    <h2>Extra thingy because everyone loves autoplaying videos</h2>
+    <h5>I apologize if you were in public</h5>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/Xfs03Va5pAY?autoplay=1" />
+  </body>
 
 </html>
