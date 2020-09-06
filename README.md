@@ -1,5 +1,5 @@
 Orlando Pinel
-http://a1-opinel98.glitch.me
+https://glitch.com/edit/#!/a1-opinel98
 
 This project shows my personal information including but not limited to my name, picture, WPI major, 
 the classes I've taken, my skills and experience.
