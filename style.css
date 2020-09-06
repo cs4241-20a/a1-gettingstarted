@@ -1,0 +1,60 @@
+h1 {
+ font-family: Roboto;
+  font-weight: bold;
+ color: #384740; 
+ font-size: 30px;
+ padding:3px;
+}
+
+p {
+ font-family: Roboto;
+ color: #536B60; 
+ font-size: 15px;
+ padding:5px;
+}
+
+h2 {
+ font-family: Roboto;
+  font-weight: bold;
+ color: #384740; 
+ font-size: 30px;
+ padding:3px;
+}
+
+p2 {
+ font-family: Roboto;
+ color: #414A46; 
+ font-size: 15px;
+ padding:5px;
+}
+
+li {
+ font-family: Roboto;
+ color: #536B60; 
+ font-size: 15px;
+ padding:5px;
+}
+
+body {background-color: #9BC7B2;}
+
+p3 {
+ font-family: Roboto;
+  font-weight: bold;
+ color: #4FD094; 
+ font-size: 15px;
+ padding:5px;
+}
+
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: #384740;
+}
+
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: #4FD094;
+}

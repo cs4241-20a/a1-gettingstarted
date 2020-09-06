@@ -1,28 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Lewis Cook</h1>
     <p>
-      [Self introduction]
+      I'm Lewis, I love music and playing guitar
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major Class of 2021
     </p>
     <p>
-      [Other things]
+      I have taken Intro To Programming, Object Oriented Programming, Systems,
+      Algorithms, Operating Systems, Intro to Computer Science, Softeng,
+      Computer Networks, Analysis of Algorithms, Mobile and Ubique Programming,
+      HCI, Programming Languages, and Object Oriented Design. I have a very
+      small amount of expirience with html, css, and javascript, I've used them
+      for only a few small projects. I am a fast learner though and tend to pick
+      up things really quickly
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <p2>
+      Work Experience
+    </p2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Coding Instructor for iDTech</li>
+      <li>QA Intern for Mutualink</li>
     </ul>
+
+    <p>
+      <button onclick="myMove()">Click Me</button>
+    </p>
+    
+    <div id="myContainer">
+      <div id="myAnimation"></div>
+    </div>
+
+    <script>
+      function myMove() {
+        var elem = document.getElementById("myAnimation");
+        var posx = 0;
+        var posy = 0;
+        var id = setInterval(frame, 20);
+        function frame() {
+          var rand1 = (Math.random() * 9)-4;
+          var rand2 = (Math.random() * 9)-4;
+          if (posx >= 350 && posy >=350) {
+            elem.style.top = 0 + "px";
+            elem.style.left = 0 + "px";
+          } else {
+            posx = posx + rand1;
+            posy = posy + rand2;
+            elem.style.top = posx + "px";
+            elem.style.left = posy + "px";
+          }
+        }
+      }
+    </script>
+  
   </body>
 </html>
