@@ -6,7 +6,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ---
 
 Abhijay Thammana
-https://glitch.com/~athammana-a1-athammana
+https://athammana-a1-athammana.glitch.me/
 
 This project shows ...
 
