@@ -34,5 +34,20 @@ This project shows ...
 
 ### Design Achievements
 - **Used the Chivo, Overpass, and Abel Font from Google Fonts**: Used Chivo as the heading font for my site. Used Abel and Overpass for different portions of the body text.
-- **Used analogous design palette** Used an analogous color palette for the main design of my site. Used recommended dark mode colors for the dark mode palette. The palettes used are on the linked page to the home page.
+- **Used analogous design palette** Used an analogous color palette for the main design of my site. Used recommended dark mode colors for the dark mode palette. The palettes used are on the linked page to the home page. The websites used for these palettes are linked to the palette images on the site.
 
+### Relevant Sources
+The following sources were either particularly helpful sites or contained the source for the more advanced elements I used like the gauges.
+
+- **Opaque background image**: 
+    [Used](https://coder-coder.com/background-image-opacity/#:~:text=%20How%20to%20change%20background-image%20opacity%20in%20CSS,add%20an%20overlay%20with%20reduced%20opacity...%20More%20) to create the opacity effect on the background images of the site headers.
+
+- **Grid containers:** 
+    - [Used](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout) to learn about grid containers and how to leverage them for site layouts.
+    - [Used](https://coryrylan.com/blog/how-to-center-in-css-with-css-grid) to learn how to work with specific container elements.
+    
+- **Creating a circle cropper:** [Used](https://medium.com/@biancapower/how-to-make-a-rectangle-image-a-circle-in-css-2f392bc9abd3) to create the circle effect on the work logos.
+
+- **Gauges:** [Used](https://www.cssscript.com/creating-fast-and-responsive-gauges-with-pure-css/) as the source for the responsive gauges. I modified the styling as well as the size and placement of the gauges within my site.
+
+- **Dark Mode Palette:** [Used](https://material.io/design/color/dark-theme.html) for the dark mode palette.
