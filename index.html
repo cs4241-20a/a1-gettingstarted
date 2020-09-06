@@ -4,25 +4,133 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <style>
+  body{
+  	  background-color: grey;
+  }
+  img{
+  	  border-radius: 50%;
+	  width: 20%;
+	  margin-right: 30px;
+	  border: 30px;
+	  float: left;
+  }
 
+  .about{
+  	  background-color:navy;
+	  margin: 20px;
+	  padding: 30px;
+	  color: grey;
+	  border-radius: 20px;
+	  overflow: auto;
+  }
+
+
+  p{
+  }
+
+  h2{
+	font-size: 250%;
+	margin: 0;
+	text-align: center;
+	text-shadow: 1px 1px black, -1px -1px #444;
+  }
+
+  h1{
+  	  font-size: 350%;
+	  text-align: center;
+  }
+
+  h3{
+  	  font-size: 150%;
+  }
+
+  .experience {
+  	  background-color: navy;
+	  margin: 20px;
+	  padding: 30px;
+	  color: grey;
+	  border-radius: 20px;
+	  margin-top: 0;
+  }
+
+	  td{
+		  border-left: 1px solid #dddddd;
+		  text-align: left;
+		  padding: 8px;
+	  }
+
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+  
+  </style>
+
+  <script>
+  var color = 0;
+  var backgrounds = ["lightblue","grey", "black", "white"];
+  function changeBackground(){
+	  document.body.style.backgroundColor = backgrounds[color];
+	  color++;
+	  console.log(backgrounds.length);
+	  if (color > backgrounds.length){
+	  	  color = 0;
+	  }
+
+  }
+  </script>
+  <body>
+    <h1>Information about Nina Taurich</h1>
+	<div class="about">
+		<h2>About</h2>
+		<p>
+		  <img src= "https://media-exp1.licdn.com/dms/image/C4D03AQHvaOO3Dd-5Pw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=HH5V0Mr6LTqFrgEbpGTYo4_s0_wlN0Rn_j0H8e_I21Y">
+		  <b>Year:</b>Senior (Class of 2021) <br>
+		  <b>Major:</b>Computer Science (CS) and Interactive Media and Game Design (IMGD) <br>
+		  <b>Clubs:</b>clubs I am involved in on campus are WiCS, IGDA, AGD <br>
+		  <button type="button" onclick="changeBackground()">Click Me!</button>
+		</p>
+
+	</div>
+	<div class= "experience">
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+	<h3>
+     Previous CS Courses
+    </h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS1101: Intro to Program Design</li>
+	  <li>CS2102: Object-Oriented Design Concepts</li>
+      <li>CS2011: Assembly</li>
+	  <li>CS2303: Systems</li>
+	  <li>CS2022: Discrete</li>
+	  <li>CS3013: Operating Systems</li>
+	  <li>CS2223: Algorithms</li>
+	  <li>CS3041: HCI</li>
+	  <li>CS3133: Foundations of CS</li>
+	  <li>CS4100: AI for IMGD</li>
+	  <li>CS4731: Computer Graphics</li>
     </ul>
+	<h3>
+     Experience
+    </h3>
+    <table>
+      <tr><td>HTML</td> <td>a lot</td></tr>
+	  <tr><td>CSS</td> <td>some</td></tr>
+      <tr><td>Java</td> <td>a lot</td></tr>
+	  <tr><td>JavaScript</td> <td>Some</td></tr>
+	  <tr><td>Ruby</td> <td>none</td></tr>
+	  <tr><td>Python</td> <td>some</td></tr>
+	  <tr><td>Unit Testing</td> <td>None</td></tr>
+    </table>
+    <h3>
+      Working experience
+    </h3>
+    <ul>
+      <li>iD Tech</li>
+	  <li>Walt Disney Imagineering</li>
+      <li>WPI</li>
+	  <li>Girls Who Code</li>
+    </ul>
+	</div>
   </body>
 </html>

@@ -95,6 +95,24 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
+Added CSS rules:
+
+body: background color
+img: made circular and aligned left
+h1: changed font size and aligned center
+h2: changed font size and aligned center
+tr, td: styled table
+
+
+JavaScript Animation:
+button changes background color and goes through array of color choices
+
+Other HTML Tags Used:
+img
+br
+button
+b
+table
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
