@@ -6,7 +6,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ---
 
 Abhijay Thammana
-http://a1-charlieroberts.glitch.me
+https://glitch.com/~athammana-a1-athammana
 
 This project shows ...
 
@@ -15,7 +15,7 @@ This project shows ...
 
 - **Javascript Animation**: I added one where if you click the play button next to courses it will scroll through all of the cs courses I have taken, and I kind of added another? I'm not sure this one counts, thats why I have 2, but if click on the companies I have worked on previously it changes them to a random from the list in the script tag.
 
-- **Other HTML Tags**: I used a button tag for scrolling through my classes. I used ul for the list of work places. I used li for each work place. I used br a lot to keep small line breaks. I used a couple different h2/5 tags to experiment with the different font types. I used an iframe to add an autoplaying youtube video because everybody loves cats.
+- **Other HTML Tags**: I used a button tag for scrolling through my classes. I used ul for the list of work places. I used li for each work place. I used br a lot to keep small line breaks. I used a couple different h2/5 tags to experiment with the different font types. I used the table tag and requisite tr and td tags to just make a simple list of languages. I used an iframe to add an autoplaying youtube video because everybody loves cats.
 
 ### Design Achievements
 - **Color Palette**: I created a color palette with a lot of purple on the adobe site. These are the colors I got:
