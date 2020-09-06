@@ -12,6 +12,7 @@ This project shows my introductory page for CS 4241: Webware.
 - **Background animation**: Animated the rotating background gradient.
 - **Implemented other HTML tags**: Added img, table and Bootstrap div elements.
   - The links used implement Bootstrap, Google Fonts, and the CSS file, respectively.
+- **Improved server.js**: now delivers custom CSS and an image file.
 
 ## Design Achievements
 
