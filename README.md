@@ -11,7 +11,7 @@ This project shows ...
 2.) Added class for h1 elements that are titles
 3.) Added h2 class for h2 elements that are headers
 - **Experiment with other HTML tags**:
-1.) Addtional tags used include: <div>, <br>, <h3>, <script>, and <link>
+1.) Addtional tags used include: &lt;div>, &lt;br>, &lt;h3>, &lt;script>, and &lt;link>
 - **Add a simple Javascript animation**:
 1.) Added a simple "bounce" animation when the user mouses over a content pane.
     The source for this animation is located in the script.js file.
