@@ -7,8 +7,10 @@ const server = http.createServer( function( request,response ) {
     case '/':
       sendFile( response, 'index.html' )
       break
-    case '/style.html':
-      sendFile( response, 'style.css' )
+    case '/style.css':
+      fs.readFile('style.css', function(err, content){
+        response.end(content, 'utf-8')
+      })
       break
     default:
       response.end( '404 Error: File Not Found' )
