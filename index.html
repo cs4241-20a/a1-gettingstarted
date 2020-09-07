@@ -1,28 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <link href="https://fonts.googleapis.com/css?family=Kufam" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Grandstander"
+    rel="stylesheet"
+  />
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-9" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Nicole Cotto</h1>
     <p>
-      [Self introduction]
+      I am a Senior at WPI.
     </p>
     <p>
-      [Major and other information]
+      I am a Computer Science Major with a Robotics Minor
     </p>
+    <div class = "center">
+       <button onclick="imgFunc()" id="b1" style="display:blocked">
+        CS Jokes
+      </button>
+      <button onclick="hideFunc()" id="b2" style="display:none">Hide</button>
+      <img
+        src="https://cdn.glitch.com/d0324813-88ff-4ad7-b31f-da2433dfb3ba%2Fmeme1.jpg?v=1599336052580"
+        id="Therapist Meme"
+        style="width:200px;height:250px;display:none"
+      />
+      <img
+        src="https://cdn.glitch.com/d0324813-88ff-4ad7-b31f-da2433dfb3ba%2Fmeme2.jpg?v=1599336515745"
+        id="Languages Meme"
+        style="width:400px;height:250px;display:none"
+      />
+    <img
+        src="https://cdn.glitch.com/d0324813-88ff-4ad7-b31f-da2433dfb3ba%2Fmeme3.jpg?v=1599346531784"
+        id="HTML Meme"
+        style="width:400px;height:250px;display:none"
+      />
+    </div>
     <p>
-      [Other things]
+      The CS classes I have taken are:
     </p>
+    <ul>
+      <li>CS 1101 INTRO TO PROGRAM DESIGN</li>
+      <li>CS 2102 OBJCT-ORIENTED DESIGN CONCEPTS</li>
+      <li>CS 2303 SYSTEMS PROGRAMMING CONCEPTS</li>
+      <li>CS 2011 INTRO-MACHINE ORG & ASSEMBLY</li>
+      <li>CS 2223 ALGORITHMS</li>
+      <li>CS 3043 SOCIAL IMPL OF INFO PROCESSING</li>
+      <li>CS 3041 HUMAN-COMPUTER INTERACTN</li>
+      <li>CS 3516 COMPUTER NETWORKS</li>
+      <li>CS 3733 SOFTWARE ENGINEERING</li>
+      <li>CS 4341 INTRO TO ARTIFICIAL INTELLIGEN</li>
+      <p>
+        I am currently taking:
+      </p>
+      <li>CS 4241 WEBWARE:COMPU TECHN FOR N I S</li>
+      <li>CS 3013 OPERATING SYSTEMS</li>
+      <li>CS 4518 MOBILE & UBIQUITOUS COMPUTING</li>
+    </ul>
 
     <h2>Experience</h2>
+    <ul>
+      <li>HTML: A lot</li>
+      <li>Java: A lot</li>
+      <li>CSS: Some</li>
+      <li>JavaScript: Some</li>
+      <li>Python: Some</li>
+      <li>Ruby: None</li>
+      <li>Unit Testing: None</li>
+    </ul>
     <p>
-      Working experience
+      <a href="https://github.com/Ncotto">GitHub</a>
     </p>
     <ul>
       <li>IBM/Rational</li>
       <li>WPI</li>
     </ul>
   </body>
+
+  <style>
+    body {
+      background-color: #DCE2F7;
+    }
+    h1 {
+      color: #25315E;
+      font-family: "Grandstander";
+      text-align: center;
+    }
+    h2 {
+      color: #5774DE;
+      text-align: center;
+    }
+    p {
+      color: #41475E;
+      font-family: "Kufam";
+      text-align: center;
+      font-size: 18px ;
+    }
+    ul {
+      color: #4359AB;
+      text-align: center;
+      list-style-type: none;
+    }
+    .center{
+       text-align: center;
+    }
+  </style>
+
+  <script type="text/javascript">
+    function imgFunc() {
+      document.getElementById("Therapist Meme").style.display = "block";
+      document.getElementById("Languages Meme").style.display = "block";
+      document.getElementById("HTML Meme").style.display = "block";
+      document.getElementById("b2").style.display = "block";
+      document.getElementById("b1").style.display = "none";
+    }
+    function hideFunc() {
+      document.getElementById("Therapist Meme").style.display = "none";
+      document.getElementById("Languages Meme").style.display = "none";
+      document.getElementById("HTML Meme").style.display = "none";
+      document.getElementById("b2").style.display = "none";
+      document.getElementById("b1").style.display = "block";
+    }
+  </script>
 </html>
