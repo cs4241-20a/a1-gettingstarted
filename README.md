@@ -19,5 +19,4 @@ I changed the background color of the whole page and I made the color change to 
 I used the outside link tag which directs to my e-portfolio page.
        the image tag which shows WPI logo
    **Simple JavaScript Animation**
-I created a simple animation for the <h1>, which is "Information About Xiaowei Chen"。 You can see that it keeps flashing.
-
+I created a simple animation for the h1, which is "Information About Xiaowei Chen". You can see that it keeps flashing.
