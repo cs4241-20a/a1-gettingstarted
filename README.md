@@ -1,102 +1,58 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+# CS 4241 Webware Assignment 1 - Matthew St Louis
 
-*DUE: Monday, September 7th by 11:59 AM (before the start of class!)*  
+Matthew St Louis  
+http://a1-mastlouis.glitch.me
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
+For me, this project is a warmup for using HTML, CSS, and JavaScript without Angular to hold them together. There are plenty of interesting features in each language that I am unfamiliar with, and this is a start toward learning some of them. This is also my first experience writing servers.
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
-
-Assignment details
----
-
-This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
-
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
-2. Fork this repo and then import it directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glitch back to GitHub.
-3. Same as #1, but instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
-
-## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
-
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-4. Complete some technical and/or design achievements (see below).
-5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
-
-6. Modify the README file according to the specification below.
-7. Commit and push all your changes to GitHub. 
-8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo.
-
-## Option 2 - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
-Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
-
-## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
-This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Achievements
----
-Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
-
-*Technical*
-1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
-
-*Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936730811904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Jon%20Duckett&offset=0) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+I incorporated the styles and scripts into the HTML document to simplify development, and I plan to split them up in later projects
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
 
-### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+### Styles
+Beyond the color I used for other achievements, I used some styles to improve the aesthetic appearance of my webpage.
+- __Width__: I halved the width of the div I used to contain the page to narrow the lines of text to make the site more readable.
+- __Margin__: I set the margin of the content div to _auto_ so that the div and its content would be in the center of the page. This has a much more natural feel than having all of the text against the left side of the page.
+- __Padding__: I used 0.8em of padding on the button to give the text some room to breathe and to better show off the button's rounded edges.
+- __Border__: I gave the button in the upper right of the page a 1 pixel solid purple (`#4A4D61`) border.
+- __Border-Radius__: I gave the button a 15px border radius to smooth the corners.
+- __Position__: I gave the button a fixed position on the screen so that the user can easily find how to stop the text from repeatedly turning green.
+- __Right__: I gave the button a bit of space from the right side of the page.
+- __Top__: I gave the button a bit of space from the top of the page.
+- __Text-Align__: I aligned the table headings to the left so that they would not float awkwardly above the middle of the text with no apparent relative alignment.
 
+### Animation
+I added a JavaScript animation to the page where the text periodically resets to near-black and slowly turns green. This animation is triggered by the "Animate Text"/"Disable Animation" button in the upper right of the page. The button's text changes depending on whether or not the animation is currently playing.
 
+The function to toggle the animation will either enable the animation if it is disabled or disable it otherwise. To enable the animation, it sets an interval of 100ms on a function to update the color of the body text by adding 8 to the green decimal RBG value. To disable the animation, it clears the set interval and resets the body text to its original color.
+
+My implementation of this took a slight initialization: I need to set the color of the body manually through a script, which I accomplish at the bottom of the body. (It is done at the bottom of the body because `getElementById()` will only work if the element has been loaded.)
+
+### Tags
+I incorporated additional elements into my site, some of which I have used before and some of which I have not.
+- __Anchor__: I used two _anchor_ tags: one for the text "Worcester Polytechnic Institute" and one for the text "World Championship Russian Roulette." Each of these anchor tags opens in a new page.
+- __Button__: I used a _button_ to control the start and stop of the JavaScript animation. The button is in the upper right corner of the screen.
+- __Strong__: I used a _strong_ element to emphasize the name of Worcester Polytechnic Institute.
+- __Emphasis__: I used an _emphasis_ element to emphasize my desired profession, software engineering.
+- __Table__: I created a _table_ to make my proficiencies more readable and organized.
+  - __Table Row__: Each row of my table is in a _table row_ element
+  - __Table Head__: I used two _table head_ elements at the top of my proficiencies table
+  - __Table Data__: Each cell of the table except the header cells is in a _table data_ element.
+- __Div__: I used a div to wrap the content in a container so I could center it on the page.
+
+## Design Achievements
+
+### Color
+To theme my website, I used the Adobe Color Wheel. I picked an arbitrary primary color (`#687AE0`) as the base color and used the colors recommended off of that one.
+![Adobe Color Wheel](./MStL-Color-Wheel.png)
+I gave the site a bit of variety within the monochrome by coloring h3 headings differently from h1 and h2 and by giving anchors and buttons different color schemes when hovered over. Every color I used is one of the five from the Adobe Color Wheel.
+
+### Font
+All of the fonts I used are from Google Fonts. The font for all headings is [Raleway](https://fonts.google.com/specimen/Raleway) and the font for all other text is [Quicksand](https://fonts.google.com/specimen/Quicksand).
+
+## Resources Used
+I used a few external references for technical details and syntax. I've commented these in the code and will also summarize them here.
+- [OnClick](https://www.w3schools.com/jsref/event_onclick.asp): I used W3Schools to remember how to apply a function on the click of a button. I used this to tie the function to toggle the animation to the corresponding button.
+- [Change CSS in JS](https://www.w3schools.com/js/js_htmldom_css.asp): I used W3Schools to remember the syntax for changing an element's style with JavaScript.
+- [ParseInt](https://www.w3schools.com/jsref/jsref_parseInt.asp): I used W3Schools to remember the name of the function to parse a string into a number.
+- [Button Borders](https://www.w3schools.com/CSSref/css3_pr_border-radius.asp): I used W3Schools to remember how to style the border of a button in CSS.
