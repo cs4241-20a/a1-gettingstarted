@@ -2,27 +2,104 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="stylesheet.css">
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Ioannis Kyriazis (class of 2021)</h1>
     <p>
-      [Self introduction]
+      Hello, I am a senior at WPI. I like to spend time with my family and friends, skateboard, read, and watch youtube
+      and netflix. <a href="www.ioannis.ky">Here</a> is my personal website.
     </p>
     <p>
-      [Major and other information]
+      I am majoring in Computer Science. I am pursuing two minors. One in Writing and Rhetoric, the other in Electrical
+      and Computer Engineering.
     </p>
-    <p>
-      [Other things]
-    </p>
-
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Technologies and methods</li>
+      <ul>
+        <li>HTML - some</li>
+        <li>CSS - some</li>
+        <li>Java - a lot</li>
+        <li>JavaScript - some</li>
+        <li>Ruby - none</li>
+        <li>Python - some</li>
+        <li>unit testing - a lot</li>
+      </ul>
+      <li>WPI CS Courses</li>
+      <ul>
+        <li>Software Engineering</li>
+        <li>Computer Graphics</li>
+        <li>Software Security Engineering</li>
+        <li>Human-Computer Interaction</li>
+        <li>Computer Networks</li>
+        <li>Algorithms</li>
+        <li>Systems Programming Concepts</li>
+        <li>Intro to Machine Organization and Assembly</li>
+        <li>Operating Systems</li>
+        <li>Accelerated Object Oriented Design</li>
+        <li>Accelerated Intro to Program Design</li>
+      </ul>
     </ul>
+  <p>Click <button onclick="myMove()"> here</button> to make me ollie over da box.</p>
+  <div id="container">
+    <img src = "skateboard.png" id = "animate">
+    <img src = "me.png" id = "me">
+    <div id = "rock"></div>
+  </div>
+  <script>
+    function myMove() {
+      var board = document.getElementById("animate");
+      var rock = document.getElementById("rock");
+      var me = document.getElementById("me");
+      var xpos = 0;
+      var ypos = 375;
+      var mxpos = -25;
+      var mypos = 180;
+
+      var id = setInterval(frame, 5);
+      function frame() {
+        if (xpos == 750) {
+          clearInterval(id);
+        } else {
+          xpos++;
+          mxpos++;
+          board.style.left = xpos + "px";
+          me.style.left = mxpos + "px";
+          if (xpos > 230 && xpos < 260) {
+            ollie();
+          }
+          if (xpos > 260 && xpos < 290) {
+            ypos -= 3;
+            mypos -= 3;
+            board.style.top = ypos + "px";
+            me.style.top = mypos + "px";
+
+          }
+          if (xpos > 380 && xpos < 410) {
+            ypos += 2;
+            mypos += 3;
+            ollieLevel();
+            board.style.top = ypos + "px";
+            me.style.top = mypos + "px";
+          }
+        }
+      }
+      theta = 0;
+      function ollie() {
+        board.style.transform = 'rotate(' + theta + 'deg)';
+        me.style.transform = 'rotate(' + theta + 'deg)';
+
+        theta--;
+      }
+      function ollieLevel() {
+        board.style.transform = 'rotate(' + theta + 'deg)';
+        me.style.transform = 'rotate(' + theta + 'deg)';
+        theta++;
+      }
+    }
+  </script>
+
   </body>
 </html>

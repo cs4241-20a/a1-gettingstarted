@@ -1,0 +1,58 @@
+h1 {
+    background-color: #4D9958;
+    font-family: "Agency FB";
+}
+
+h2 {
+    background-color: #997854;
+    font-family: "Times New Roman";
+}
+
+p {
+    background-color: #E6AE73;
+    font-family: "Bahnschrift";
+}
+
+body {
+    background-color: #8BE698;
+    font-family: "Baskerville Old Face";
+}
+
+ul {
+    background-color: #B7A1E6;
+    font-family: "Bernard MT Condensed";
+}
+
+#animate {
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+}
+
+#container {
+    width: 900px;
+    height: 400px;
+    position: relative;
+    background: white;
+}
+
+#me {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 180px;
+    left: -25px;
+}
+
+#rock {
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    background-color: black;
+    top: 375px;
+    left: 375px;
+}
+
+
