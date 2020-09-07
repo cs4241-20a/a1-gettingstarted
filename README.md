@@ -18,7 +18,7 @@ There are also some fun computer science memes in it for some fun.
 
 ### Design Achievements
 - **Used the Kufam and Grandstander Font from Google Fonts**: I used kufam for the p sections and Grandstander for h1.
-- **Create a color palette using color.adobe.com.**: I used the colors below for my website. 
+- **Create a color palette using color.adobe.com.**: I used the colors that can be found in a screensot in the assests file for my website. 
    These colors were used for each section an one of them for the background color.
    
    
