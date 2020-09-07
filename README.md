@@ -11,11 +11,11 @@ This project shows ...
   - *img* I added a border-radius, position absolute so that I could then set the left and top attributes to be used with the javascript.
 - **JS Animation**: My profile image bounces up and down on the screen using a simple JavaScript animation setting the  'top' attribute and updating that with an interval.
 - **HTML Tags**: I used several additional HTML tags:
-  - *<a>*  to show links to my sites I have worked on
-  - *<sup>* to show my class of 2022 
-  - *<sub>* to show the linkes to my sites underneath
-  - *<img>* to show the profile image from GitHub
-  - *<code>* to denote code 
+  - *a*  to show links to my sites I have worked on
+  - *sup* to show my class of 2022 
+  - *sub* to show the linkes to my sites underneath
+  - *img* to show the profile image from GitHub
+  - *code* to denote code 
 ### Design Achievements
 - **Used the Kanit Font from Google Fonts**: I used Kanit font for the primary copy text in my site.
 
