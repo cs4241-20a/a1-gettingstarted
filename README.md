@@ -10,5 +10,6 @@ https://a1-alvaradoblancouribe.glitch.me/
 ### Design Achievements
 - **Used the Roboto and Montserrat Font from Google Fonts**: I used Roboto as the font for the primary text in my site. I used Montserrat for the title of the page. 
 - **Used a color pallete from color.adobe.com**: Atttached is a screenshot of the color pallete. 
+![Color Wheel](/Screen Shot 2020-09-06 at 5.20.22 PM.png)
 
 
