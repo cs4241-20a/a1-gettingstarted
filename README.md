@@ -14,9 +14,9 @@ This project shows a basic understanding of HTML, CSS, and JavaScript.
  This technical challenge was an ideal challenge to refresh how CSS could be used to style the webpage.
 
 - **Experimented with HTML**: 
-- I added a link using the <a> tag.
-- I added a table using the <table> tag, the <th> tag, and the <tr> tag
-- I added the <b> tag 
+- I added a link using the &#60;a&#62; tag.
+- I added a table using the &#60;table&#62; tag, the &#60;th&#62; tag, and the &#60;tr&#62; tag
+- I added the &#60;b&#62; tag 
 
 ### Design Achievements
 - **Used the Lora Font from Google Fonts**: 
