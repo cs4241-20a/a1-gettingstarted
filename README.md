@@ -96,25 +96,28 @@ This project shows ...
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
 Added CSS rules:
+   * body: background color
+   * img: made circular and aligned left
+   * h1: changed font size and aligned center
+   * h2: changed font size and aligned center
+   * tr, td: styled table to alternate the color of each row
 
-body: background color
-img: made circular and aligned left
-h1: changed font size and aligned center
-h2: changed font size and aligned center
-tr, td: styled table
 
+- JavaScript Animation:
+   * button changes background color and goes through array of color or image choices each time button is activated
 
-JavaScript Animation:
-button changes background color and goes through array of color choices
-
-Other HTML Tags Used:
-img
-br
-button
-b
-table
+- Other HTML Tags Used:
+   * **img,
+br,
+button,
+b,
+table**
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Montserrat Font from Google Fonts**: I used Montserrat as the font for the primary copy text in my site. I used the large version for titles and the smaller one for the body text
+- I used a color scheme from color.adobe.com. The colors I used were #575FF2, #5C73F2, #6B8DF2, #022873, #82B8D9
+![alt text](https://github.com/ntaurich/a1-gettingstarted/blob/glitch/AdobeColor-Bright%20neon%20purple%20fluorescing%20coral.jpeg)
+
+
 
 
