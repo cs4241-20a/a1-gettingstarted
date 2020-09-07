@@ -13,7 +13,7 @@ I had struggled to get the image to display using node.js and on glitch until I 
     - **text-align**: Modified h1 to be centered at the top of the page.
 
 - **Added JavaScript animation**: Added javascript animation to make image pop and introduce the gradient background.
-- **Used HTML Tags**: Added ......
+- **Used HTML Tags**: Added an image, links, a table, a horizontal rule, and scrolling text
     - **Image**: Added an image.
     - **Links**: Added links to the WPI page of all computer science courses I have taken.
     - **Table**: Added a table to simplify the previous courses section.
@@ -23,5 +23,4 @@ I had struggled to get the image to display using node.js and on glitch until I 
 
 ### Design Achievements
 - **Used the Press Start 2P and Roboto Mono Font from Google Fonts**: I used Press Start 2P as the font for the main header and Roboto Mono as the font for the primary copy text in my site.
-- **Used font colors**: I used colors to differentiate text.
-- **Created color palette using color.adobe.com**: I created a color palette and used each color in the website through css.
+- **Created color palette using color.adobe.com**: I created a color palette and used each color for the text and background in the website through css.
