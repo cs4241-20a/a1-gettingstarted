@@ -5,7 +5,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 Brittany Henriques
 http://a1-bhenriques.glitch.me
 
-This project shows a background of my time here at WPI, both academically and socially. The page consists of header, and a navigation bar which links the user to each section on the page. The "Meet Me" section contiains a picture of myself and a small introduction about me. The "Techinical Skills" section describes the different classes I've taken, skill levels I have, and some of my past projects and work. The "Campus Involvement" section show cases some of the organizations I'm involved in at WPI and the images expand when you hover over them. Lastly, the "Fun Facts" section describes some of my favorite movies, books, and songs, and provides link to each that are listed (ie. links to IMbD pages, book or author sites, or YouTube videos).
+This project shows a background of my time here at WPI, both academically and socially. The page consists of header, and a navigation bar which links the user to each section on the page. The "Meet Me" section contiains a picture of myself and a small introduction about me. The "Techinical Skills" section describes the different classes I've taken, skill levels I have, and some of my past projects and work. The "Campus Involvement" section show cases some of the organizations I'm involved in at WPI and the images expand when you hover over them. Lastly, the "Fun Facts" section describes some of my favorite movies, books, and songs, and provides link to each that are listed (9 in total) (ie. links to IMbD pages, book or author sites, or YouTube videos).
 
 ## Technical Achievements
 - **Styled page with CSS**:
@@ -22,7 +22,7 @@ This project shows a background of my time here at WPI, both academically and so
 
 ### Design Achievements
 - **Create a color palette**:
-1. I created a color palette using Adobe colorwheel and implmented these colors throught the chapter
+1. I created a color palette using Adobe colorwheel and implmented these colors throughout the page (screenshot can be found in the images folder)
     #BAC1E6 - used for header text with dark purple background
     #5867AD - used for the background of the navigation bar
     #7385E0 - used for bigger text headers
