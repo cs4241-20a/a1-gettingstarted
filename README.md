@@ -2,7 +2,7 @@ CS4241 Assignment 1
 ===
 
 Edward Philippo
-http://a1-edwardphilippo.glitch.me
+http://a1-ephilippo.glitch.me
 
 This is a basic "about me" website.  I played around to the point where it looks half decent, and did my first bit of dabbling in JavaScript.
 
