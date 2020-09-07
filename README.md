@@ -2,7 +2,7 @@ Readme
 ---
 
 Ryan Cirella
-https://glitch.com/~theryancirella-a1-gettingstarted
+http://a1-theryancirella.glitch.me/
 
 This project shows an understanding of how to use CSS styling in order to style a website in a more personalized style.
 It also shows an understanding of HTML and its tags in order to create content on a webpage.
