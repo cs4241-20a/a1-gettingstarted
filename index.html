@@ -1,28 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine"
+  />
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <style>
+    body {
+      font-family: "Tangerine", serif;
+      font-size: 24px;
+
+      background-color: #AECEE6;
+    }
+
+    .blue1 {
+      color: #2D4A61;
+    }
+
+    .blue2 {
+      color: #3F5566;
+    }
+
+    .blue3 {
+      color: #5085AD;
+    }
+
+    .blue4 {
+      color: #67ACE0;
+    }
+
+    .blue5 {
+      color: #AECEE6;
+    }
+
+    #content {
+      margin-left: 50px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .dropdown-content {
+      display: none;
+      background-color: white;
+      box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.1);
+      padding: 15px 15px;
+    }
+
+    .dropdown {
+      display: inline-block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .smaller-font {
+      font-size: 13px;
+    }
+
+    #animation {
+      position: absolute;
+    }
+  </style>
+
+  <body>
+    <h1 class="blue2">
+      Information about Zaiyang Zhong
+    </h1>
+    <div id="content" class="blue1">
+      <p>
+        I am a CS major junior who finds CS very difficult and sometimes boring.
+        I guess the reason may be that the backend part of computer science
+        requires so much technical skills but lacks some design elements! So I
+        decided to try on this course and see if I will enjoy working with more
+        visual stuff & website designs.
+      </p>
+      <p>
+        Computer Science. I learned C, C++, Java, JS, and so many other
+        softwares.
+      </p>
+      <p>
+        I like to social with people I feel comfortable and happy with,
+        particularly during this pandemic, hunging out, playing games... etc.
+      </p>
+
+      <h2 class="center">
+        Experience
+      </h2>
+      <div class="dropdown">
+        <span>Work Experience </span>
+
+        <div class="dropdown-content">
+          <ul class="blue1">
+            <li>IBM/Rationan</li>
+            Internship at JITSTACK Network Technology Co.Ltd, Shanghai, China,
+            2019
+            <li>WPI</li>
+            Peer-learning Assitant in Math Department, 2019 Peer-learning
+            Assistant in Math Department, 2020
+          </ul>
+        </div>
+      </div>
+      <!--Additional Content -->
+      <p>
+        <a href="http://www.google.com">this is google</a>
+      </p>
+
+      <h4 class="smaller-font,blue4">
+        This is smaller text.
+      </h4>
+
+      <button onclick="MyAni()" stype="position:relative">
+        Press me to move text below
+      </button>
+      <p id="animation">
+        This text will move downward
+      </p>
+
+      <script>
+        function MyAni() {
+          var id = setInterval(frame, 10);
+
+          var elem = document.getElementById("animation");
+          var pos = 0;
+
+          function frame() {
+            if (pos == 999) {
+              clearInterval(id);
+            } else {
+              pos++;
+              elem.style.top = pos + "px";
+            }
+          }
+        }
+      </script>
+    </div>
+    <div>
+      <img
+        src="https://cdn.glitch.com/b7345c68-f320-4521-b856-d1c3c0125e9a%2Fcolor.PNG?v=1599448371526"
+      />
+    </div>
   </body>
 </html>
