@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en" id="html">
+  <head>
+    <title>CS4241 Assignment 1</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body id="body">
+    <div style="padding: 20px">
+      <h1>Information about <i>Bryce Corbitt</i></h1>
+      <p>
+        Working with technology is a passion and hobby of mine. I enjoy designing robust, scalable software solutions, and hope to pursue a future career in Software Architecture. I often use my free time to experiment with different languages, frameworks, and hardware to maintain a well-rounded skill set.
+      </p>
+      <audio controls controls controlsList="nodownload">
+        <source src="https://brycecorbitt.com/wp-content/uploads/2020/09/Rain-Sword-Memories.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p><i>Rain Sword - Memories</i></p>
+    </div>
+    
+    <div class="section">
+      <h2>Education</h2>
+      <h4>Degree:</h4>
+      <p>Bachelor's in Computer Science (class of 2021).</p>
+      <h4>Prior CS Courses Taken at WPI:</h4>
+      <table id="prior-courses">
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Term Taken</th>
+        </tr>
+      </table>
+    </div>
+    <div class="section">
+      <h2>Skills</h2>
+      <table id="skillset">
+        <tr>
+          <th>Skill</th>
+          <th>None</th>
+          <th>Some</th>
+          <th>A Lot</th>
+        </tr>
+      </table>
+      <p>
+        <strong>Programming Languages:</strong> Python, Java, JavaScript/Node.js, C/C++, PHP, Racket, Verilog, SQL(PostgreSQL, MySQL, and MSSQL), NoSQL (MongoDB)
+        <br>
+        <strong>Libraries & Frameworks:</strong> Spring, Express, Django, Hibernate, Sequelize, Mongoose, Liquibase, ReactNative, OpenCV, PyAudio, Selenium, Pug (Jade), Bootstrap
+        <br>
+        <strong>Technologies:</strong> Linux, Docker, ElasticSearch, Kibana, Strapi, REST APIs, Google Cloud Platform, Microsoft Azure
+      </p>
+    </div>
+    <div class="section">
+      <h2>Experience</h2>
+      <h4>
+        Working Experience (Internships)
+      </h4>
+      <ul>
+        <li><strong>eBay</strong>, San Jose, CA (Remote), May-Aug 2020</li>
+        <li><strong>Bottomline Technologies</strong>, Portsmouth, NH, Jun-Aug 2019</li>
+        <li><strong>Blujay Solutions</strong>, Chelmsford, MA, May-Aug 2018</li>
+      </ul>
+      <h4>Project Experience</h4>
+      <div class="container" style="overflow:auto; ">
+        <div class="card">
+          <a href="https://brycecorbitt.com/tpaas">
+            <img src="https://brycecorbitt.com/wp-content/uploads/2020/07/Screenshot-from-2020-07-07-20-51-44-300x170.png" alt="TPaaS" style="width:100%">
+            <div class="container">
+              <h4><b>"Smart" Toilet Paper Dispenser</b></h4>
+              <p>The days of running out of toilet paper are over!</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://brycecorbitt.com/piano-playing-robot-hand/">
+            <img src="https://brycecorbitt.com/wp-content/uploads/2019/12/image122.jpg" alt="Piano Hand" style="width:100%">
+            <div class="container">
+              <h4><b>Piano Playing Robot Hand</b></h4>
+              <p>“Bernard” is a robot hand designed to play simple melodies on the piano.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://brycecorbitt.com/mobile-platform-for-mindfulness-based-stress-reduction/">
+            <img src="https://brycecorbitt.com/wp-content/uploads/2019/12/iphone_simulator_small-1.png" alt="MBSR" style="width:100%">
+            <div class="container">
+              <h4><b>Mobile Platform For Mindfulness Based Stress Reduction</b></h4>
+              <p>A React Native iOS/Android app powered by a CMS to manage and stream content.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://brycecorbitt.com/aarons-presents-manager/">
+            <img src="https://brycecorbitt.com/wp-content/uploads/2019/12/ap_logo.png" alt="APM" style="width:100%">
+            <div class="container">
+              <h4><b>Project Management Platform for Aaron’s Presents</b></h4>
+              <p>Designed, implemented, and deployed a web platform to centralize data for Aaron’s Presents, a 501(c)(3) non-profit organization.</p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://brycecorbitt.com/embedded-metronome-with-the-basys-3-fpga/">
+            <img src="https://brycecorbitt.com/wp-content/uploads/2019/12/IMG_20191211_085134-1024x965.jpg" alt="FPGA Metronome" style="width:100%">
+            <div class="container">
+              <h4><b>FPGA Metronome</b></h4>
+              <p>Embedded programming on the Basys 3 FPGA alongside a simple circuit to create a working metronome.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script src="client.js"></script>
+  <script src="three.r119.min.js"></script>
+  <script src="vanta.fog.min.js"></script>
+  <script>
+    VANTA.FOG({
+      el: "#html",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0x3c00ff,
+      midtoneColor: 0xff00ff,
+      lowlightColor: 0xffb3,
+      baseColor: 0xebfffa,
+      blurFactor: 0.54
+        })
+    </script>
+</html>
