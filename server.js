@@ -10,6 +10,10 @@ const server = http.createServer( function( request,response ) {
     case '/index.html':
       sendFile( response, 'index.html' )
       break
+    case '/dvd.png':
+      var img = fs.readFileSync('./dvd.png');
+      response.writeHead(200, {'Content-Type': 'image/png'});
+      response.end(img, 'binary');
     default:
       response.end( '404 Error: File Not Found' )
   }
