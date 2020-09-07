@@ -1,0 +1,61 @@
+html {
+    background-color: #012F42;
+}
+
+h1, h2 {
+    margin-top: 50px;
+    font-family: 'Kufam', cursive;
+    color: #0288C2;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: -30px;
+    font-size: 15px;
+    font-family: 'Grandstander', cursive;
+}
+
+pre {
+    line-height: 20px;
+    margin-left: 2%;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Grandstander', cursive;
+    color:#7EB5CC;
+}
+
+li, p, table {
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:#7EB5CC;
+}
+
+.anotherColor{
+    color:#01648F;
+}
+
+.canyouseeme {
+    font-size: 15px;
+    font-family: 'Grandstander', cursive;
+    color: #153F52;
+}
+
+.indent {
+    margin-left: 5%;
+}
+
+.left-margin {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.center {
+    text-align: center;
+}
+
+.span-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
