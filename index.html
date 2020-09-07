@@ -3,26 +3,98 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,300&family=Kufam:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1 class="center Rainbow"> Information about Yongcheng Liu</h1>
+    
+    <p class="center anotherColor" > Hello! I am Yongcheng Liu, one of the Class of 2023 students at WPI (Worcester Polytechnic Institute)! </p>
+    <p class="center canyouseeme" > <abbr title="CAN YOU SEE ME XDD = = THIS IS FOR THE EXTRA COLOR"> CYSM </abbr></p>
+    
+    <div class="left-margin">
+      <h2> About Me </h2>
+      <!-- I really did not just copy this from linked in xdd-->
+      <pre>
+        I am a Class of 2023 student majoring in CS (Computer Science) and IMGD (Interactive Media & Game Development).
+        I love CS because I love the way how computers build different virtual worlds for us in every aspect of life.
+        I love games as a unique way to provide interactive access to those virtual worlds. 
+        I hope we can bring virtuality and reality closer one day so we can be the masters of our dreams.
+      </pre>
+    </div>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="left-margin">
+      <h2> Major </h2>
+      <table class="indent">
+        <tr>
+          <th> CS + IMGD Design </th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="left-margin">
+      <h2> Previous Courses </h2>
+      <ul style="margin-left: 20px;">
+        <li> CS 2011: Introduction to Mac</li>
+        <li> CS 2103: Accelerated Object-oriented Design</li>
+        <li> CS 2223: Algorithms</li>
+        <li> CS 2303: Systems Programming Concepts</li>
+        <li> CS 3013: Operating Systems</li>
+        <li> CS 3043: Social Implications of Information Processing</li>
+        <li> CS 3516/513: Computer Networks</li>
+        <li> CS 3733: Software (Forward) Engineering</li>
+        <li> CS 4518: Ubiquitous and Mobile Computing</li>
+        <li> CS 4731/543: Computer Graphics</li>
+        <li> IMGD 3000: Technical Game Dev 1</li>
+        <li> IMGD 4000: Technical Game Dev 2</li>
+      </ul>
+    </div>
+
+    <div class="left-margin">
+      <h2> Previous Experiences </h2>
+      <ul style="margin-left: 20px;">
+        <li> HTML </li>
+          <ul><li> Some. Majorly due to the need of some front end interfaces of some projects. </li></ul>
+        <li> CSS </li>
+          <ul><li> Some. Majorly due to the need of some front end interfaces of some projects. </li></ul>
+        <li> Java </li>
+          <ul><li> Some. CS 3733, 4518, and some other projects. </li></ul>
+        <li> JavaScript </li>
+          <ul><li> A few. CS 4731. </li></ul>
+        <li> Ruby </li>
+          <ul><li> Null Pointer Exception</li></ul>
+        <li> Python </li>
+          <ul><li> Some. Machine Learning, Federated Learning Research, and some other projects. </li></ul>
+        <li> Unit Testing</li>
+          <ul><li> Some. CS 3733, 4518, and some other projects. </li></ul>
+      </ul>
+    </div>
+    
+    <script>
+      let animCount = 0
+
+      const func = function (){
+        // const divs = document.getElementsByTagName("div") // give up using this one since its too annoying
+        const element = document.getElementsByClassName("Rainbow")[0]
+        
+        let text = element.innerText
+        element.innerHTML = ""
+        
+        for (let i = 0; i < text.length; i++) {
+          let charElem = document.createElement("span")
+          charElem.style.color = "hsl(" + (360 * i / text.length + animCount) + ",80%,50%)"
+          charElem.innerHTML = text[i]
+          element.appendChild(charElem)
+        }
+      
+        animCount ++
+      }
+      
+      setInterval (func, 10)
+    </script>
+    
+
   </body>
 </html>
