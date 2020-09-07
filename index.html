@@ -1,28 +1,110 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+
+<head>
+  <title>CS4241 Assignment 1 - Hezekiah Owuor</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gloria+Hallelujah&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<script type="text/javascript">
+  function blinker() {
+    var h = document.getElementById("title");
+    if (h.style.color == "black") {
+      h.style.color = "red";
+    } else {
+      h.style.color = "black"
+    }
+  }
+</script>
+
+
+<body onload="setInterval(blinker, 3000)">
+
+  <div class="topBand">
+    <h1>Hezekiah Owuor - WPI - Class of 2022</h1>
+  </div>
+
+  <img src="HeziShoot.jpg" alt="Hezi Shoot" width="25%" height="auto">
+
+  <button type="button" name="button1" id="button1">
+
+    <div id="title">
+      <h2 class="antonStyle">About Me:</h2>
+    </div>
+
+    <br />
+
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Hi there, Welcome to my page! <br /> My name is <b> Hezekiah Owuor. </b> <br /> Here is some information about me:
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+  </button>
+
+  <div class="robotoFont">
+
+    <h2>Academic Information:</h2>
+
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li><b>GPA: </b> 3.19 </li>
+      <li><b>1st Major: </b> Computer Science </li>
+      <li><b>2nd Major: </b> Humanities and Arts with a Concentration in Music </li>
     </ul>
-  </body>
+
+    <h2>Completed Computer Science Courses:</h2>
+
+    <ul>
+      <li>CS2102 - Object Oriented Design Concepts</li>
+      <li>CS3013 - Operating Systems</li>
+    </ul>
+
+    <h2>Coding Experience</h2>
+
+    <table>
+      <tr class="robotoFont2">
+        <th>Programming Language</th>
+        <th>Experience Level</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Basic Experience</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Basic Experience</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Intermediate Experience</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Very Basic Experience</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>No Experience</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Basic Experience</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Intermediate Experience</td>
+      </tr>
+    </table>
+
+    <h2>Work Experience</h2>
+
+    <ul>
+      <li>iD Tech Online Instructor</li>
+      <li>WPI Lab Technician</li>
+      <li>WPI Admission Associate</li>
+    </ul>
+  </div>
+
+</body>
+
 </html>

@@ -1,0 +1,64 @@
+table {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 12px;
+  border-collapse: collapse;
+  border-radius: 15%;
+  border: 8px outset #770047;
+}
+
+td,
+th {
+  border: 1px solid #FFFFFF;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #CBEB26;
+}
+
+body {
+  background-color: rgba(137, 218, 217, 0.5);
+}
+
+img {
+  border-radius: 15%;
+  border: 8px outset #F09B22;
+  margin: 5px;
+  margin-right: 75px;
+  margin-top: 15px;
+  float: right;
+}
+
+#button1 {
+  float: right;
+  border-radius: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  padding: 175px;
+  border-radius: 15%;
+  border: 8px outset #4722F0;
+}
+
+.antonStyle {
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+}
+
+.topBand {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 24px;
+  background-color: #D92952;
+  text-align: center;
+  border: 6px inset #22FFB1;
+  margin: 0px;
+}
+
+.robotoFont {
+  font-family: 'Roboto Mono', monospace;
+}
+
+tr.robotoFont2 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+}
