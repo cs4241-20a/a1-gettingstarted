@@ -1,9 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 Isabel Alvarado Blanco Uribe
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+https://a1-alvaradoblancouribe.glitch.me/
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, body, h3, h1, th, td, and img selectors. I used margin-left, margin-right, text-align, padding, width, and float for proportions and positioning things. I used font-family, background-color, and color for style of fonts and add a background color for the table.
