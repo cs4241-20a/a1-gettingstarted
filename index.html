@@ -2,27 +2,259 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #ADD1DA;
+        transition: background-color 2s;
+        color: #3C4142;
+        font-family: 'Slabo 27px', serif
+      }
+      cubic-bezier(1, 1, 1, 1){
+	      transition-delay: 0s;
+      }
+      
+      h1 {color: black}
+      h2 {color: black}
+      h3 {color: #033440}
+      h4 {color: #033440}
+      
+      img {
+        border: 10px solid #06718C;
+      }
+      ul {
+        padding-left: 30px;
+      }
+      
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      
+      table.center {
+        margin-left: auto; 
+        margin-right: auto;
+      }
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+      td {
+        text-align: left;
+        padding: 10px;
+      }
+
+      tr:nth-child(even){background-color: #089BBF}
+
+      th {
+        background-color: #033440;
+        color: white;
+      }
+    </style>
+    <script>
+      let colors = ["#F2F2F2", "#ADD1DA", "#9FBFDF"];
+        let idx = 0;
+        let direction = "up";
+
+        setInterval(function() {
+          document.body.style.cssText = "background-color: " + colors[idx];
+          if (direction == "up"){
+            idx++;
+          }
+          else {
+            idx--;
+          }
+          if (idx == colors.length-1) {
+            direction = "down";
+          }
+          if (idx == 0){
+            direction = "up";
+          }
+        }, 1000);
+    </script>
+  </head>
+  
+  <body>
+    <h1>Information about Eric Reardon</h1>
+    
+    <span style="float:left; width:40%; margin-right:50px">
+      <p>
+        My name is Eric Reardon and I am from Auburn, NH. Auburn is a small town 
+        on New Hampshire's southern border, only about an hour from Worcester. 
+        I justed started my senior year virtually, but I expect to return to campus before the 
+        end of this term. 
+      </p>
+      <p>
+        For my senior year MQP, I am beginning a project to create and enhance an 
+        Autonomous Modular Vehicle. I will specifically be focusing on the AI/Neural
+        Networks portion.
+      </p>
+      <p>
+        <strong>Class of 2021</strong> <br>
+        <strong>Major:</strong> Computer Science <br>
+        <strong>Minor:</strong> Data Science
+      </p>
+    </span>
+    
+    <div style="float:left; width:40%">
+      <img src="https://cdn.glitch.com/5211f451-a4aa-439c-951d-59a70f859025%2FEric%20Sr.%20Pic.JPG?v=1599322761415" 
+         width="200" alt="Eric Reardon Picture">
+    </div>
+    
+    <div style="clear:both;"></div>
+    
+    <span>
+      <h2>Involvement & Hobbies</h2>
+
+      <span style="float:left; width:33%; margin-right:50px">
+        <h3> WPI </h3>
+        <ul>
+          <li>Sigma Alpha Epsilon - President</li>
+          <li>Men's Club Volleyball - Officer</li>
+          <li>Senior Class Gift Committee</li>
+        </ul>
+      </span>
+
+      <span style="float:left; width:33%">
+        <h3> External </h3>
+        <ul>
+          <li>New Hampshire Food Bank and Pleasant Lake Weed Watching Volunteer</li>
+          <li>Golf, Snow & Water Skiing, Surfing, Basketball</li>
+        </ul>
+      </span>
+    </span>
+
+    <div style="clear:both;"></div>
+    
+    <h2> Experience </h2>
+    
+    <h3>Working experience</h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Liberty Mutual Technology Group, Inc.</li>
+        <ul>
+          <li> 
+            Developed threat modeling web application for the Cyber 
+            Governance, Risk, and Compliance Solutions team, achieving the 
+            creation of a functional prototype to centralize all enterprise 
+            threat modeling practices for app development teams
+          </li>
+          <li>
+            Worked through complete product development lifecycle 
+            with an intern team to gather stakeholder expectations, 
+            plan our application architecture securely, develop the web app, 
+            and demo to customers for review and feedback
+          </li>
+        </ul>
+      <li>Sunrise Labs, Inc.</li>
+        <ul>
+          <li>
+            Developed interactive database desktop application for employees’ 
+            resumes and company biographies, resulting in an application prototype 
+            with sophisticated searching to better find and market qualified
+            employees to clients
+          </li>
+          <li>
+            Tested and documented software iterations of medical devices 
+            in compliance of customers’ SRDs to catch and correct any bugs
+          </li>
+        </ul>
+      <li>BAE Systems, Inc.</li>
+        <ul>
+          <li>
+            Worked with intern team to document sector managed devices in various 
+            BAE locations across NH, conducting an examination of each with 
+            federal compliance levels to identify all systems in need of correction
+          </li>
+        </ul>
     </ul>
+    
+    <h3>
+      Technical experience
+    </h3>
+    <ul>
+      <li>HTML - a lot</li>
+      <li>CSS - some</li>
+      <li>Java - a lot</li>
+      <li>Javascript - a lot</li>
+      <li>Ruby - none</li>
+      <li>Python - a lot</li>
+      <li>Unit Testing - a lot</li>
+      <li>TypeScript/Angular - some</li>
+      <li>C/C++ - some</li>
+      <li>SQL - a lot</li>
+      <li>Spring Boot, Spring Data JPA - some</li>
+    </ul>
+    
+    <h2>
+      Related Courses
+    </h2>
+    <table class="center">
+      <tr>
+        <th>Course</th>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td>CS 1101</td>
+        <td>INTRO TO PROGRAM DESIGN</td>
+      </tr>
+      <tr>
+        <td>CS 2102</td>
+        <td>OBJCT-ORIENTED DESIGN CONCEPTS</td>
+      </tr>
+      <tr>
+        <td>CS 2223</td>
+        <td>ALGORITHMS</td>
+      </tr>
+      <tr>
+        <td>CS 2303</td>
+        <td>SYSTEMS PROGRAMMING CONCEPTS</td>
+      </tr>
+      <tr>
+        <td>CS 2011</td>
+        <td>INTRO-MACHINE ORG & ASSEMBLY</td>
+      </tr>
+      <tr>
+        <td>CS 2022</td>
+        <td>DISCRETE MATHEMATICS</td>
+      </tr>
+      <tr>
+        <td>CS 3043</td>
+        <td>SOCIAL IMPL OF INFO PROCESSING</td>
+      </tr>
+      <tr>
+        <td>CS 3133</td>
+        <td>FOUNDATIONS OF COMP. SCIENCE</td>
+      </tr>
+      <tr>
+        <td>CS 3431</td>
+        <td>DATABASE SYSTEMS I</td>
+      </tr>
+      <tr>
+        <td>CS 4432</td>
+        <td>DATABASE SYSTEMS II</td>
+      </tr>
+      <tr>
+        <td>CS 3733</td>
+        <td>SOFTWARE ENGINEERING</td>
+      </tr>
+      <tr>
+        <td>CS 4233</td>
+        <td>OBJ-ORIENTED ANALYSIS & DESIGN</td>
+      </tr>
+      <tr>
+        <td>CS 4341</td>
+        <td>INTRO TO ARTIFICIAL INTELLIGEN</td>
+      </tr>
+      <tr>
+        <td>CS 4731</td>
+        <td>COMPUTER GRAPHICS</td>
+      </tr>
+      <tr>
+        <td>CS 4241</td>
+        <td>WEBWARE</td>
+      </tr>
+      <tr>
+        <td>CS 3031</td>
+        <td>OPERATING SYSTEMS</td>
+      </tr>
+    </table>
   </body>
 </html>
