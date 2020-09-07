@@ -1,0 +1,61 @@
+body {
+	font-family: 'Noto Serif KR', serif;
+	overflow: auto;
+	cursor: url("http://www.rw-designer.com/cursor-extern.php?id=140781)"), auto;
+}
+
+table, th, td {
+  border: 2px solid #5d37fa;
+	border-collapse: collapse;
+	background-color: #b437fa;
+}
+
+.section {
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.5);
+	margin: 40px;
+	padding: 60px;
+	border-radius: 5px 5px 0 0;
+}
+
+#prior-courses td{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#skillset td{
+	text-align: center;
+	min-width: 60px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+	border-radius: 5px; 
+	width: 300px;
+	float: left;
+	margin: 20px;
+	background-color: #ffffff;
+}
+
+.card a{
+	text-decoration:none;
+	cursor: url("http://www.rw-designer.com/cursor-extern.php?id=140780"), pointer;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(255,255,255,0.5);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card p, a {
+	color: #7A3DE3;
+}
