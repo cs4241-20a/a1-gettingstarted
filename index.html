@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>CS4241 Assignment 1 - Kyle Mikolajczyk</title>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <style>
@@ -23,14 +23,37 @@
       
       img {
         border-radius: 50%;
+        position: absolute;
+        right: 50px;
+        top: 250px;
       }
     </style>
   </head>
   <body>
     <h1>Information about Kyle Mikolajczyk</h1>
-    <img src="https://avatars0.githubusercontent.com/u/20652002?s=460&u=bede07f489e27f2ffe4d0f41dcb9e37ef64bcbc3&v=4" width="200" height="200">
+    <img id="kyle" src="https://avatars0.githubusercontent.com/u/20652002?s=460&u=bede07f489e27f2ffe4d0f41dcb9e37ef64bcbc3&v=4" width="200" height="200">
+    <script>
+      var image = document.getElementById('kyle');
+      var count = 225;
+      var direction = 1;
+      
+      function loop() {
+        count+=direction;
+        image.style.top = count + 'px';
+        if(count === 300)
+          {
+            direction = -1;
+          }
+        if(count === 225)
+          {
+            direction = 1;
+          }
+      }
+      
+      var call = setInterval(loop, 75);
+    </script>
     <p>
-      My name is <strong>Kyle</strong> and I am a <strong>Junior</strong> (Class of 2022).
+      My name is <strong>Kyle</strong> and I am a <strong>Junior</strong> <sup>(Class of 2022)</sup>
     </p>
     <p>
       I am a <strong>Computer Science Major</strong> and I am trying to get a <strong>Minor in Eletrical and Computer Engineering</strong>.
@@ -54,8 +77,9 @@
       I have had much experience with HTML, CSS, JAVA, JavaScript, and Unit Testing. I have had a little experience with Python and no experience with Ruby.
     </p>
     <ul>
-      <li>WPI Marketing Communications (<a href="https://www.wpi.edu" target="_blank">wpi.edu</a>)</li>
-      <li>Altitude Unlimited Advanced IT Solutions (<a href="https://www.altitudeunltd.com" target="_blank">altitudeunltd.com</a>)</li>
+      <li>WPI Marketing Communications <sub>(<a href="https://www.wpi.edu" target="_blank">wpi.edu</a>)</sub></li>
+      <li>Altitude Unlimited Advanced IT Solutions <sub>(<a href="https://www.altitudeunltd.com" target="_blank">altitudeunltd.com</a>)</sub></li>
+      <li>I wrote <code>code</code> on my own site <sub>(<a href="https://kylem.org" target="_blank">kylem.org</a>)</sub></li>
       <li>WPI</li>
     </ul>
   </body>
