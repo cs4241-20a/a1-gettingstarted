@@ -1,28 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #82B8D9;
+      font-family: 'Noto Sans JP', sans-serif;
+      background-repeat: repeat;
+      background-size: 200px;
+    }
+    img {
+      border-radius: 50%;
+      width: 20%;
+      margin-right: 30px;
+      border: 30px;
+      float: left;
+    }
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    .about {
+      background-color: #5C73F2;
+      margin: 20px;
+      padding: 30px;
+      color: #022873;
+      border-radius: 20px;
+      overflow: auto;
+    }
+
+    h2 {
+      font-size: 250%;
+      margin: 0;
+      text-align: center;
+      color: black;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    h1 {
+      font-size: 300%;
+      text-align: center;
+      font-family: 'Noto Sans JP', sans-serif;
+      
+    }
+
+    h3 {
+      font-size: 150%;
+    }
+
+    .experience {
+      background-color: #5C73F2;
+      margin: 20px;
+      padding: 30px;
+      color: #022873;
+      border-radius: 20px;
+      margin-top: 0;
+    }
+
+    td {
+      border: 1px solid black;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    tr:nth-child(odd) {
+      background-color: #575FF2;
+    }
+  </style>
+
+  <script>
+    var color = 0;
+    var backgrounds = ["#0B9ED9","#0433BF", "lightblue", "grey", "white", "url('https://cdn.glitch.com/869342fa-4e95-4691-a57d-344644489e72%2FIMG_2909.JPG?v=1599458972459')"];
+    function changeBackground() {
+      document.body.style.backgroundColor = backgrounds[color];
+      if(color == (backgrounds.length -1)){
+      document.body.style.backgroundImage = backgrounds[color];
+      }
+      else{
+      document.body.style.backgroundImage = ''; 
+      }
+      color++;
+      console.log(backgrounds.length);
+      if (color > backgrounds.length) {
+        color = 0;
+      }
+    }
+  </script>
+  <body>
+    <h1>Information about Nina Taurich</h1>
+    <div class="about">
+      <h2>About</h2>
+      <p>
+        <img
+          src="https://media-exp1.licdn.com/dms/image/C4D03AQHvaOO3Dd-5Pw/profile-displayphoto-shrink_400_400/0?e=1604534400&v=beta&t=HH5V0Mr6LTqFrgEbpGTYo4_s0_wlN0Rn_j0H8e_I21Y"
+        />
+        <b>Year:</b>Senior (Class of 2021) <br />
+        <b>Major:</b>Computer Science (CS) and Interactive Media and Game Design
+        (IMGD) <br />
+        <b>Clubs:</b>WiCS, IGDA, AGD, Greenhouse Club <br />
+        <button type="button" onclick="changeBackground()">Click Me to Change Background</button>
+      </p>
+    </div>
+    <div class="experience">
+      <h2>Experience</h2>
+      <h3>
+        Previous CS Courses
+      </h3>
+      <ul>
+        <li>CS1101: Intro to Program Design</li>
+        <li>CS2102: Object-Oriented Design Concepts</li>
+        <li>CS2011: Assembly</li>
+        <li>CS2303: Systems</li>
+        <li>CS2022: Discrete</li>
+        <li>CS3013: Operating Systems</li>
+        <li>CS2223: Algorithms</li>
+        <li>CS3041: HCI</li>
+        <li>CS3133: Foundations of CS</li>
+        <li>CS4100: AI for IMGD</li>
+        <li>CS4731: Computer Graphics</li>
+      </ul>
+      <h3>
+        Experience
+      </h3>
+      <table>
+        <tr>
+          <td>HTML</td>
+          <td>a lot</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>some</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>a lot</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>none</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>some</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>None</td>
+        </tr>
+      </table>
+
+      <h3>
+        Working experience
+      </h3>
+      <ul>
+        <li>iD Tech</li>
+        <li>Walt Disney Imagineering</li>
+        <li>WPI</li>
+        <li>Girls Who Code</li>
+      </ul>
+    </div>
   </body>
 </html>
