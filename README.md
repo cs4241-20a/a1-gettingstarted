@@ -1,6 +1,12 @@
 This is the Assignment 1 for CS 4241 A20
 
-We are asked to craft a simple web page with server using git and glitch
+We are asked to craft a simple web page for our info using git and glitch
+
+## Code Structure
+- server.js: server
+- style.css: stlesheet
+- package.json: for server
+- index.html: static html page
 
 ## References
 [Rainbow Text Implementation](https://stackoverflow.com/questions/36793529/how-to-generate-rainbow-colored-text-in-javascript)
