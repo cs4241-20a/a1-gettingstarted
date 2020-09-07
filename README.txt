@@ -1,3 +1,5 @@
+Lewis Cook: https://glitch.com/~a1-lewj20
+
 Technical Achievements:
 
 Styled page with CSS - Changed font-family, font-weight, color, font-size, and padding for each text type
