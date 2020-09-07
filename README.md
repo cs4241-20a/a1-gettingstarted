@@ -9,8 +9,8 @@ This project shows ...
 
 ## Technical Achievements
 - **Styled page with CSS**: 
-I used the bullet points(<ul> <li>),
-       the table(<table>)
+I used the bullet points(ul, li),
+       the table
 I changed the background color of the whole page and I made the color change to be gradient, as you can see that the color changes from blue to green up-down.
           the font-weight for the table
           the font-size for the table
