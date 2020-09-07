@@ -92,7 +92,8 @@
             <div class = "hero">
                 
                 <h1><MARQUEE bgcolor="#1A1D26" behavior = "alternate" loop="-1" scrollamount="2" width="90%">Information about Isaac Abouaf</MARQUEE></h1>
-                <img class="mountains" src="./mountains.jpg">
+                <img class="mountains" src="http://localhost:3000/mountains.jpg">
+                
                 <a>Image From: <a href = "https://wallpaperaccess.com/4k-mountain">wallpaperaccess.com</a></a>
             </div>
         </section>
@@ -157,22 +158,6 @@
       const tl = new TimelineMax();
       tl.fromTo( hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
         .fromTo(slider, 1, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut});
-      
-      //let pos = 0;
-      
-      //const fnc = function(){
-      //    document.head.style.position = "left: 20px";
-          //pos += 5;
-      //}
-      
-//      let color = [0,100,200];
-//      
-//      const fnc = function(){
-//          document.body.style.backgroundColor = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
-//          color = color.map(val => (val + 5)% 255);
-//      }
-      
-      //setInterval(fnc, 50);
       
   </script>
 </html>

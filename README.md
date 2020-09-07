@@ -1,6 +1,6 @@
-Isaac Abouaf  ########LINK#########
+Isaac Abouaf  http://a1-zacoulou.glitch.me
 
-This project shows ...
+I had struggled to get the image to display using node.js and on glitch until I realized i needed to alter the server.js file to send the file when the server is created.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1, h2, p, ul, ol, a selectors.
