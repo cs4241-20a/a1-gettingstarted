@@ -1,102 +1,71 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
+README.md
 ===
 
-*DUE: Monday, September 7th by 11:59 AM (before the start of class!)*  
-
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skills with these tools throughout the rest of the course.
-
-Assignment details
+CS 4241: Webware Assignment 1
 ---
 
-This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
+### Author: Eric Reardon
 
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
-2. Fork this repo and then import it directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glitch back to GitHub.
-3. Same as #1, but instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
+**Live App Link**: https://a1-ejreardon.glitch.me
 
-## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
+This project shows a very simple webpage utlizing basic html, CSS styling within the style tag, and 
+  a background animation utilizing a JavaScript function in the script tag. I have a small introduction
+  about myself, my mqp, class year, and major/minor. I have also included a picture of myself from a 
+  few years back and put down my involvement at WPI and outside of school. I put a list of my technical
+  experience and then made a table of all of the CS classes I've taken. I've had a decent amount of experience
+  with front-end development, but this project was a good way to refresh myself with html, css, and js.
+  
+The most challenging part of this assigment was the styling to make the text and pictures
+appear next to each other on the page in "columns". Using the "float" internal styling within the 
+span and divs were very fragile, and took a lot of testing to make sure it all worked
+and looks nice on the screen.
 
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-4. Complete some technical and/or design achievements (see below).
-5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
+Additionally, getting the colors to fade in the background was very challenging
+until I discovered the cubic-bezier() function that handles page transitions much more easily.
 
-6. Modify the README file according to the specification below.
-7. Commit and push all your changes to GitHub. 
-8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo.
-
-## Option 2 - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
-Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
-
-## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
-This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Achievements
----
-Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
-
-*Technical*
-1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
-
-*Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936730811904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Jon%20Duckett&offset=0) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
-
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+### Technical Achievements
+- **Styled page with CSS**
+  - **Body**: Styled with background-color, color, font-family (see google fonts below), and transition (see JavaScript animation below)
+  - **h1**: Styled with color
+  - **h2**: Styled with color
+  - **h3** Styled with color
+  - **h4** Styled with color
+  - **img**: Styled with border size and color
+  - **ul**: Styled with padding size
+  - **table**: Styled with border-collapse (condensed border lines) and width
+  - **table.center**: Styled to center table on page
+  - **td, th**: (table data and header cells) Styled to align text, apply padding, and background/text color
+  - **tr**: (table row) Styled background color of even rows so table rows alternate color
+  - **cubic-bezier**: Styled background color transition (see JavaScript animation below)
+  - **span&div**: Used internal styling using float, width, margin-right, and clear to put some items side by side in "columns"
+    - example: picture next to intro text, Involvement & Hobbies section. I used span for text and div for the image
+    - Used the following: style="float:left; width:40%; margin-right:50px", style="float:left; width:40%", style="clear:both;"
+- **Add a simple JavaScript animation to the page**
+  - My simple JavaScipt page animation fades the background color of the page between three colors ("#F2F2F2", "#ADD1DA", "#9FBFDF").
+  - In order to do this, I utilized the SetInterval() JavaScript function as shown in class. 
+  I chose three colors that fade from a light grey to a deeper blue-grey to match the adobe color scheme I picked.
+  - I initiate an array that holds the three colors and then apply the document background color at the beginning index, 0.
+  The index increments until it hits the last color in the array. Once it reaches the end, the index starts decrementing 
+  until it reaches the first element, and so on. This makes the background switch between the 3 colors, back and forth.
+  - The last part of this animation is the use of the cubic-bezier() function in the CSS tag. By making the animation follow 
+  cubic-bezier(1, 1, 1, 1) (which is a straight line) with a 0s transition time, the background color linearly fades between the three colors
+  instead of switching between them.
+- **Experiment with other HTML tags**:
+ - Within this project, I used the following tags: h1, h2, h3, h4, p, strong, img, ul, li, table, tr, th, td, span, and div
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Create a color palette using [color.adobe.com](https://color.adobe.com)**:
+  - <img src="https://cdn.glitch.com/5211f451-a4aa-439c-951d-59a70f859025%2FScreen%20Shot%202020-09-06%20at%2011.11.08%20AM.png?v=1599436249793">
+  - I used the Monochromatic Color Harmony Rule and used all 5 on the scale
+  - h3, h4, and th are #033440
+  - background color transition uses #ADD1DA
+  - table even rows are (base color) #089BBF
+  - p is #3C4142
+  - image frame is #06718C
+- **Use a font from [Goolge Fonts](https://fonts.google.com)**:
+  - I used the "Slabo 27px" Google Font for all of the body.
+  - To do this, I put "<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">"
+  in the head tag and "font-family: 'Slabo 27px', serif" in the body tag 
+  within the style tag, as directed by the Google Fonts website
 
 
