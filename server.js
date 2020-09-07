@@ -1,19 +1,22 @@
 const http = require('http'),
       fs   = require('fs'),
       port = 3000
- 
+      routes = [
+        'error',
+        'home',
+      ];
 
-
+//Based off of https://www.freecodecamp.org/news/understanding-memoize-in-javascript-51d07d19430e
 const memoizedFs = (response) => {
   let cache = {};
   return (fileName) => {
     if(fileName in cache) {
       let fileString = cache[fileName];
       if(!!response){
-        response.end(fileString, 'utf-8');
+        response.end(fileString);
       }
     }
-    fs.readFile(fileName, 'utf8', (err, data) => {
+    fs.readFile(fileName, (err, data) => {
       if(err){
         if(!!cache['error.html'] && !!response){
           response.end(cache['error.html'], 'utf-8');
@@ -29,7 +32,7 @@ const memoizedFs = (response) => {
       else {
         cache[fileName] = data;
         if(!!response) {
-          response.end(data, 'utf-8');
+          response.end(data);
         }
       }
     });
@@ -49,27 +52,15 @@ loadFile('index.html');
 loadFile('error.html');
 
 const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
+  if(request.url === '/'){
+    sendFile( response, 'index.html' );
+  }
+  else if((routes.indexOf(request.url.slice(1)) !== -1)){
+   sendFile( response, request.url.concat('.html').slice(1) );
+  }
+  else{
+    sendFile(response, request.url.slice(1));
   }
 });
 
-
-
 server.listen( process.env.PORT || port )
-
-// const sendFile = function( response, filename ) {
-//    fs.readFile( filename, function( err, content ) {
-//      file = content
-//      response.end( content, 'utf-8' )
-//    })
-// }
-
-//Based off of https://www.freecodecamp.org/news/understanding-memoize-in-javascript-51d07d19430e
