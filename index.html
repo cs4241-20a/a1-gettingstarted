@@ -2,40 +2,56 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-    <link rel = "stylesheet" href = "style.css"></link>
-  </head>
-  <body>
-    <h1>Information about Patrick Houlihan</h1>
-    <p id = "class">
-      Class of 2020
-    </p>
-    <p id = "major">
-      Computer Science Major
-    </p>
-    <p>
-    I have taken the following courses.
-    <ul id="courses">
-      <li>CS1102</li>
-      <li>CS2102</li>
-      <li>CS2223</li>
-      <li>CS2303</li>
-      <li>CS3043</li>
-      <li>CS3133</li>
-      <li>CS3431</li>
-      <li>CS3516</li>
-      <li>CS3733</li>
-      <li>CS4731</li>
-    </ul>
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul id = "work">
-      <li>CS3733 : Software Engineering</li>
-      <li>ASSISTments</li>
-    </ul>
+    <meta charset="utf-8">
+
+    <link rel = "stylesheet" href = "/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> 
+ 
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <h1>Information about Patrick Houlihan</h1>
+    <div class = "grid">
+        <div class = "gridItem1a">
+          <p class = "year">
+            <a href = "https://www.wpi.edu/news/class-2022-welcomed-campus">Class of 2022</a>
+          </p>
+        </div>
+        <div class = "gridItem1b">
+          <p class = "major">
+            Computer Science Major
+          </p>
+        </div>
+        <div class = "gridItem2a">
+          <p class = "course">
+            I have taken the following courses.
+            <ul class = "courses">
+              <li><button class = "button1">CS1102</button></li>
+              <li><button class = "button1">CS2102</button></li>
+              <li><button class = "button1">CS2223</button></li>
+              <li><button class = "button1">CS2303</button></li>
+              <li><button class = "button1">CS3043</button></li>
+              <li><button class = "button1">CS3133</button></li>
+              <li><button class = "button1">CS3431</button></li>
+              <li><button class = "button1">CS3516</button></li>
+              <li><button class = "button1">CS3733</button></li>
+              <li><button class = "button1" onclick = "main()">CS4731</button></li>
+              </ul>
+          </p>
+        </div>
+        <div class = "gridItem2b">
+          <p class = "work">
+            Work experience
+          </p>
+            <ul id = "work">
+            <li><button class = "button2">CS3733</button></li>
+            <li><button class = "button2">Math Tutor</button></li>
+            <li><button class = "button2">ASSISTments</button></li>
+          </ul>
+        </div>
+          
+    </div>
   </body>
 </html>
