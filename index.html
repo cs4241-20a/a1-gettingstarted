@@ -1,28 +1,138 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+      body {
+        font-family: "Lato";
+        color: #C32ED9;
+      }
+      table, th, td {
+        border: 1px solid #C32ED9;
+      }
+    </style>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 style="color: #3CA9FA;text-align:center;font-weight: bold;">Information about Jordan Stoessel</h1>
     <p>
-      [Self introduction]
+      I'm Jordan Stoessel and I'm currently a senior in the class of 2021. I like to spend my time playing games, cooking, and working on personal projects. I'm currently looking forward to finishing school and placing all of my focus into app, game, and web development.
     </p>
     <p>
-      [Major and other information]
+      I'm a <strong> CS major</strong> who may or may not be pursuing a <strong>Psychology minor</strong> degree.
     </p>
+    <p style="border-style: double;padding-left: 5px;position: relative;width: 30%;">
+      <strong>Previous CS courses that I have taken at WPI are: </strong>
+      <br>CS1101 - Introduction to Program Design [Racket]
+      <br>CS2102 - Object-Oriented Design Concepts [Java]
+      <br>CS2022 - Discrete Mathematics [Mathematics]
+      <br>CS2223 - Algorithms [Python]
+      <br>CS2303 - Systems Programming Concepts [C/C++]
+      <br>CS3041 - Human-Computer Interaction [HTML/CSS]
+      <br>CS3043 - Social Implications of Information Processing [Theory]
+      <br>CS3733 - Software Engineering [JavaFX/CSS]
+      <br>CS3516 - Computer Networks [Mathematics/JavaFX]
+      <br>CS4731 - Computer Graphics [Javascript/HTML]
+      <br>
+      <br><strong>Courses planned to finish this school year:</strong>
+      <br>CS3013 - Operating Systems
+      <br>CS4120 - Analysis of Algorithms
+      <br>CS4241 - Webware: Computational Technology for Network Information Systems
+      <br>CS4341 - Introduction to Artificial Intelligence
+      <br>CS4342 - Machine Learning
+    </p>
+    
+    <h3 style="color: #2E3FD9;font-weight: bold;">CS Progress Bar</h3>
+    <p>How close I am to finishing my computer science requirement (visually).</p>
     <p>
-      [Other things]
+      <button onclick="myProgress()">Click Me</button>
     </p>
+    <style>
+    #animationContainer {
+      width: 500px;
+      height: 20px;
+      position: relative;
+      background-color: #FFCCDD;
+    }
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    #myAnimation {
+      width: 1px;
+      height: 20px;
+      position: absolute;
+      background-color: #C32ED9;
+    }
+    </style>
+
+    <script>
+      function myProgress() {
+        var e = document.getElementById("myAnimation");
+        var pos = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (pos == 340) {
+            clearInterval(id);
+          } else{
+            pos++;
+            e.style.left = pos + 'px';
+            e.style.right = pos + 'px';
+          }
+          }
+        }
+    </script>
+    <div id = "animationContainer">
+      <div id = "myAnimation"><br>I am here.</div>
+    </div>
+      
+
+    <h2 style="color: #2E3FD9;text-align: left;font-weight: bold;"><br>Experience</h2>
+    <table>
+      <caption>Languages Done:</caption>
+      <tr>
+        <th>HTML</th>
+        <th>Some</th>
+      </tr>
+
+      <br><tr>
+        <th>CSS</th> 
+        <th>Some</th>
+      </tr>
+
+      <tr>
+        <th>Java</th>
+        <th>Some</th>
+      </tr>
+
+      <tr>
+        <th>JavaScript</th>
+        <th>Some</th>
+      </tr>
+
+      <tr>
+        <th>Ruby</th>
+        <th>None</th>
+      </tr>
+
+      <tr>
+        <th>Python</th>
+        <th>Some</th>
+      </tr>
+
+      <tr>
+        <th>Unit Testing</th>
+        <th>Some</th>
+      </tr>
+    </table>
+
     <ul>
       <li>IBM/Rational</li>
       <li>WPI</li>
     </ul>
   </body>
+  <img src="https://static.wikia.nocookie.net/dragonballfighterz/images/7/77/Nappa_Artwork.png/revision/latest?cb=20180914191045" width="100" height="150">
+  <img src="https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fentries%2Ficons%2Ffacebook%2F000%2F005%2F609%2F800px-Yamcha_found_dead.jpg" width="200" height="100">
+
+  <footer>
+    <p style="font-size: small;">This site was made by Jordan Stoessel for the CS4241 course in A term of 2020-21.</p>
+  </footer>
 </html>
