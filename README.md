@@ -1,6 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 Jordan Stoessel
+
 https://a1-jstoessel.glitch.me
 
 This project shows the initial creation and deployment of a Web site onto Glitch. By completing the project I am able to showcase a proper understanding of Git, Github, Text editting (HTML & CSS), and Gltich. Being that the assignment was an intro "warm-up" exercise, there will definitely be more things for me to learn.
