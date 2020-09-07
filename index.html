@@ -1,28 +1,85 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <nav>
+    <h1 class="c_homePage__name">Christian Tweed</h1>
+  </nav>
+  <main>
+    <section id="academics" class="c_homePage__Info">
+      <h2>Academics</h2>
+      <p>
+        Hi, my name is Christian Tweed and I'm a 5th year senior (class of 2020) at WPI hoping to graduate in December.
+      </p>
+      <p>
+        BS Computer Science with a Minor in Philosophy
+      </p>
+      <h3>
+        Classes I've Taken
+      </h3>
+      <ul>
+        <li>Software Engineering</li>
+        <li>Databases 1</li>
+        <li>Databases 2</li>
+        <li>Mobile Dev (Currently)</li>
+        <li>Graphics</li>
+        <li>Computer Architecture</li>
+      </ul>
+    </section>
+  
+    <section id="personal" class="c_homePage__Info">
+      <h2>Personal</h2>
+      <p>I have a few hobbies to entertain myself. I like to skateboard, I like to read philosophy, and I enjoy some web development for fun. However, I know my design skills can be sharpened and that's what I hope to get out of this class.</p>
+      <figure>
+        <img src="assets/mowgli.jpg" class="c_homePage__catImage" alt="Orange cat on couch">
+        <figcaption>Mowgli</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/jellybean.jpg" class="c_homePage__catImage" alt="calico cat on cat bed">
+        <figcaption>Jellybean (aka Jellizabeth)</figcaption>
+      </figure>
+    </section>
+  
+    <section id="experience" class="c_homePage__Info">
+      <h2>Experience</h2>
+      <h3>
+        Working experience
+      </h3>
+      <ul>
+        <li>Carr Property Management (May - August 2018)</li>
+        <li>
+            <a href="https://www.ggleagues.com/" target="_blank" class="c_homePage__link">
+            GGLeagues
+          </a>(January 2018 - Current)
+        </li>
+      </ul>
+      <h3>Programming Experience</h3>
+      <ul>
+        <li>TypeScript (1 year)</li>
+        <li>Javascript (2 years)</li>
+        <li>C (4 years)</li>
+        <li>SQL (3 years)</li>
+      </ul>
+      <h3>Frameworks</h3>
+      <ul>
+        <li>
+          Angular (1 year)
+        </li>
+      </ul>
+    </section>
+  </main>
+  <button onclick="yeetElements()" class="c_homePage__funButton">
+   Wacky 
+  </button>
+  <footer>
+    <img class="c_homePage__sans" src="assets/tenor.gif" alt="dancing skeleton man">
+  </footer>
+</body>
 </html>

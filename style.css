@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-1: #141363;
+    --color-2: #7371E8;
+    --color-3: #2E2BE3;
+    --color-4: #323163;
+    --color-5: #2421B0;
+
+    --color-6: #E34B42;
+    --color-7: #E3A236;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: var(--color-4);
+    color: white;
+    margin: 0;
+} 
+
+main {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c b";
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#personal {
+    grid-area: b;
+}
+
+#academics {
+    grid-area: a;
+}
+
+#experience {
+    grid-area: c;
+    width: auto;
+}
+
+.c_homePage__name {
+    text-align: center;
+}
+
+.c_homePage__Info {
+    padding: 1rem;
+    margin: 1rem;
+
+    width: auto;
+    background-color: var(--color-7);
+
+    box-shadow: 5px 10px 10px 4px var(--color-1);
+    border-radius: 25px;
+}
+
+.c_homePage__Info h2 {
+    margin-top: 0;
+}
+
+.c_homePage__Info p {
+    margin-bottom: 0;
+}
+
+.c_homePage__Info ul {
+    margin-bottom: 0;
+}
+
+.c_homePage__catImage {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    width: 100%; 
+    background-color: var(--color-2);
+    height: 75px;
+}
+
+.c_homePage__sans {
+    height: 75px;
+    width: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+.c_homePage__link {
+    color: white;
+    margin-right: 5px;
+}
+
+.c_homePage__link:hover {
+    color: white;
+}
+
+.c_homePage__funButton {
+    position: fixed;
+    bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-6);
+    border-radius: 25px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    right: 1rem;
+    border:none
+}
