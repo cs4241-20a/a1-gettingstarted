@@ -1,6 +1,6 @@
 
 Isabel Morales Sirgo
-http://a1-charlieroberts.glitch.me
+http://a1-imoralessirgo.glitch.me
 
 This project shows uderstanding of basic HTML, JavaScript and CSS. 
 Aditionally it showcases the following achievements.
