@@ -1,0 +1,52 @@
+h1, h2, h3, p{
+    font-family: "Courier New";
+}
+body{
+    background-color: #170F11;
+    color: #e2fcef;
+}
+.tech_skill{
+    width: 400px;
+    height: 600px;
+    color: #e2fcef;
+    padding: 20px;
+    background-color: #402039;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+.skill{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.skill p {
+    color: white;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.skill p:nth-child(2){
+   float: right;
+    position: relative;
+    top: -25px;
+}
+
+.skill_level {
+    background: #9B287B;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #5C164E;
+    border-radius: 5px;
+}
+
+.skill_bar {
+    background: #5C164E;
+    width: 100%;
+    height: 10px;
+}
+table, th, td {
+    border: 3px solid #5C164E;
+    font-family: "Courier New";
+}
