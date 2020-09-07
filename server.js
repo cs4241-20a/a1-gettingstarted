@@ -1,6 +1,10 @@
 const http = require('http'),
       fs   = require('fs'),
       port = 3000
+      routes = [
+        'error',
+        'home',
+      ];
 
 //Based off of https://www.freecodecamp.org/news/understanding-memoize-in-javascript-51d07d19430e
 const memoizedFs = (response) => {
