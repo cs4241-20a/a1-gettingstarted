@@ -9,6 +9,7 @@
 
   </head>
   <body>
+    <button onclick="clearTheBackground()"> CLEAR THE BACKGROUND COLOR </button>
     <h1 class="center Rainbow"> Information about Yongcheng Liu</h1>
     
     <p class="center anotherColor" > Hello! I am Yongcheng Liu, one of the Class of 2023 students at WPI (Worcester Polytechnic Institute)! </p>
@@ -93,6 +94,11 @@
       }
       
       setInterval (func, 10)
+    </script>
+    <script>
+      const clearTheBackground = function(){
+        document.body.style.backgroundColor = '#e636ab'
+      }
     </script>
     
 

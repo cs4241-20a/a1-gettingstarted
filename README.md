@@ -14,7 +14,7 @@ We are asked to craft a simple web page for our info using git and glitch
 ## Technical Achievements
 - **Styled page with CSS**: 1.margins for elements 2.font-size for contents 3.font-family for headers and contents 4.line-height for contents 5. text-allign for some elements
 - **JavaScript Animation**: Rainbow Animation of the title
-- **Various Tags**: 1.link 2.pre 3.div 4.abbr 5.table
+- **Various Tags**: 1.link 2.pre 3.div 4.abbr 5.table 6.button
 
 ### Design Achievements
 - **Color**: [The Color Palette](Color.PNG) Used one darker color for background, another to hide an ester egg. Then used three lighter colors for contents.
