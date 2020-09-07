@@ -3,26 +3,211 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway&display=swap" rel="stylesheet"> 
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <!-- Styles -->
+    <style>
+      body {
+        background-color: #AEB7E6;
+        color: #2D3461;
+        font-family: 'Quicksand', sans-serif;
+      }
+
+      #content {
+        width: 50%;
+        margin: auto;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Raleway', sans-serif;
+      }
+
+      h3 {
+        color: #687AE0;
+      }
+
+      a {
+        color: #505EAD;
+      }
+
+      a:visited {
+        color: #4A4D61;
+      }
+
+      a:hover, a:visited:hover {
+        color: #687AE0;
+      }
+
+      button {
+        background-color: #687AE0;
+        padding: 0.8em;
+        color: #2D3461;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        /* Button Border Styles made with help from W3 schools
+        https://www.w3schools.com/CSSref/css3_pr_border-radius.asp */
+        border: 2px solid #4A4D61;
+        border-radius: 15px;
+        position: fixed;
+        right: 2em;
+        top: 2em;
+      }
+
+      button:hover {
+        background-color: #505EAD;
+        color: #AEB7E6;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      th {
+        text-align: left;
+      }
+      </style>
+    <!-- End Styles -->
+
+    <!-- Begin Script -->
+    <script>
+      const BASE_COLOR = "#2D3461";
+      let animationInterval = null;
+
+      // Reference used for OnClick:
+      // https://www.w3schools.com/jsref/event_onclick.asp
+      // Reference used for changing color:
+      // https://www.w3schools.com/js/js_htmldom_css.asp
+      toggleAnimation = function() {
+        if(animationInterval) {
+          console.log('Disabling Animation');
+          clearInterval(animationInterval);
+          resetColor();
+          animationInterval = null;
+          document.getElementById('animation-button').innerText = "Animate Text";
+        }
+        else {
+          console.log('Enabling Animation');
+          document.getElementById('animation-button').innerText = "Disable Animation";
+          animationInterval = setInterval(updateColor, 100);
+        }
+      }
+
+      resetColor = function() {
+        document.getElementById("body-id").style.color = BASE_COLOR;
+      }
+
+      updateColor = function() {
+        // Parse Int Reference
+        // https://www.w3schools.com/jsref/jsref_parseInt.asp
+        let colors = parseRGB(document.getElementById("body-id").style.color);
+        colors[1] = (colors[1] + 8) % 256;
+        let newColor = `rgb(${colors[0]}, ${colors[1]}, ${colors[2]}`;
+        document.getElementById("body-id").style.color = newColor
+        console.log('Updating color');
+      }
+
+      parseRGB = function(colorsString) {
+        let colors = colorsString.split(',');
+        colors[0] = parseInt(colors[0].substring(4)); // remove 'rgb('
+        colors[1] = parseInt(colors[1].substring(1)); // remove ' '
+        colors[2] = parseInt(colors[2].substring(1, colors[2].length - 1)); // remove ' ' and ')'
+        return colors;
+      }
+    </script>    
+    <!-- End Script -->
+
+  </head>
+  <body id="body-id">
+    <div id="content">
+      <h1>Information about Matthew St Louis</h1>
+      <p>Class of 2021</p>
+      <p>Major: Computer Science</p>
+      <p>
+        Hi! My name is Matthew St Louis, and I'm a <em>software engineer</em> studying computer science at <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><strong>Worcester Polytechnic Institute</strong></a>.
+      </p>
+      <p>
+        In my free time, I like horror movies and board games. My favorite board game is <a href="https://www.tuesdayknightgames.com/wcrr" target="_blank">World Championship Russian Roulette</a>!
+      </p>
+
+      <h2>Experience</h2>
+      <h3>
+        Working experience
+      </h3>
+      <ul>
+        <li>WPI</li>
+        <li>CommScope</li>
+      </ul>
+      <h3>
+        Proficiencies
+      </h3>
+      <table>
+        <tr>
+          <th>Skill</th><th>Proficiency Level</th>
+        </tr>
+        <tr>
+          <td>HTML</td><td>Fair</td>
+        </tr>
+        <tr>
+          <td>CSS</td><td>Some</td>
+        </tr>
+        <tr>
+          <td>Java</td><td>Fair</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td><td>Fair</td>
+        </tr>
+        <tr>
+          <td>Ruby</td><td>None</td>
+        </tr>
+        <tr>
+          <td>Python</td><td>Fair</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td><td>Some</td>
+        </tr>
+        <tr>
+          <td>Jasmine</td><td>Little</td>
+        </tr>
+        <tr>
+          <td>Karma</td><td>Little</td>
+        </tr>
+        <tr>
+          <td>JUnit</td><td>Some</td>
+        </tr>
+        <tr>
+          <td>Angular</td><td>Fair</td>
+        </tr>
+      </ul>
+    </table>
+      <h3>
+        Computer Science Courses
+      </h3>
+      <ul>
+        <li>CS 1101: Intro to Programming</li>
+        <li>CS 2102: Object-Oriented Design</li>
+        <li>CS 2022: Discrete Math</li>
+        <li>CS 2303: Systems Programming Concepts</li>
+        <li>CS 3431: Database Systems I</li>
+        <li>CS 2011: Machine Organization & Assembly</li>
+        <li>CS 2223: Algorithms</li>
+        <li>CS 3041: Human-Computer Interaction</li>
+        <li>CS 3013: Operating Systems</li>
+        <li>CS 3133: Foundations of Computer Science</li>
+        <li>CS 3733: Software Engineering</li>
+        <li>CS 3043: Social Implications of Information Processing</li>
+        <li>CS 4802: Introduction to Cryptography</li>
+        <li>CS 565: User Modeling</li>
+        <li>CS 4341: Introduction to Artificial Intelligence</li>
+        <li>CS 4341: Machine Learning</li>
+        <li>CS 4241: Webware</li>
+        <li>CS 584: Algorithms</li>
+        <li>MQP</li>
+      </ul>
+      <button id="animation-button" onclick="toggleAnimation()">Animate Text</button>
+    </div>
+    <script>
+      // Explicitly initialize a color
+      document.getElementById("body-id").style.color = BASE_COLOR;
+    </script>
   </body>
 </html>
