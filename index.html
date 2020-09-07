@@ -3,17 +3,37 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      body {
+          background-color: #79f553;
+      }
+      h1 span {
+          color: #5aa842;
+          background-color: #3939a8;
+      }
+      h2 {
+          color: #6c6bf5 
+      }
+      p {
+          color: #3939a8;
+      }
+      li {
+          color: #f55a0a;
+      }
+      #animate {
+        position: fixed;
+        z-index: -1;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <div id="animate"><img src="./dvd.png"></div>
+    <h1><span>Information about Raymond Dolan, Class of 2021</span></h1>
     <p>
-      [Self introduction]
+      Hi, welcome to my website!
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      I am a Computer Science + IMGD Tech major.
     </p>
 
     <h2>Experience</h2>
@@ -21,8 +41,80 @@
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Computer Science Student Assistant, WPI</li>
+      <li>Senior Student Intern, AMICA Mutual Insurance</li>
     </ul>
+    <p>
+      <b>Language Experience</b>
+    </p>
+    <ul>
+      <li>HTML: a lot</li>
+      <li>CSS: some</li>
+      <li>Java: a lot</li>
+      <li>JavaScript: some</li>
+      <li>Ruby: none</li>
+      <li>Python: some</li>
+      <li>Unit Testing: some</li>
+    </ul>
+    <p>
+      <b>Computer Science Courses</b>
+    </p>
+    <ul>
+      <li>1101: Intro to Program Design</li>
+      <li>2102: Object Oriented Design Concepts</li>
+      <li>2022: Discrete Mathematics</li>
+      <li>2223: Algorithms</li>
+      <li>2303: Systems Programming Concepts</li>
+      <li>2011: Intro to Machine Organization and Assembly Language</li>
+      <li>3013: Operating Systems</li>
+      <li>3133: Foundations of Computer Science</li>
+      <li>3733: Software Engineering</li>
+      <li>4341: Intro to Artificial Intelligence</li>
+      <li>4432: Database Systems II</li>
+    </ul>
+
+    <h2>Bonus Content</h2>
+    <a href="https://www.youtube.com/watch?v=doEqUhFiQS4">Click here to get rickrolled if you want.</a>
+    <p>
+      vvv Cool Video vvv
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e9DfSCk-6Ko" frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br />
+    <q>The ability to play chess is the sign of a gentleman. The ability to play chess well is the sign of a wasted life.</q>
+    <p>-Paul Morphy</p>
+
+    <script>
+      function bob() {
+        const speed = 0.5;
+        var w = window.innerWidth;
+        var v = window.innerHeight;
+        console.log("hi");
+        var elem = document.getElementById("animate");
+        var id = setInterval(frame, 5);
+        var vpos = 0;
+        var vdir = speed;
+        var hpos = 0;
+        var hdir = speed;
+        function frame() {
+          if(vpos >=innerHeight - elem.offsetHeight) {
+            vdir = -speed;
+          } else if(vpos <=0){
+            vdir = speed;
+          }
+          vpos += vdir;
+          elem.style.top = vpos + "px";
+          if(hpos >=innerWidth - elem.offsetWidth) {
+            hdir = -speed;
+          } else if(hpos <=0){
+            hdir = speed;
+          }
+          hpos += hdir;
+          elem.style.left = hpos + "px";
+        }
+      }
+      window.onload = bob();
+    </script>
+    
   </body>
 </html>
