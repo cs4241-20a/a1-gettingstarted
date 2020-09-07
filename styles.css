@@ -39,7 +39,7 @@ header::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(123, 134, 140, 0.4) 
+  background: rgba(123, 134, 140, 0.55) 
 }
 
 
@@ -62,7 +62,7 @@ section::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(89, 82, 69, 0.4)
+  background: rgba(89, 82, 69, 0.55)
 }
 
 
