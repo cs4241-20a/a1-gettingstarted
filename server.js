@@ -4,11 +4,6 @@ const http = require('http'),
 
 const server = http.createServer( function( request,response ) {
   switch( request.url ) {
-    case '/css/index.css':
-      fs.readFile('index.html', function(err, content) {
-        response.end(content, 'utf-8')
-      })
-      break
     case '/':
       sendFile( response, 'index.html' )
       break
@@ -18,7 +13,7 @@ const server = http.createServer( function( request,response ) {
     default:
       response.end( '404 Error: File Not Found' )
   }
-}).listen(3000)
+})
 
 server.listen( process.env.PORT || port )
 
