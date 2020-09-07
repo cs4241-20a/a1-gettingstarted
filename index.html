@@ -3,26 +3,181 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <style>
+      
+      body{
+        margin: 30px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #circle{
+        width: 200px;
+        height: 200px;
+        background-color: purple;
+        border-radius: 50%;
+        position: relative;
+      }
+      
+      p{
+        color: white;
+        background: rgb(26,164,184);
+      }
+      
+      li{
+        font-family: 'Shadows Into Light', cursive;
+        color: indigo;
+        padding-left: 25px;
+        margin-left: 100px;
+      }
+      
+      video{
+        margin-left: 600px;
+      }
+      
+      img{
+        margin-left:40px;
+      }
+      
+      h2{
+        color: white;
+      }
+      
+    </style>
+    
+  <script>
+  var circle = document.getElementById('circle');
+    
+  function animate(){
+    circle.style.transform = 'translate(50px, 20px)';
+  }
 
-    <h2>Experience</h2>
+      if(document.getElementById('click').clicked){
+        animate();
+      }
+      
+</script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    
+  </head>
+  <body style="background-image: linear-gradient(rgb(26,132,184),rgb(26,140,184),rgb(26,148,184), rgb(26,156,184), rgb(26,164,184))">
+    <div>
+      <div>
+    <h1 style= "color: white;">All there is to know about Carley Gilmore</h1>
     <p>
-      Working experience
+      Hi there CS4241 class! Here's some fun things to know about <i>yours truly!</i>
+      <ul>
+        <li>I'm from the Empire State <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2F43-434113_empire-state-building-icon-vector-clipart.png?v=1599062493527" width = "50"></li>
+        <li>I'm fond of the great outdoors <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2F156-1568888_landscape-computer-icons-nature-clip-art-scenery-icon-png.png?v=1599062531818" width = "50"></li>
+        <li>My favorite color is practically any hue of blue <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2F768px-Color_icon_blue.svg.png?v=1599062567382" width = "50"></li>
+        <li>My favorite food is sushi (RIP Kyoto IQP) <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2F302-3028946_happy-sushi-clipart.png?v=1599062605845" width = "50"></li>
+        <li>I love to kayak and paddleboard <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2F1-16959_canoe-clipart-free-for-download-kayak-clipart-black.png?v=1599062631740" width = "50"></li>
+        <li>I enjoy long walks on the beach <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2F456-4568207_download-palm-tree-png-png-images-background-palm.png?v=1599062666586" width = "50"></li>
+        <li>I've been to 7 different countries and love to travel <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2F5-57950_earth-clip-png-transparent-globe-clipart-png.png?v=1599062695777" width = "50"></li>
+        <li>My favorite sport is tennis <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2Faustralian-open-tennis-balls-racket-sport-tennis-vector.jpg?v=1599063182605" width = "50"></li>
+        <li>I want to write a fictional novel someday <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2Fdrawing-book-book.jpg?v=1599062795312" width = "50"></li>
+        <li>I own a lightsaber <img src= "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2FLightsaber%2C_silver_hilt%2C_blue_blade.png?v=1599062213339" width = "50"></li>
+    </ul>
+    </p>
+    <p>
+      I am a Computer Science and Professional Writing double major on track to graduate in 2022
+    </p>
+      <img src = "https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2FWP0255.jpg?v=1599449649747" width = "200" id = "me">
+      <div>
+    <p>
+      I participated in WPI's COVID-19 Innovation Challenge this summer, and it was super fun! Check out the video I made with my team :) </p>
+      <video align = "center" src="https://cdn.glitch.com/be62906d-d095-4582-b40d-fe56c8054794%2FFlexConnect.mp4?v=1599062075275" width="480" controls>
+</video>
+      </div>
+      </div>
+    <div>
+      <h2>
+        Related Coursework (in order taken)
+      </h2>
+      <ol>
+        <li>CS 1101: Introduction to Program Design</li>
+        <li>CS 2102: Object-Oriented Design Concepts</li>
+        <li>CS 2303: Systems Programming Concepts</li>
+        <li>CS 2011: Introduction to Machine Organization and Assembly Language</li>
+        <li>CS 2022: Discrete Mathematics</li>
+        <li>CS 3516: Computer Networks</li>
+        <li>CS 2223: Algorithms</li>
+        <li>CS 3013: Operating Systems</li>
+        <li>CS 3133: Foundations of Computer Science</li>
+      </ol>
+  </div>
+  
+  </div>
+    <div>
+  <div>
+    <h2>Related Programming Experience</h2>
+    <table border = "1">
+      <caption>Language Fluency</caption>
+      <tr align = "center">
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>Java</th>
+        <th>JavaScript</th>
+        <th>Ruby</th>
+        <th>Python</th>
+        <th>Unit Testing</th>
+      </tr>
+      <tr>
+        <td align = "left">a lot</td>
+        <td align = "left">a lot</td>
+        <td align = "left">a lot</td>
+        <td align = "left">a lot</td>
+        <td align = "left">none</td>
+        <td align = "left">some</td>
+        <td align = "left">some</td>
+      </tr>
+    </table>
+  </div>
+    <div>
+      <h2>Links</h2>
+      <dl>
+        <dt>Connect with me on LinkedIn!</dt>
+        <dd><a href="https://www.linkedin.com/in/carleygilmore/">Carley's LinkedIn</a></dd>
+        <dt>Check me out on Handshake!</dt>
+        <dd><a href="https://app.joinhandshake.com/users/14542643">Carley's Handshake</a></dd>
+        <dt>Follow me on Github!</dt>
+        <dd><a href="https://github.com/cgilmore18">Carley's Github</a></dd>
+      </dl>
+    </div>
+  </div>
+  
+    <p>
+      <h2>
+        Working Experience
+  </h2>
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li style = "margin-bottom: 10px;">TrampleZone: Currently working as the lead of the Client team on a webapp called MyChapter which helps manage organizations such as fraternities and sororities (primarily working with JS and CSS).</li>
+      
+      <li style = "margin-bottom: 10px;">WPI: Student worker as a Resident Advisor in Sanford Riley Hall and mentor to the First Floor First-Gen Innovation Community.</li>
+      
+      <li style = "margin-bottom: 10px;">Black Rocket: Over quarantine, I worked as an instructor at Black Rocket teaching 8-14 year olds how to design programs and creations in JS, CSS, HTML, Python, and CAD.</li>
+      
+      <li style = "margin-bottom: 10px;">Bureau of Emergency Services: I worked at the bureau in my county initializing their barcode database to manage important assets such as defibrillators. I also wrote a 20 page piece of technical documentation to leave behind.</li>
+      
     </ul>
+
+<h2>
+  I leave you with this quote!
+</h2>
+<q>
+ Great things are done by a series of small things brought together.
+</q>
+<h3 style = "padding-left: 300px">
+  Vincent van Gogh
+</h3>
+
+<div id="circle"></div>
+<button onclick = "animate()" id = "click" type= "button">
+    Click Me!
+</button>
+
   </body>
 </html>
