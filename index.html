@@ -1,28 +1,161 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Page title -->
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Meta Info -->
+    <meta charset="utf-8" />
+    <meta name="description" content="First homework assignment for Webware" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Jacob Pelrah" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  <body>
+    <!--Page header -->
+    <header>
+      <h1 id="nameHeader">JACOB PELRAH</h1>
+      <!--An image of me  -->
+      <img
+        id="myPhoto"
+        src="https://cdn.glitch.com/c96bdd3a-8412-4f73-8df9-40953ef8d400%2Fthumbnails%2Fpelrah_electric-haze_2018.jpg?1599451798153"
+        alt="Electric Haze 2018"
+        title="Playing at Electric Haze in Worcester."
+      />
+      <h1 id="yearHeader">Class of 2022</h1>
+    </header>
+
+    <!-- Line dividing header and introduction -->
+    <hr />
+    <!-- A little about me -->
+    <section id="myIntro">
+      <p>
+        Welcome to my page! <br />
+        <br />
+        You can call me Jake if you like. I'm a part-time student, a junior and
+        I study Computer Science and German. I'm a musician and enjoy listening
+        to and playing rock, jazz, blues and more. Prior to attending WPI I
+        served in the Army from 2004 - 2011.
+      </p>
+
+      <p>
+        My wife Delaney and I live in Grafton with our pomeranian Zelda. In my
+        free time I'm studying jazz and music theory. I also enjoy riding my
+        bicycle, video games, programming, web scraping and learning more about
+        Linux. I'm always looking to jam with new musicians and I'm working
+        toward forming a new band.
+      </p>
+      Have a great Fall!
+      <b>-Jake</b>
+    </section>
+    <br />
+    <!-- Line dividing introduction and course/skills-->
+    <hr />
+
+    <section id="school">
+      <!-- List of completed coursework -->
+      <section id="courseList">
+        <h4>Completed CS Coursework:</h4>
+        <ul>
+          <li>Intro to Electrical & Computer Engineering</li>
+          <li>Intro to Communications & Networks</li>
+          <li>Intro to Program Design</li>
+          <li>Object-Oriented Design Concepts</li>
+          <li>Algorithms</li>
+          <li>Systems Programming Concepts</li>
+          <li>Computer Graphics</li>
+        </ul>
+      </section>
+
+      <!-- List of skills with experience-->
+      <section id="skillList">
+        <table>
+          <tr>
+            <th scope="col">SKILL</th>
+            <th scope="col">EXPERIENCE</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td class="exp">Some</td>
+          </tr>
+          <tr class="even">
+            <td>CSS</td>
+            <td class="exp">Some</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td class="exp">A lot</td>
+          </tr>
+          <tr class="even">
+            <td>JavaScript</td>
+            <td class="exp">Some</td>
+          </tr>
+          <tr>
+            <td>Ruby</td>
+            <td class="exp">None</td>
+          </tr>
+          <tr class="even">
+            <td>Python</td>
+            <td class="exp">A lot</td>
+          </tr>
+          <tr>
+            <td>Unit Testing</td>
+            <td class="exp">A lot</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <hr />
+    <br />
+    <div id="myLinks">
+      <a
+        class="p-link"
+         id="spotifyLink"
+        href="https://open.spotify.com/user/xln3eby4h4cgn5sx6cnb3qqrt?si=KrfHmM5BTyi5cXjbCqOAXw"
+        target="_blank"
+        >Spotify Profile</a
+      >
+      <a
+        class="p-link"
+        href="https://github.com/HerschelKrustofsky"
+        target="_blank"
+        >Github Profile</a
+      >
+      <a
+        class="p-link"
+        href="https://github.com/HerschelKrustofsky/Datasets"
+        target="_blank"
+        >Datasets</a
+      >
+      <a class="p-link" href="https://vote.gov/" target="_blank"
+        >Register To Vote</a
+      >
+    </div>
+
+    <br />
+    <hr />
+    <canvas id="myCanvas"></canvas>
+    <script src="main.js"></script>
+    <footer>
+      <address>
+        <p class="h-card">
+          <a href="interests.html">
+            <img
+              class="u-photo"
+              src="https://cdn.glitch.com/c96bdd3a-8412-4f73-8df9-40953ef8d400%2Fpelrah_jacob.png?v=1599489619821"
+              alt="Jacob Pelrah"
+          /></a>
+          <a class="u-email" href="mailto:jpelrah@wpi.edu" target="_blank"
+            >jpelrah@wpi.edu</a
+          >
+          <span class="p-street-address">100 Institute Road,</span>
+          <span class="p-city">Worcester,</span>
+          <span class="p-state">MA</span>
+          <span class="p-zip">01609</span>
+        </p>
+      </address>
+    </footer>
   </body>
 </html>

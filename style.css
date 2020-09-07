@@ -1,0 +1,143 @@
+/* Specify custom font for name header */
+@font-face {
+  font-family: "Alegreya-ExtraBold";
+  src: url("https://cdn.glitch.com/c96bdd3a-8412-4f73-8df9-40953ef8d400%2FAlegreya-ExtraBold.ttf");
+}
+
+/* Specify custom font for body text*/
+@font-face {
+  font-family: "Alegreya-Regular";
+  src: url("https://cdn.glitch.com/c96bdd3a-8412-4f73-8df9-40953ef8d400%2FAlegreya-Regular.ttf?v=1599451817613");
+}
+
+/* Bring name closer to photo */
+#nameHeader {
+  margin: -2px;
+}
+
+/* Bring class year closer to photo */
+#yearHeader {
+  margin: -2px;
+}
+
+header {
+  font-family: Alegreya-ExtraBold, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+#myPhoto {
+  max-width: 400px;
+  border: solid #D4cf96 5px;
+  border-radius: 20% 20% 3px 3px;
+}
+
+hr {
+  border: solid #D4cf96 6px;
+  border-radius: 30%;
+}
+
+#myIntro:first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  color: #D4cf96;
+}
+
+body {
+  background: #292D33;
+  color: #D4cf96;
+  font-family: Alegreya-Regular, serif;
+  font-size: 24px;
+  margin: 50px 100px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+#school {
+  overflow: auto;
+}
+
+#courseList {
+  float: left;
+  width: 50%;
+}
+
+#skillList {
+  margin-top: 25px;
+  float: left;
+  width: 50%;
+}
+
+/* Table Styling*/
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 5px 10px;
+}
+
+tr {
+  background-color: #514947;
+}
+
+td {
+  border: solid #D4cf97 2px;
+}
+
+.exp {
+  text-align: center;
+}
+
+th {
+  background-color: #272322;
+  border: solid #D4cf97 2px;
+  text-align: left;
+}
+
+.h-card {
+  text-align: center;
+}
+
+/* Link Styling */
+a:link {
+  font-family: Alegreya-Regular, serif;
+  text-decoration: none;
+  color: #D4cf97;
+}
+
+a:visited {
+  color: #D8A0De;
+}
+
+a:hover {
+  background: #9BEBB4;
+  color: #272322;
+}
+
+a:active {
+  color: #EBB89B;
+}
+
+.p-link {
+  border: solid #D4cf97 2px;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+#myLinks {
+  text-align: center;
+}
+
+#myCanvas {
+  width: 200px;
+  height: 200px;
+  border: solid #D4cf97 2px;
+  margin: auto;
+  display: block;
+  border-radius: 20% 20% 20% 20%;
+}
