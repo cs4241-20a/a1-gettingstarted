@@ -1,4 +1,4 @@
-Adam Desveaux <glitch link>
+Adam Desveaux https://glitch.com/~a1-acdesveaux
 
 This assignment is a basic webpage with html and css.
 
