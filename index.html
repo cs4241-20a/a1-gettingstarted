@@ -1,28 +1,163 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+        
+        .slider{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background: linear-gradient(to right, #1A1D26, black);
+            z-index: -1;
+        }
+        
+        section{
+            display: flex;
+            height: 50vh;
+            align-items: center;
+        }
+        
+        .hero{
+            height: 80%;
+            width: 100%;
+        }
+        
+        .hero img{
+            width: 100%;
+            height: 110%;
+            object-fit: cover;
+        }
+        
+        body {
+            background-color: white; 
+        }
+        h1 {
+            font-family: 'Press Start 2P', 'sans-serif';
+            font-size: 50px;
+            color: #7593A3;
+            font-style: oblique;
+            text-align: center;
+        }
+        h2{
+            font-family: 'Roboto Mono', 'sans-serif';
+            font-size: 30px;
+            color: #B0BF7A;
+            text-decoration: underline;
+        }
+        p {
+            font-family: 'Roboto Mono', 'sans-serif';
+            font-size: 16px;
+            color: #D98F89;
+        }
+        ul {
+            font-family: 'Roboto Mono', 'sans-serif';
+            font-size: 14px;
+            color: #F2EEEB;
+        }
+        ol {
+            font-family: 'Roboto Mono', 'sans-serif';
+            font-size: 14px;
+            color: #F2EEEB;
+        }
+        a{
+            font-family: 'Roboto Mono', 'sans-serif';
+            font-size: 14px;
+            color: #F2EEEB;
+        }
+        table, th, td{
+            border: 1px solid #F2EEEB;
+            border-spacing: 0px;
+            background-color: #7593A3;
+            font-family: 'Roboto Mono', 'sans-serif';
+            font-size: 14px;
+        }
+        th, td{
+            padding: 10px;
+            font-family: 'Roboto Mono', 'sans-serif';
+            font-size: 14px;
+        }
+        
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+      <header>
+      <section>
+            <div class = "hero">
+                
+                <h1><MARQUEE bgcolor="#1A1D26" behavior = "alternate" loop="-1" scrollamount="2" width="90%">Information about Isaac Abouaf</MARQUEE></h1>
+                <img class="mountains" src="/mountains.jpg">
+                
+                <a>Image From: <a href = "https://wallpaperaccess.com/4k-mountain">wallpaperaccess.com</a></a>
+            </div>
+        </section>
+      </header>  
+    
+    <div class = "slider"></div><br><br><br><br><br><br><br><br><br><br>
+               
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+        WPI Senior: Class of 2021 <br>
+        Major: Robotics Engineering <br>
+        Minor: Computer Science <br><br>
+        
+      <table>
+          <tr>
+            <th>Previous Computer Science Courses:</th>
+            <th>Link</th>
+          </tr>
+          <tr>
+            <td>CS 1101: INTRODUCTION TO PROGRAM DESIGN</td>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-1101">Course Page</a></td>
+          </tr>
+          <tr>
+            <td>CS 2102: OBJECT-ORIENTED DESIGN CONCEPTS</td>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-2102">Course Page</a></td>
+          </tr>
+          <tr>
+            <td>CS 2303. SYSTEMS PROGRAMMING CONCEPTS</td>
+            <td><a href="https://www.wpi.edu/academics/calendar-courses/course-descriptions/17851/computer-science#CS-2303">Course Page</a></td>
+          </tr>
+      </table>
+    </p>	
 
+    <br><HR WIDTH="75%" COLOR="#F2EEEB" SIZE="4"><br>
+    
     <h2>Experience</h2>
-    <p>
-      Working experience
+	<p>
+      Technology:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: some</li>
+      <li>CSS: none</li>
+	  <li>Java: some</li>
+	  <li>JavaScript: some</li>
+	  <li>Ruby: none</li>
+	  <li>Python: a lot</li>
+	  <li>unit testing: some</li>
     </ul>
+	<p>
+      Work:
+    </p>
+    <ol>
+      <li>Hasbro - Platform Engineer Intern (Summer 2020)</li>
+      <li>Hasbro - Global Product Acquisition Intern (Summer 2019)</li>
+	  <li>Kids4Coding - Coding Instructor (Summer 2018)</li>
+	  <li>NanoPath - Intern (Summer 2018)</li>
+    </ol>
   </body>
+  <script>
+      const hero = document.querySelector(".hero");
+      const slider = document.querySelector(".slider");
+      
+      const tl = new TimelineMax();
+      tl.fromTo( hero, 1, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
+        .fromTo(slider, 1, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut});
+      
+  </script>
 </html>
