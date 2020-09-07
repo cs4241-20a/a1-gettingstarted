@@ -3,26 +3,83 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <header>
+      <h1>About Me</h1>
+      <p>
+        Hi, I'm Edward!  I'm a Computer Science major from the WPI Class of '22.
+      </p>
+      <p>
+        Besides tech, I'm a big fan of the outings: I love camping and backpacking (though I don't have gear here in Massachusetts) and I'm always up for a hike.
+      </p>
+      <p>
+        If you want to know more about me, visit <a href="https://wpi.digication.com/edward-philippo/">my Digication page.</a>
+      </p>
+    </header>
+    <section>
+      <h2>Experience</h2>
+      <h3>
+        Courses
+      </h3>
+      <ul>
+        <li>CS 4241 - Webware (ongoing)</li>
+        <li>CS 4518 - Mobile and Ubiquitous Computing (ongoing)</li>
+        <li>CS 3516 - Computer Networks</li>
+        <li>CS 3133 - Foundations of Computer Science</li>
+        <li>CS 3043 - Social Implications of Information Processing</li>
+        <li>CS 3013 - Operating Systems</li>
+        <li>CS 2223 - Algorithms</li>
+        <li>CS 2022 - Discrete Math</li>
+        <li>CS 2011 - Introduction to Machine Org. and Assembly Language</li>
+        <li>CS 2303 - Systems Programming Concepts</li>
+        <li>CS 2102 - Object-Oriented Design Concepts</li>
+        <li>CS 1101 - Introduction to Program Design</li>
+      </ul>
+      <h3>
+        Relevant Skills
+      </h3>
+      <ul>
+        <li>Python - very substantial personal experience</li>
+        <li>HTML - substantial coursework</li>
+        <li>CSS - substantial coursework</li>
+        <li>Java - some coursework</li>
+        <li>JavaScript - no experience</li>
+        <li>Ruby - no experience</li>
+        <li>Unit Testing - no experience</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Cool Animation</h2>
+      <button onclick="startLoad();">Push Me</button>
+      <div id="LoadBox">
+      <div id="LoadBar"></div>
+    </section>
+    <footer>Background photo: somewhere in the hills of central Marin.  Image credit: myself.</footer>
   </body>
 </html>
+
+<script>
+function startLoad() {
+  var bar = document.getElementById("LoadBar");
+  
+  var xloc = 1;
+  var hitRight = false;
+  var bounces = 0;
+  
+  var timer = setInterval(frame, 10);
+  
+  function frame() {
+    if(bounces > 50) { clearInterval(timer); }
+    if (xloc == 300 || xloc == 0) {
+      hitRight = !hitRight;
+      bounces++;
+    }
+    if (hitRight) { xloc--; } else { xloc++; }
+    
+    bar.style.left = xloc + 'px';  
+  }
+}
+</script>
