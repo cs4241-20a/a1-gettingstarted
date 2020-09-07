@@ -3,26 +3,237 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      body {
+      font-family: 'Roboto', sans-serif;
+      color: #DFDCE3;
+      font-weight: 400;
+      letter-spacing: -.003em;
+      font-size: 14px;
+      margin: 2em;
+      background: #4ABDAC;
+      }
+
+      h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 6000;
+          letter-spacing: -.003em;
+          font-size: 40px;
+          color: #FC4A1A
+      }
+
+      h2 {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 1000;
+          letter-spacing: -.003em;
+          font-size: 26px;
+          color: #F7B733
+      }
+
+      h3 {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 800;
+          letter-spacing: -.003em;
+          font-size: 18px;
+          text-decoration: underline;
+          color: rgba(0, 0, 0, .4);
+      }
+
+      p {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 100;
+          letter-spacing: -.003em;
+          font-size: 14px;
+          color: #DFDCE3;
+      }
+
+      li {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 100;
+          letter-spacing: -.003em;
+          font-size: 14px;
+          color: #DFDCE3;
+      }
+
+      .personal-info {
+          width: 580px; 
+          height: 140px; 
+          border: 20px double rgba(0, 0, 0, .4); 
+          background: rgba(0, 0, 0, .4); 
+          background-clip: padding-box; 
+          border-radius: 5px; 
+          padding: 5px;
+      }
+
+      hr {
+        margin: 0em;
+        align-content: left;
+        width: auto;
+        background-color: #333;
+      }
+
+      table {
+          width: 630px;
+          border-collapse: collapse;
+          border-spacing: 0;
+          text-align: center;
+          color: #333
+      }
+
+      th, td {
+          border: 2.5px solid #CCC;
+          height: 25px;
+      }
+
+      th{
+          background: rgba(0, 0, 0, .4);
+          font-weight: bold;
+          color: #DFDCE3
+      }
+
+      td{
+          background: #DFDCE3;
+      }
+
+      .fading-slides {
+        display: none;
+      }
+      
+      .slideshow-container {
+        max-width:800px;
+        position:relative;
+        margin:0px;
+      }
+
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Aditya Malik</h1> 
+    <div class="personal-info">
     <p>
-      [Self introduction]
+      Self introduction: I am a senior at WPI and am a member of the class of 2021
     </p>
     <p>
-      [Major and other information]
+      Major: Robotics Engineering 
     </p>
     <p>
-      [Other things]
+        Minor: Computer Science
     </p>
+    <p>
+      Previous Computer Science classes: 
+      <a href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html">CS 1101,</a>
+      <a href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html">CS 2102,</a> 
+      <a href="https://web.wpi.edu/academics/catalogs/ugrad/cscourses.html">CS 2303</a>
+    </p>
+    </div>
+    <br>
+
+    <div class="slideshow-container">
+      <!--images-->
+      <div class="slides">
+        <img src="https://www.wpi.edu/sites/default/files/2018/01/10/new%20gompei.jpg" width="630px" height="350px">
+      </div>
+      <div class="slides">
+        <img src="https://www.wpi.edu/sites/default/files/inline-image/News/Daily-Herd/DSC9378.jpg" width="630px" height="350px">
+      </div>
+      <div class="slides">
+        <img src="https://www.wpi.edu/sites/default/files/2018/08/28/MJB_6790_DIGITAL.jpg" width="630px" height="350px">
+      </div>
+    </div>
+    <br>
+    <hr> 
 
     <h2>Experience</h2>
-    <p>
+    <h3>
+      Experience with technology
+    </h3>
+
+    <table>
+      <tr>
+        <th></th>
+        <th scope="col">A lot</th>
+        <th scope="col">Some</th>
+        <th scope="col">None</th>
+      </tr>
+      <tr>
+        <th scope="row">HTML</th>
+        <td></td>
+        <td>&#10004</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">CSS</th>
+        <td></td>
+        <td>&#10004</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Java</th>
+        <td></td>
+        <td>&#10004</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">JavaScript</th>
+        <td></td>
+        <td></td>
+        <td>&#10004</td>
+      </tr>
+      <tr>
+        <th scope="row">Ruby</th>
+        <td></td>
+        <td></td>
+        <td>&#10004</td>
+      </tr>
+      <tr>
+        <th scope="row">Python</th>
+        <td>&#10004</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">Unit Testing</th>
+        <td></td>
+        <td>&#10004</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h3>
       Working experience
-    </p>
+    </h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Robotics Engineering Intern at DGWorld</li>
+      <li>Summer Research Intern at Smart Dubai</li>
+      <li>To find out more about my work experience, you can find my LinkedIn profile by clicking 
+        <a href="https://www.linkedin.com/in/adityamalik3/">HERE</a>
+      </li>
     </ul>
+    <br>
+    <marquee behavior='scroll' direction=right>
+      This website was created as a project for CS 4241 as an introduction to HTML, CSS, and JavaScript
+    </marquee>
   </body>
+  
+  <script> 
+    var picIndex = 0;
+    rotateSlides();
+
+    function rotateSlides() {
+      var i;
+      var pics = document.getElementsByClassName("slides");
+      for (i = 0; i < pics.length; i++) {
+        pics[i].style.display = "none";  
+      }
+      picIndex++;
+      if (picIndex > pics.length) {
+        picIndex = 1
+      }    
+      pics[picIndex-1].style.display = "block";  
+      setTimeout(rotateSlides, 2500); // Change image every 2.5 seconds
+    }
+  </script>
 </html>
