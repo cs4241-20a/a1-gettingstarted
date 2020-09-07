@@ -15,5 +15,8 @@ This project shows a personal page by me to demonstrate some technical web devel
 - **Used the Roboto Font from Google Fonts**: I used Ubuntu as the font for the primary copy text in my site.
 - **Used the Adobe Color Pallete to Create the Color Scheme for the Site**: Based on the image below I created a color pallete, I drew some other colors from some other options on the side
 
+<<<<<<< HEAD
 ![Image of Color Wheel](https://raw.githubusercontent.com/TweedChristian/a1-gettingstarted/master/assets/colors.png)
+=======
+>>>>>>> cc3799c1051f2940bcc437cdde79be237cd03b83
 
