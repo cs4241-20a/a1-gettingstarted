@@ -15,3 +15,8 @@ begins the javascript animation. **table** format for displaying prev cs courses
 ## Design Achievements
 - **Used color palette** displayed in "ColorPalette.png".
 - **Using Google Font's "Bebas Neue"** for "Information about Garrett Smith" header.
+
+## Accreditation
+- Used https://www.w3schools.com/js/js_htmldom_animate.asp for the basic animation code. I modified this 
+by making the html object both ascend and descend, as well as set the color of list elements it passed
+to be its current color which is changed with Math.random() every interval.
