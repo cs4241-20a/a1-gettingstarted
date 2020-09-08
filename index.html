@@ -1,28 +1,181 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<style>
+		h1 {color:#555DE6;
+			text-decoration: underline;
+			text-decoration-color: maroon;
+			font-family: 'Bebas Neue', cursive;}
+		h2 {color:#5989F0;}
+		p {	color:#5BA4D9;
+			font-family: verdana;
+			font-size: 90%}
+		background-color {	color:white;}
+		#container {
+		  width: 400px;
+		  height: 400px;
+		  position: relative;
+		  background: white;
+		}
+		code { color:#555DE6}
+		li { color:#55E6D4}
+		#animate {
+		  width: 150px;
+		  height: 20px;
+		  position: absolute;
+		  background: green;
+		  color:#FF0000;
+		}
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+		button {
+			color:#5BA4D9;
+		}
+		td {
+			color: #5BA4D9;
+		}
+	</style>
+	<script>
+	  function myMove() 
+		{
+		  var elem = document.getElementById("animate");
+		  var list = [];
+		  for(var i = 1; i < 8; i++) {
+			list.push(document.getElementById("arr"+i));
+		  }
+		  var start = list[0].getBoundingClientRect().top;
+		  console.log("start " + start);
+		  var end = list[6].getBoundingClientRect().bottom;
+		  var pos = start;
+		  var id = setInterval(frame, 15);
+		  var animBox = elem.getBoundingClientRect();
+		  
+		  var direction = true; // true is ++
+		  var rgb = [20, 42, 96];
+		  console.log(rgb[0]);
+		  var colorChangeStep = 3;
+		  var nextLine = 0;
+		  function frame() {
+			start = list[0].getBoundingClientRect().top;
+			end = list[6].getBoundingClientRect().bottom;
+			animBox = elem.getBoundingClientRect();
+			  console.log("animBox Bottom: " + animBox.bottom + " end: " + end);
+			  animBox = elem.getBoundingClientRect();
+			for(var i = 0; i < 3; i++) {
+				rgb[i] = (rgb[i] + Math.round(colorChangeStep * Math.random())) % 255;
+			}
+			var str = "#" + rgb[0].toString(16) + rgb[1].toString(16) + 
+				rgb[2].toString(16);
+			elem.style.background = str;
+			if (animBox.bottom >= end) {
+			  direction = false;
+	
+			  console.log("Switch")
+			} else if(animBox.top <= start) {
+				direction = true;
+
+			}
+			if(nextLine < 0) {
+				nextLine = 0;
+			} else if(nextLine > 7) {
+				nextLine = 7;
+			}
+			if(direction) {
+				pos++;
+				var nextElem = list[nextLine];
+				if(animBox.top >= nextElem.getBoundingClientRect().top) {
+					nextElem.style.color = elem.style.background;
+					nextLine++;
+				}
+			} else {
+				pos--;
+				var nextElem = list[nextLine];
+				if(animBox.top <= nextElem.getBoundingClientRect().top) {
+					nextElem.style.color = elem.style.background;
+					nextLine--;
+				}
+			}
+			console.log(direction);
+			console.log(animBox.bottom + " " + end + " " + animBox.top + " " + start);
+			  elem.style.top = pos + 'px';
+			 
+			}
+			
+		  }
+		
+</script>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+  
+	
+    <h1>Information about Garrett Smith</h1>
     <p>
-      [Self introduction]
+      Whats up guys? I'm a Senior at WPI.
     </p>
     <p>
-      [Major and other information]
+      Major: CS <br>
+	  Year: 2021
     </p>
     <p>
-      [Other things]
+	<a href="https://www.wpi.edu/academics/departments/computer-science/courses">Catalog</a>
+      <br><br><b>Previous CS Courses:</b> <br>
+		<table>
+			<tr>
+				<td> CS1101 </td>
+				<td> CS3013 </td>
+				<td> CS3733 </td>
+				<td> CS3043 </td>
+			</tr>
+			<tr>
+				<td> CS3516 </td>
+				<td> CS2102 </td>
+				<td> CS2022 </td>
+				<td> CS2303 </td>
+			</tr>
+			<tr>
+				<td> CS4518 </td>
+				<td> - </td>
+				<td> - </td>
+				<td> - </td>
+			</tr>
+		</table>
     </p>
 
     <h2>Experience</h2>
     <p>
       Working experience
     </p>
+	
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+	<button onclick="myMove()">Start Animation</button> <br><br>
+	
+	<div id ="animate"></div>
+      <li id="arr1">HTML - some</li>
+      <li id="arr2">CSS - some</li>
+	  <li id="arr3">Java - a lot</li>
+	  <li id="arr4">JavaScript - none</li>
+	  <li id="arr5">Ruby - none</li>
+	  <li id="arr6">Python - some</li>
+	  <li id="arr7">unit testing - some</li>
     </ul>
+	</div>
+	
   </body>
+  <noscript>Your browser does not support JavaScript! </noscript>
+  <code>
+  function myMove()  <br>
+	<br>	{
+	<br>	  var elem = document.getElementById("animate");
+	<br>	  var list = [];
+	<br>	  for(var i = 1; i < 8; i++) {
+	<br>		list.push(document.getElementById("arr"+i));
+		<br>  }
+	<br>	  var start = list[0].getBoundingClientRect().top;
+	<br>.....
+		</code>
 </html>
