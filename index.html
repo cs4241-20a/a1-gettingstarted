@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+</head>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 id="head1">Information about Xiaowei Chen</h1>
     <p>
-      [Self introduction]
+      Name: Xiaowei Chen
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Major: Computer Science<br>
+      Graduation Year: 2021
     </p>
 
     <h2>Experience</h2>
@@ -21,8 +23,97 @@
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>WPI, Peer-Learning Assistant For Mathematics Department</li>
+      <li>WPI, Research Assistant</li>
+      <li>E-Joy Information and Technology Corp., Ltd., Front-End Engineer</li>
     </ul>
+    <p>
+      Course Experience
+    </p>
+    <ul>
+      <li>CS1101</li>
+      <li>CS2102</li>
+      <li>CS2022</li>
+      <li>CS2011</li>
+      <li>CS2303</li>
+      <li>CS2223</li>
+      <li>CS3013</li>
+      <li>CS3043</li>
+      <li>CS3133</li>
+      <li>CS3431</li>
+      <li>CS3733</li>
+      <li>CS4233</li>
+      <li>CS4432</li>
+    </ul>
+    <p>
+      Skill Experience
+    </p>
+    <table>
+      <tr>
+        <th>Skill Name</th>
+        <th>Experience Level</th>
+      </tr>
+      <tr>
+        <th>HTML</th>
+        <th>Some</th>
+      </tr>
+      <tr>
+        <th>CSS</th>
+        <th>Some</th>
+      </tr>
+      <tr>
+        <th>Java</th>
+        <th>A Lot</th>
+      </tr>
+      <tr>
+        <th>JavaScript</th>
+        <th>None</th>
+      </tr>
+      <tr>
+        <th>Ruby</th>
+        <th>None</th>
+      </tr>
+      <tr>
+        <th>Python</th>
+        <th>None</th>
+      </tr>
+      <tr>
+        <th>Unit Testing</th>
+        <th>A Lot</th>
+      </tr>
+    </table>
+    <p>
+      <a href="https://wpi.digication.com/xiaowei1800/home-1" target="_blank">My Eportfolio</a>
+    </p>
+    <img src="https://cdn.glitch.com/0410d8ea-a27d-42de-ae2e-ee2509e717dd%2Fwpi_logo.png?v=1599332405354" heigh="200"
+          width="200"/>
   </body>
+  
+  <style type="text/css"> 
+    table  tr th{
+      font-size:16px;
+      font-family: 'Aclonica';
+    }
+    body {
+      font-weight:600;
+      background-image:linear-gradient(#33BDFF,#33FFD5)
+    }
+  </style>
+  
+  <script tyle="text/javascript">
+    //head1.style.color = "red";
+    setInterval(colorBlink, 300);
+    var colorFlag = 0;
+    function colorBlink(){
+      var head1 = document.getElementById("head1");
+      if(colorFlag===0){
+        head1.style.visibility="hidden";
+        colorFlag=1;
+      }
+      else{
+        head1.style.visibility="visible";
+        colorFlag=0;
+      }
+    }
+  </script>
 </html>
